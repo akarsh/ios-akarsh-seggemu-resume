@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D32273F3218535AD0068A69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32273F2218535AD0068A69D /* AppDelegate.swift */; };
-		D32273F5218535AD0068A69D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32273F4218535AD0068A69D /* ViewController.swift */; };
 		D32273F8218535AD0068A69D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32273F6218535AD0068A69D /* Main.storyboard */; };
 		D32273FA218535AE0068A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32273F9218535AE0068A69D /* Assets.xcassets */; };
 		D32273FD218535AE0068A69D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32273FB218535AE0068A69D /* LaunchScreen.storyboard */; };
+		D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324D66021860B9D0089CD44 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D32273EF218535AD0068A69D /* akarsh seggemu resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "akarsh seggemu resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32273F2218535AD0068A69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D32273F4218535AD0068A69D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D32273F7218535AD0068A69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D32273F9218535AE0068A69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32273FC218535AE0068A69D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D32273FE218535AE0068A69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D324D66021860B9D0089CD44 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		D324D66221860C880089CD44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		D32273E6218535AD0068A69D = {
 			isa = PBXGroup;
 			children = (
+				D324D66221860C880089CD44 /* README.md */,
 				D32273F1218535AD0068A69D /* akarsh seggemu resume */,
 				D32273F0218535AD0068A69D /* Products */,
 			);
@@ -54,14 +56,30 @@
 		D32273F1218535AD0068A69D /* akarsh seggemu resume */ = {
 			isa = PBXGroup;
 			children = (
+				D32274072185360A0068A69D /* Controller */,
+				D3227405218535F60068A69D /* Model */,
 				D32273F2218535AD0068A69D /* AppDelegate.swift */,
-				D32273F4218535AD0068A69D /* ViewController.swift */,
 				D32273F6218535AD0068A69D /* Main.storyboard */,
 				D32273F9218535AE0068A69D /* Assets.xcassets */,
 				D32273FB218535AE0068A69D /* LaunchScreen.storyboard */,
 				D32273FE218535AE0068A69D /* Info.plist */,
 			);
 			path = "akarsh seggemu resume";
+			sourceTree = "<group>";
+		};
+		D3227405218535F60068A69D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D32274072185360A0068A69D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D324D66021860B9D0089CD44 /* MainTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32273F5218535AD0068A69D /* ViewController.swift in Sources */,
+				D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */,
 				D32273F3218535AD0068A69D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
