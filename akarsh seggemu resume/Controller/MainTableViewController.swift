@@ -9,7 +9,10 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-
+    
+    
+    var basicsStorage: Resume?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,29 +21,53 @@ class MainTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
+        self.fetchData { (basicsStorage) in
+            print(basicsStorage)
+            self.basicsStorage = basicsStorage
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
+    func fetchData(completionHandler: @escaping (Resume) -> ()) {
+        let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified/master/resume.json"
+        if let urlString = URL(string: url) {
+            let session = URLSession(configuration: .ephemeral)
+            let dataTask = session.dataTask(with: urlString) { (data, response, error) in
+            if let jsonData = data {
+                    // do try catch block
+                    let jsonDecoder = JSONDecoder()
+                    do {
+                        let basicsStorage = try jsonDecoder.decode(Resume.self, from: jsonData)
+                        completionHandler(basicsStorage)
+                    } catch {
+//
+                    }
+                }
+            }
+            dataTask.resume()
+        }
+    }
+    
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+//        return 0
+                return 1
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as! MainTableViewCell
+        
+        let basicInfoLabelValue = basicsStorage?.basics.profiles[indexPath.row]
+        cell.basicsInfoLabel.text = basicInfoLabelValue?.network
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
