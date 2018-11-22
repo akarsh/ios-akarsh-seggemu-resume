@@ -11,7 +11,8 @@ import UIKit
 class MainTableViewController: UITableViewController {
     //    var basicsStorage: Resume?
     
-    let resumeNameArrays = ["🇬🇧 English resume", "🇩🇪 Deutsch Lebenslauf"]
+    let resumeNameArrays = ["English resume", "Deutsch Lebenslauf"]
+    let emojiOfLanaguageArrays = ["🇬🇧", "🇩🇪"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,9 @@ class MainTableViewController: UITableViewController {
         
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
+        
+        // Adding separator Inset
+        tableView.separatorInset = UIEdgeInsets.init(top: 0, left: 40, bottom: 0, right: 0)
         
         //        self.fetchData { basicsStorage in
         //            self.basicsStorage = basicsStorage
@@ -108,15 +112,14 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        //        return 0
         return resumeNameArrays.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as! MainTableViewCell
         
-        cell.textLabel?.text = resumeNameArrays[indexPath.row]
+        cell.emojiLabelOfLanguage.text = emojiOfLanaguageArrays[indexPath.row]
+        cell.nameLabelOfLanguage.text = resumeNameArrays[indexPath.row]
         
         // MARK: - appending JSON parsed value to cell
         //        let basicInfoLabelValue = basicsStorage?.basics.profiles[indexPath.row]
