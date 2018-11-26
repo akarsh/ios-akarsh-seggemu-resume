@@ -62,10 +62,11 @@
 		D32273F1218535AD0068A69D /* akarsh seggemu resume */ = {
 			isa = PBXGroup;
 			children = (
+				D32273F2218535AD0068A69D /* AppDelegate.swift */,
 				D35AA9D421A4D72D009F8BC8 /* Assets */,
 				D32274072185360A0068A69D /* Controller */,
 				D3227405218535F60068A69D /* Model */,
-				D32273F2218535AD0068A69D /* AppDelegate.swift */,
+				D359DC7721AB72E5008011EE /* View */,
 			);
 			path = "akarsh seggemu resume";
 			sourceTree = "<group>";
@@ -82,9 +83,16 @@
 			isa = PBXGroup;
 			children = (
 				D324D66021860B9D0089CD44 /* MainTableViewController.swift */,
-				D3B28BE621A6236000029A3F /* MainTableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D359DC7721AB72E5008011EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D3B28BE621A6236000029A3F /* MainTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D35AA9D421A4D72D009F8BC8 /* Assets */ = {
