@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  akarsh seggemu resume
+
+  Created by Akarsh Seggemu on 03/12/2018.
+  Copyright © 2018 Akarsh Seggemu. All rights reserved.
+*/
+
+"contact" = "Contact";
+"info" = "Info";
+"summary" = "Summary";
+"profiles" = "Profiles";
+"skills" = "Skills";
+"languages" = "Languages";
+"education" = "Education";
+"experience" = "Experience";
+"volunteer" = "Volunteer";
+"awards" = "Awards";
+"publications" = "Publications";
+"interests" = "Interests";
+"references" = "References";

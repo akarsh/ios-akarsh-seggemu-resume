@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  akarsh seggemu resume
+
+  Created by Akarsh Seggemu on 03/12/2018.
+  Copyright © 2018 Akarsh Seggemu. All rights reserved.
+*/
+
+"contact" = "Kontakt";
+"info" = "Info";
+"summary" = "Zusammenfassung";
+"profiles" = "Profil";
+"skills" = "Fähigkeiten";
+"languages" = "Sprachen";
+"education" = "Ausbildung";
+"experience" = "Berufserfahrung";
+"volunteer" = "Gemeinnützig";
+"awards" = "Auszeichnung";
+"publications" = "Publikation";
+"interests" = "Interessen";
+"references" = "Referenzen";
+
+
+
