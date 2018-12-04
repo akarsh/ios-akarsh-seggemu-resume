@@ -6,6 +6,7 @@
   Copyright © 2018 Akarsh Seggemu. All rights reserved.
 */
 
+// MARK: ResumeSchemaLayout
 "contact" = "Contact";
 "info" = "Info";
 "summary" = "Summary";
@@ -19,3 +20,6 @@
 "publications" = "Publications";
 "interests" = "Interests";
 "references" = "References";
+
+// MARK: - ContactLayout
+

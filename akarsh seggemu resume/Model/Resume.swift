@@ -88,12 +88,12 @@ struct languages: Codable {
 struct Resume: Codable {
     var basics: basics
     var work: [work]
-//    var volunteer: [volunteer]
+    //    var volunteer: [volunteer]
     var education: [education]
-//    var awards: [awards]
-//    var publications: [publications]
+    //    var awards: [awards]
+    //    var publications: [publications]
     var skills: [skills]
     var languages: [languages]
-//    var interests: [interests]
-//    var references: [references]
+    //    var interests: [interests]
+    //    var references: [references]
 }

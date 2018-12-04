@@ -9,19 +9,17 @@
 import UIKit
 
 class ResumeSchemaTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var emojiSymbolLabelOfSchemaKeys: UILabel!
     @IBOutlet weak var contentLabelOfSchemaKeys: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
     }
-
+    
 }

@@ -9,70 +9,55 @@
 import UIKit
 
 class ResumeSchemaTableViewController: UITableViewController {
-
+    
+    var choosenLanguage: String?
+    
+    lazy var data: [String] = {
+        return [
+            locForKey("contact")!,
+            locForKey("info")!,
+            locForKey("summary")!,
+            locForKey("profiles")!,
+            locForKey("skills")!,
+            locForKey("languages")!,
+            locForKey("education")!,
+            locForKey("experience")!,
+            locForKey("volunteer")!,
+            locForKey("awards")!,
+            locForKey("publications")!,
+            locForKey("interests")!,
+            locForKey("references")!
+        ]
+    }()
+    
+    let emojiOfSchemaKeys = ["📇", "ℹ️", "💬", "👤", "🛠", "🌐", "🎓", "⏳", "🏵", "🏆", "📚", "❤️", "📝"]
+    
+    func locForKey(_ key: String) -> String? {
+        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: choosenLanguage!) else {
+            return nil
+        }
+        guard let dict = NSDictionary(contentsOf: path) else {
+            return nil
+        }
+        return dict.value(forKey: key) as? String
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
+        
+        // Adding separator Inset
+        tableView.separatorInset = UIEdgeInsets.init(top: 0, left: 40, bottom: 0, right: 0)
     }
-
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 extension ResumeSchemaTableViewController {
@@ -85,11 +70,14 @@ extension ResumeSchemaTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return emojiOfSchemaKeys.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "resumeSchemaTableCell", for: indexPath) as! ResumeSchemaTableViewCell
+        
+        cell.contentLabelOfSchemaKeys.text = data[indexPath.row]
+        cell.emojiSymbolLabelOfSchemaKeys.text = emojiOfSchemaKeys[indexPath.row]
         
         return cell
     }

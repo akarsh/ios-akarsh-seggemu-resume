@@ -8,6 +8,7 @@
 
 import UIKit
 
+// extends UILabel for localization
 extension UILabel {
     
 }
