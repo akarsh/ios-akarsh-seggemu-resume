@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDg-2G-bt5">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Summary Layout View Controller-->
+        <scene sceneID="cZl-fb-xDC">
+            <objects>
+                <viewController storyboardIdentifier="summaryLayout" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yDg-2G-bt5" customClass="summaryLayoutViewController" customModule="akarsh_seggemu_resume" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HuP-VH-WzJ" customClass="summaryLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6D-6V-Nr9">
+                                <rect key="frame" x="16" y="20" width="124" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-GZ-FXS">
+                                <rect key="frame" x="16" y="64" width="288" height="484"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wbe-GZ-FXS" firstAttribute="top" secondItem="P6D-6V-Nr9" secondAttribute="bottom" constant="8" symbolic="YES" id="PkL-xx-grZ"/>
+                            <constraint firstItem="wbe-GZ-FXS" firstAttribute="trailing" secondItem="HuP-VH-WzJ" secondAttribute="trailingMargin" id="QBf-sZ-MnI"/>
+                            <constraint firstItem="P6D-6V-Nr9" firstAttribute="leading" secondItem="wbe-GZ-FXS" secondAttribute="leading" id="aRa-d0-c5X"/>
+                            <constraint firstAttribute="bottom" secondItem="wbe-GZ-FXS" secondAttribute="bottom" constant="20" symbolic="YES" id="diF-j1-Ipo"/>
+                            <constraint firstItem="P6D-6V-Nr9" firstAttribute="leading" secondItem="HuP-VH-WzJ" secondAttribute="leadingMargin" id="dys-Mz-hp5"/>
+                            <constraint firstItem="P6D-6V-Nr9" firstAttribute="top" secondItem="rWp-8M-7Lh" secondAttribute="top" id="xFJ-xh-IF2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rWp-8M-7Lh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aae-Wl-iu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97.5" y="-147.88732394366198"/>
+        </scene>
+    </scenes>
+</document>

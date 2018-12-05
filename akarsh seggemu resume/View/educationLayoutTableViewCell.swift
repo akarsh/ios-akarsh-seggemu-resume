@@ -1,22 +1,24 @@
 //
-//  ResumeSchemaTableViewCell.swift
+//  educationLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
-//  Created by Akarsh Seggemu on 26.11.18.
+//  Created by Akarsh Seggemu on 06.12.18.
 //  Copyright © 2018 Akarsh Seggemu. All rights reserved.
 //
 
 import UIKit
 
-class ResumeSchemaTableViewCell: UITableViewCell {
-    @IBOutlet var emojiSymbolLabelOfSchemaKeys: UILabel!
-    @IBOutlet var contentLabelOfSchemaKeys: UILabel!
-    
+class educationLayoutTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
     }
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
+
 }

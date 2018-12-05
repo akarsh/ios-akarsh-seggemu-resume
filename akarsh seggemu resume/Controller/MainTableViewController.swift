@@ -9,8 +9,6 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    //    var basicsStorage: Resume?
-    
     let resumeNameArrays = ["English resume", "Deutsch Lebenslauf"]
     let emojiOfLanaguageArrays = ["🇬🇧", "🇩🇪"]
     let languageCode = ["en", "de"]
@@ -31,41 +29,16 @@ class MainTableViewController: UITableViewController {
         tableView.tableFooterView = UIView(frame: .zero)
         
         // Adding separator Inset
-        tableView.separatorInset = UIEdgeInsets.init(top: 0, left: 40, bottom: 0, right: 0)
-        
-        //        self.fetchData { basicsStorage in
-        //            self.basicsStorage = basicsStorage
-        //            DispatchQueue.main.async {
-        //                self.tableView.reloadData()
-        //            }
-        //        }
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0)
     }
     
-    //    func fetchData(completionHandler: @escaping (Resume) -> ()) {
-    //        let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified/master/resume.json"
-    //        if let urlString = URL(string: url) {
-    //            let session = URLSession(configuration: .ephemeral)
-    //            let dataTask = session.dataTask(with: urlString) { data, _, _ in
-    //                if let jsonData = data {
-    //                    // do try catch block
-    //                    let jsonDecoder = JSONDecoder()
-    //                    do {
-    //                        let basicsStorage = try jsonDecoder.decode(Resume.self, from: jsonData)
-    //                        completionHandler(basicsStorage)
-    //                    } catch {
-    //                    }
-    //                }
-    //            }
-    //            dataTask.resume()
-    //        }
-    //    }
-    
     // MARK: - Navigation
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mainCell = sender as? MainTableViewCell,
             let target = segue.destination as? ResumeSchemaTableViewController else {
-                return
+            return
         }
         
         target.choosenLanguage = mainCell.languageCode
@@ -73,14 +46,14 @@ class MainTableViewController: UITableViewController {
 }
 
 // MARK: - Table view data source
+
 extension MainTableViewController {
-    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resumeNameArrays.count
+        return self.resumeNameArrays.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,6 +64,7 @@ extension MainTableViewController {
         cell.languageCode = languageCode[indexPath.row]
         
         // MARK: - appending JSON parsed value to cell
+        
         //        let basicInfoLabelValue = basicsStorage?.basics.profiles[indexPath.row]
         //        cell.basicsInfoLabel.text = basicInfoLabelValue?.network
         

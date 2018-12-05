@@ -60,10 +60,106 @@
         <!--ContactLayout-->
         <scene sceneID="YyX-Hl-VIp">
             <objects>
-                <viewControllerPlaceholder storyboardName="ContactLayout" id="UUW-cH-8uH" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="contactLayout" storyboardName="ContactLayout" id="UUW-cH-8uH" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BXV-Hf-Jqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1143" y="-144"/>
+            <point key="canvasLocation" x="747" y="-117"/>
+        </scene>
+        <!--infoLayout-->
+        <scene sceneID="gzr-M9-6rP">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="infoLayout" storyboardName="infoLayout" id="YBH-ph-tCl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fx-tb-90O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="-75"/>
+        </scene>
+        <!--summaryLayout-->
+        <scene sceneID="Emy-Ag-bFH">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="summaryLayout" storyboardName="summaryLayout" id="eow-vb-AgL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdC-wg-QpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="-33"/>
+        </scene>
+        <!--profilesLayout-->
+        <scene sceneID="bC2-Tv-9WM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="profilesLayout" storyboardName="profilesLayout" id="BGo-yY-YUU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkF-qZ-3J4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="8"/>
+        </scene>
+        <!--skillsLayout-->
+        <scene sceneID="r0P-Eh-ZM5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="skillsLayout" storyboardName="skillsLayout" id="xS3-p4-SFA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0aA-Fh-ZZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="51"/>
+        </scene>
+        <!--languagesLayout-->
+        <scene sceneID="UPN-kk-YCQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="languagesLayout" storyboardName="languagesLayout" id="vzV-Gn-Nqx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OQp-1Q-esE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="94"/>
+        </scene>
+        <!--educationLayout-->
+        <scene sceneID="Ctv-Db-stX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="educationLayout" storyboardName="educationLayout" id="0ml-Hz-Hwr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QEf-q9-pQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="135"/>
+        </scene>
+        <!--experienceLayout-->
+        <scene sceneID="d1N-MW-dV7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="experienceLayout" storyboardName="experienceLayout" id="uCX-MX-cOl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eht-lu-27O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765" y="181"/>
+        </scene>
+        <!--volunteerLayout-->
+        <scene sceneID="9Si-pB-e2o">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="volunteerLayout" storyboardName="volunteerLayout" id="LQP-RP-0le" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqH-R4-hY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="225"/>
+        </scene>
+        <!--awardsLayout-->
+        <scene sceneID="9j5-ZO-RDC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="awardsLayout" storyboardName="awardsLayout" id="6wF-oC-DGR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGX-wR-9cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="269"/>
+        </scene>
+        <!--publicationsLayout-->
+        <scene sceneID="jGZ-Pp-8eD">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="publicationsLayout" storyboardName="publicationsLayout" id="yB0-EQ-1dV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGV-MD-qkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="313"/>
+        </scene>
+        <!--interestsLayout-->
+        <scene sceneID="hT9-xK-zTG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="interestsLayout" storyboardName="interestsLayout" id="1dd-Zi-J38" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEY-zy-UdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="753" y="355"/>
+        </scene>
+        <!--referencesLayout-->
+        <scene sceneID="O4Z-eh-Q65">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="referencesLayout" storyboardName="referencesLayout" id="g9i-bk-dDv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zP4-aA-fII" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="394"/>
         </scene>
     </scenes>
 </document>
