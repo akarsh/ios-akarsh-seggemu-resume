@@ -18,6 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hr-IX-5Ae">
+                                <rect key="frame" x="16" y="20" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YlS-na-2P1">
                                 <rect key="frame" x="193" y="61" width="120" height="113"/>
                                 <constraints>
@@ -138,12 +144,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hr-IX-5Ae">
-                                <rect key="frame" x="16" y="20" width="104" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -200,6 +200,18 @@
                             <constraint firstItem="iEo-yf-0gX" firstAttribute="top" secondItem="K6f-md-htf" secondAttribute="bottom" constant="8" symbolic="YES" id="zF7-zj-WFS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aUR-qp-fR4"/>
+                        <connections>
+                            <outlet property="imageViewProfilePicture" destination="YlS-na-2P1" id="RGB-Ps-4tU"/>
+                            <outlet property="labelAddress" destination="K6f-md-htf" id="66b-wJ-9Hu"/>
+                            <outlet property="labelCity" destination="tQq-Lm-RJu" id="whO-w7-oxg"/>
+                            <outlet property="labelCountryCode" destination="qhh-gk-o30" id="PqE-E6-dgc"/>
+                            <outlet property="labelEmail" destination="Gbz-fT-pZ3" id="smU-VH-myQ"/>
+                            <outlet property="labelName" destination="rb7-5h-cr3" id="Epb-36-tjX"/>
+                            <outlet property="labelPostalCode" destination="tgu-Jz-aVk" id="jlE-Ez-k6N"/>
+                            <outlet property="labelRegion" destination="040-UL-GCL" id="fqY-HE-fDz"/>
+                            <outlet property="labelTitle" destination="OLw-IX-nvI" id="HFl-2L-zcR"/>
+                            <outlet property="labelWebsite" destination="z9g-8M-0uR" id="Grn-t7-jPc"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPZ-1b-Jbw" userLabel="First Responder" sceneMemberID="firstResponder"/>

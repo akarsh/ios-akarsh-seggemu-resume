@@ -1,15 +1,16 @@
 //
-//  languagesLayoutView.swift
+//  ResumeSchemaTableViewHeader.swift
 //  akarsh seggemu resume
 //
-//  Created by Akarsh Seggemu on 05.12.18.
+//  Created by Akarsh Seggemu on 09.12.18.
 //  Copyright © 2018 Akarsh Seggemu. All rights reserved.
 //
 
 import UIKit
 
-class languagesLayoutView: UIView {
-
+class ResumeSchemaTableViewHeader: UIView {
+    
+    @IBOutlet weak var labelResumeSchemaTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -17,5 +18,4 @@ class languagesLayoutView: UIView {
         // Drawing code
     }
     */
-
 }

@@ -11,7 +11,8 @@ import UIKit
 class ResumeSchemaTableViewController: UITableViewController {
     var basicsStorage: Resume?
     
-    var choosenLanguage: String?
+    var chosenLanguage: String?
+    var labelContentResumeSchemaTableViewHeader: String?
     
     lazy var data: [String] = {
         [
@@ -49,15 +50,9 @@ class ResumeSchemaTableViewController: UITableViewController {
         "referencesLayout"
     ]
     
-    func locForKey(_ key: String) -> String? {
-        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: choosenLanguage!) else {
-            return nil
-        }
-        guard let dict = NSDictionary(contentsOf: path) else {
-            return nil
-        }
-        return dict.value(forKey: key) as? String
-    }
+    // file path
+    var filePath = ""
+    var resumeFileName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,31 +69,66 @@ class ResumeSchemaTableViewController: UITableViewController {
         // Adding separator Inset
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0)
         
-//        self.fetchData { basicsStorage in
-//            self.basicsStorage = basicsStorage
-//            DispatchQueue.main.async {
-//                self.tableView.reloadData()
-//            }
+        // set the resume file to chosen language
+        self.setResumeFileToChosenLanguage()
+        
+    }
+    
+    // returns the translated string based on the chosen language
+    func locForKey(_ key: String) -> String? {
+        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: chosenLanguage!) else {
+            return nil
+        }
+        guard let dict = NSDictionary(contentsOf: path) else {
+            return nil
+        }
+        return dict.value(forKey: key) as? String
+    }
+    
+    // set the resume file name according to the chosen language
+    func setResumeFileToChosenLanguage() {
+        let tableViewHeader = ResumeSchemaTableViewHeader()
+        if chosenLanguage! == "en" {
+            self.resumeFileName = "englishResume.json"
+            self.readData()
+        } else if chosenLanguage! == "de" {
+            self.resumeFileName = "deutschResume.json"
+            self.readData()
+        } else {
+            return
+        }
+        
+//        if labelContentResumeSchemaTableViewHeader != nil {
+//            tableViewHeader.labelResumeSchemaTableViewHeader.text = labelContentResumeSchemaTableViewHeader!
 //        }
     }
-    // MARK: - Fetch Data from JSON file
-//    func fetchData(completionHandler: @escaping (Resume) -> ()) {
-//        let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified/master/resume.json"
-//        if let urlString = URL(string: url) {
-//            let session = URLSession(configuration: .ephemeral)
-//            let dataTask = session.dataTask(with: urlString) { data, _, _ in
-//                if let jsonData = data {
-//                    // do try catch block
-//                    let jsonDecoder = JSONDecoder()
-//                    do {
-//                        let basicsStorage = try jsonDecoder.decode(Resume.self, from: jsonData)
-//                        completionHandler(basicsStorage)
-//                    } catch {}
-//                }
-//            }
-//            dataTask.resume()
-//        }
-//    }
+    
+    // read the JSON data file
+    func readData() {
+        // Find documents directory on device
+        let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+        
+        do {
+            if dirs.count > 0 {
+                // documents directory
+                let dir = dirs[0]
+                // adding the filename to the documents directory as file path
+                self.filePath = dir.appendingFormat("/" + self.resumeFileName)
+                // Read file content
+                let contentFromFile = try String(contentsOfFile: self.filePath, encoding: String.Encoding.utf8)
+//                print(contentFromFile)
+            } else {
+                print("Could not find local directory to store file")
+                return
+            }
+        }
+        catch let error as NSError {
+            print("An error took place: \(error)")
+        }
+    }
+    
+    // change the resume schema table view header according to the language chosen
+    
 }
 
 extension ResumeSchemaTableViewController {

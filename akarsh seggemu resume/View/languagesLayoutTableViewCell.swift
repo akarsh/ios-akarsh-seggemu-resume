@@ -1,17 +1,15 @@
 //
-//  skillsLayoutTableViewCell.swift
+//  languagesLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
-//  Created by Akarsh Seggemu on 06.12.18.
+//  Created by Akarsh Seggemu on 09.12.18.
 //  Copyright © 2018 Akarsh Seggemu. All rights reserved.
 //
 
 import UIKit
 
-class skillsLayoutTableViewCell: UITableViewCell {
-    @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var textViewKeywords: UITextView!
-    
+class languagesLayoutTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
