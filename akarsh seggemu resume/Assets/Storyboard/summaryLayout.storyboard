@@ -42,7 +42,14 @@
                             <constraint firstItem="P6D-6V-Nr9" firstAttribute="top" secondItem="rWp-8M-7Lh" secondAttribute="top" id="xFJ-xh-IF2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rWp-8M-7Lh"/>
+                        <connections>
+                            <outlet property="labelSummary" destination="wbe-GZ-FXS" id="WzW-Sh-0cM"/>
+                            <outlet property="labelSummaryHeader" destination="P6D-6V-Nr9" id="oSN-hF-uyD"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="viewHeader" destination="HuP-VH-WzJ" id="c0V-6b-rWP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aae-Wl-iu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

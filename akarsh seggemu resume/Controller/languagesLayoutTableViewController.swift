@@ -9,7 +9,9 @@
 import UIKit
 
 class languagesLayoutTableViewController: UITableViewController {
-
+    var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: languagesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +20,16 @@ class languagesLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.setlanguagesLayoutTableViewHeader()
     }
 
+    // set the table view header
+    func setlanguagesLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentLanguagesLayoutTableViewHeader.text = labelContentHeader!
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

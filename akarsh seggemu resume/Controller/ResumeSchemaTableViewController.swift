@@ -54,6 +54,8 @@ class ResumeSchemaTableViewController: UITableViewController {
     var filePath = ""
     var resumeFileName = ""
     
+    @IBOutlet weak var tableViewHeader: ResumeSchemaTableViewHeader!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -87,7 +89,6 @@ class ResumeSchemaTableViewController: UITableViewController {
     
     // set the resume file name according to the chosen language
     func setResumeFileToChosenLanguage() {
-        let tableViewHeader = ResumeSchemaTableViewHeader()
         if chosenLanguage! == "en" {
             self.resumeFileName = "englishResume.json"
             self.readData()
@@ -97,10 +98,10 @@ class ResumeSchemaTableViewController: UITableViewController {
         } else {
             return
         }
-        
-//        if labelContentResumeSchemaTableViewHeader != nil {
-//            tableViewHeader.labelResumeSchemaTableViewHeader.text = labelContentResumeSchemaTableViewHeader!
-//        }
+        // set the table view header
+        if labelContentResumeSchemaTableViewHeader != nil {
+            tableViewHeader?.labelResumeSchemaTableViewHeader?.text = labelContentResumeSchemaTableViewHeader!
+        }
     }
     
     // read the JSON data file
@@ -126,9 +127,6 @@ class ResumeSchemaTableViewController: UITableViewController {
             print("An error took place: \(error)")
         }
     }
-    
-    // change the resume schema table view header according to the language chosen
-    
 }
 
 extension ResumeSchemaTableViewController {
@@ -155,8 +153,59 @@ extension ResumeSchemaTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcName = identitiesOfStoryboards[indexPath.row]
+        if vcName == "contactLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "infoLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! infoLayoutViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "summaryLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! summaryLayoutViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "profilesLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! profilesLayoutViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "skillsLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! skillsLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "languagesLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! languagesLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "educationLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! educationLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "experienceLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! experienceLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "volunteerLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! volunteerLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "awardsLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! awardsLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "publicationsLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! publicationsLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "interestsLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! interestsLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else if vcName == "referencesLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
         
-        let viewController = storyboard?.instantiateViewController(withIdentifier: vcName)
-        self.navigationController?.pushViewController(viewController!, animated: true)
     }
 }

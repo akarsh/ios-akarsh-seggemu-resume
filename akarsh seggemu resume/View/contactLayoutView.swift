@@ -10,6 +10,9 @@ import UIKit
 
 class contactLayoutView: UIView {
 
+    
+    @IBOutlet weak var labelContactLayoutHeader: UILabel!
+    
     @IBOutlet weak var imageViewProfilePicture: UIImageView!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelTitle: UILabel!

@@ -45,6 +45,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEE-sX-kcW">
+                                <rect key="frame" x="16" y="200" width="288" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="b6A-q8-Fj7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geburtsdatum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiR-UY-sYZ">
                                 <rect key="frame" x="16" y="254" width="125" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -70,15 +79,6 @@
                                 <rect key="frame" x="16" y="378" width="288" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="v0V-kw-cVK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEE-sX-kcW">
-                                <rect key="frame" x="16" y="200" width="288" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="b6A-q8-Fj7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -115,7 +115,17 @@
                             <constraint firstItem="wL1-My-BdP" firstAttribute="leading" secondItem="JEE-sX-kcW" secondAttribute="leading" id="zdy-mq-eaC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KW4-Jr-7Cg"/>
+                        <connections>
+                            <outlet property="labelArbeitserlaubnis" destination="JEE-sX-kcW" id="xXJ-Zu-QqM"/>
+                            <outlet property="labelGeburtsdatum" destination="jUK-me-l43" id="cAB-VF-glm"/>
+                            <outlet property="labelGeburtsort" destination="HXS-Oi-aaG" id="awb-2u-2s5"/>
+                            <outlet property="labelInfoLayoutHeader" destination="DNB-NR-c6Z" id="SyV-Vw-Qvv"/>
+                            <outlet property="labelNationality" destination="edv-gO-3mX" id="8bc-5V-Oy4"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="viewHeader" destination="k4p-Jn-MAR" id="9uQ-Hx-npo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tE-Rb-IaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

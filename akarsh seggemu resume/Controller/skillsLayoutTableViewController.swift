@@ -9,7 +9,9 @@
 import UIKit
 
 class skillsLayoutTableViewController: UITableViewController {
-
+    
+    var labelContentHeader: String?
+    @IBOutlet weak var tableViewHeader: skillsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,15 @@ class skillsLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setSkillsTableViewHeader()
+    }
+    
+    // set table view header
+    func setSkillsTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader?.labelSkillsLayoutTableViewHeader.text = labelContentHeader!
+        }
     }
 
     // MARK: - Table view data source

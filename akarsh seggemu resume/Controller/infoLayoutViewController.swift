@@ -9,13 +9,23 @@
 import UIKit
 
 class infoLayoutViewController: UIViewController {
-
+    var labelContentHeader: String?
+    
+    @IBOutlet var viewHeader: infoLayoutView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setInfoLayoutHeader()
     }
     
+    // set the view header
+    func setInfoLayoutHeader() {
+        if labelContentHeader != nil {
+            viewHeader.labelInfoLayoutHeader.text = labelContentHeader!
+        }
+    }
 
     /*
     // MARK: - Navigation

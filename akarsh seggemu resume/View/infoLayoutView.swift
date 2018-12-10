@@ -10,6 +10,11 @@ import UIKit
 
 class infoLayoutView: UIView {
 
+    @IBOutlet weak var labelInfoLayoutHeader: UILabel!
+    @IBOutlet weak var labelNationality: UILabel!
+    @IBOutlet weak var labelArbeitserlaubnis: UILabel!
+    @IBOutlet weak var labelGeburtsdatum: UILabel!
+    @IBOutlet weak var labelGeburtsort: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

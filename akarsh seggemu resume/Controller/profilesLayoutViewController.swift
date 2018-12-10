@@ -9,13 +9,23 @@
 import UIKit
 
 class profilesLayoutViewController: UIViewController {
+    var labelContentHeader: String?
 
+    @IBOutlet var viewHeader: profilesLayoutView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setProfilesLayoutViewHeader()
     }
     
+    // set the view header
+    func setProfilesLayoutViewHeader() {
+        if labelContentHeader != nil {
+            viewHeader.labelProfilesHeader.text = labelContentHeader!
+        }
+    }
 
     /*
     // MARK: - Navigation

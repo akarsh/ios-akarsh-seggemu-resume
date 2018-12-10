@@ -9,7 +9,9 @@
 import UIKit
 
 class educationLayoutTableViewController: UITableViewController {
-
+    var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: educationLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +20,17 @@ class educationLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setEducationLayoutTableViewHeader()
     }
 
+    // set the table view header
+    func setEducationLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentEducationLayoutTableViewHeader.text = labelContentHeader!
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

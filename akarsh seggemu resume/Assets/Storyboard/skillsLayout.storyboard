@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="SzJ-7t-r9E" userLabel="Table View Header">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="SzJ-7t-r9E" userLabel="Table View Header" customClass="skillsLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -30,6 +30,9 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="labelSkillsLayoutTableViewHeader" destination="xcd-XA-snH" id="9j9-8u-Gc6"/>
+                            </connections>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="180" id="sUy-bn-LE4" customClass="skillsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
@@ -56,6 +59,10 @@
                                         </textView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelName" destination="GMv-QK-NHC" id="a3y-FA-xFY"/>
+                                    <outlet property="textViewKeywords" destination="gBx-HA-wlh" id="gSa-n7-3DL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -63,6 +70,9 @@
                             <outlet property="delegate" destination="Ff8-am-KKc" id="0dN-XW-Jth"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tableViewHeader" destination="SzJ-7t-r9E" id="XKK-x9-vyI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGO-Sv-eV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

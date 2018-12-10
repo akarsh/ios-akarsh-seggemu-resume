@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Wd2-yQ-fAY">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Wd2-yQ-fAY" customClass="languagesLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -30,6 +30,9 @@
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="labelContentLanguagesLayoutTableViewHeader" destination="PT2-Lq-nal" id="OEv-IM-m9H"/>
+                            </connections>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FAn-f6-jfa" customClass="languagesLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
@@ -62,6 +65,9 @@
                             <outlet property="delegate" destination="acW-Ah-IMF" id="Slj-P3-7tY"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tableViewHeader" destination="Wd2-yQ-fAY" id="9TH-OE-Xrv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rqu-fX-sCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

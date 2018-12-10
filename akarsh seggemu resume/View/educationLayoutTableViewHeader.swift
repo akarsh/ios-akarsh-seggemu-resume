@@ -1,17 +1,15 @@
 //
-//  summaryLayoutView.swift
+//  educationLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
-//  Created by Akarsh Seggemu on 05.12.18.
+//  Created by Akarsh Seggemu on 10.12.18.
 //  Copyright © 2018 Akarsh Seggemu. All rights reserved.
 //
 
 import UIKit
 
-class summaryLayoutView: UIView {
-
-    @IBOutlet weak var labelSummaryHeader: UILabel!
-    @IBOutlet weak var labelSummary: UITextView!
+class educationLayoutTableViewHeader: UIView {
+    @IBOutlet weak var labelContentEducationLayoutTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

@@ -9,7 +9,7 @@
 import UIKit
 
 class referencesLayoutTableViewController: UITableViewController {
-
+    var labelContentHeader: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 

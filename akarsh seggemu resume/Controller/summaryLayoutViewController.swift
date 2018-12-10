@@ -9,13 +9,23 @@
 import UIKit
 
 class summaryLayoutViewController: UIViewController {
-
+    var labelContentHeader: String?
+    
+    @IBOutlet var viewHeader: summaryLayoutView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.setSummaryViewHeader()
     }
     
+    // set the view header
+    func setSummaryViewHeader() {
+        if labelContentHeader != nil {
+            viewHeader.labelSummaryHeader.text = labelContentHeader!
+        }
+    }
 
     /*
     // MARK: - Navigation
