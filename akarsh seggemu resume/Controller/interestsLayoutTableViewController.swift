@@ -8,8 +8,10 @@
 
 import UIKit
 
-class interestsLayoutTableViewController: UITableViewController {
+class interestsLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: interestsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +20,17 @@ class interestsLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setInterestsLayoutTableViewHeader()
     }
 
+    // set the table view header
+    func setInterestsLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentInterestsLayoutTableViewHeader.text = labelContentHeader!
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

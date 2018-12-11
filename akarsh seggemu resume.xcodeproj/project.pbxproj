@@ -60,6 +60,13 @@
 		D3D498E621B8955C008ABCED /* publicationsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E521B8955C008ABCED /* publicationsLayoutTableViewController.swift */; };
 		D3D498E821B89569008ABCED /* interestsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E721B89569008ABCED /* interestsLayoutTableViewController.swift */; };
 		D3D498EA21B89576008ABCED /* referencesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */; };
+		D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920621BF31AA00A238FD /* LabelHeader.swift */; };
+		D3D6920921BF43BE00A238FD /* experienceLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */; };
+		D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */; };
+		D3D6920D21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920C21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift */; };
+		D3D6920F21BF457100A238FD /* publicationsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920E21BF457100A238FD /* publicationsLayoutTableViewHeader.swift */; };
+		D3D6921121BF45D400A238FD /* interestsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6921021BF45D400A238FD /* interestsLayoutTableViewHeader.swift */; };
+		D3D6921321BF463800A238FD /* referencesLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6921221BF463800A238FD /* referencesLayoutTableViewHeader.swift */; };
 		D3E300D221A4D0980068D820 /* ResumeSchemaLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E300D121A4D0980068D820 /* ResumeSchemaLayout.storyboard */; };
 		D3E6BAC921B5FA35004F3F52 /* ContactLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E6BAC821B5FA35004F3F52 /* ContactLayout.storyboard */; };
 /* End PBXBuildFile section */
@@ -122,6 +129,13 @@
 		D3D498E521B8955C008ABCED /* publicationsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E721B89569008ABCED /* interestsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D6920621BF31AA00A238FD /* LabelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeader.swift; sourceTree = "<group>"; };
+		D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6920C21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awardsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6920E21BF457100A238FD /* publicationsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6921021BF45D400A238FD /* interestsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6921221BF463800A238FD /* referencesLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3E300D121A4D0980068D820 /* ResumeSchemaLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResumeSchemaLayout.storyboard; sourceTree = "<group>"; };
 		D3E6BAC821B5FA35004F3F52 /* ContactLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactLayout.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +173,7 @@
 			children = (
 				D32273F2218535AD0068A69D /* AppDelegate.swift */,
 				D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */,
+				D3D6920621BF31AA00A238FD /* LabelHeader.swift */,
 				D35AA9D421A4D72D009F8BC8 /* Assets */,
 				D32274072185360A0068A69D /* Controller */,
 				D3227405218535F60068A69D /* Model */,
@@ -213,11 +228,17 @@
 				D352110C21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift */,
 				D3646F3321BE429000E726D8 /* educationLayoutTableViewHeader.swift */,
 				D3D498CF21B8949E008ABCED /* educationLayoutTableViewCell.swift */,
+				D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */,
 				D3D498D121B894AE008ABCED /* experienceLayoutTableViewCell.swift */,
+				D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */,
 				D3D498D321B894DE008ABCED /* volunteerLayoutTableViewCell.swift */,
+				D3D6920C21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift */,
 				D3D498D521B894EA008ABCED /* awardsLayoutTableViewCell.swift */,
+				D3D6920E21BF457100A238FD /* publicationsLayoutTableViewHeader.swift */,
 				D3D498D721B894F6008ABCED /* publicationsLayoutTableViewCell.swift */,
+				D3D6921021BF45D400A238FD /* interestsLayoutTableViewHeader.swift */,
 				D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */,
+				D3D6921221BF463800A238FD /* referencesLayoutTableViewHeader.swift */,
 				D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */,
 			);
 			path = View;
@@ -345,14 +366,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3646F3421BE429000E726D8 /* educationLayoutTableViewHeader.swift in Sources */,
+				D3D6920F21BF457100A238FD /* publicationsLayoutTableViewHeader.swift in Sources */,
 				D3D498BA21B88AF5008ABCED /* contactLayoutView.swift in Sources */,
 				D3D498C021B88B38008ABCED /* summaryLayoutViewController.swift in Sources */,
+				D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */,
+				D3D6920921BF43BE00A238FD /* experienceLayoutTableViewHeader.swift in Sources */,
 				D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */,
 				D3D498CC21B89473008ABCED /* skillsLayoutTableViewController.swift in Sources */,
 				D3D498BC21B88B14008ABCED /* infoLayoutView.swift in Sources */,
 				D3B42ABC21867BC500F183B9 /* Resume.swift in Sources */,
 				D3D498D821B894F6008ABCED /* publicationsLayoutTableViewCell.swift in Sources */,
 				D3D498D021B8949E008ABCED /* educationLayoutTableViewCell.swift in Sources */,
+				D3D6921121BF45D400A238FD /* interestsLayoutTableViewHeader.swift in Sources */,
 				D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */,
 				D3D498E821B89569008ABCED /* interestsLayoutTableViewController.swift in Sources */,
 				D3D498E421B89551008ABCED /* awardsLayoutTableViewController.swift in Sources */,
@@ -374,11 +399,14 @@
 				D3D498CE21B89489008ABCED /* skillsLayoutTableViewCell.swift in Sources */,
 				D3D498DA21B89506008ABCED /* interestsLayoutTableViewCell.swift in Sources */,
 				D3646F3221BE414100E726D8 /* languagesLayoutTableViewHeader.swift in Sources */,
+				D3D6920D21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift in Sources */,
 				D352110D21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift in Sources */,
 				D3D498E021B89539008ABCED /* experienceLayoutTableViewController.swift in Sources */,
 				D3D498EA21B89576008ABCED /* referencesLayoutTableViewController.swift in Sources */,
 				D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */,
 				D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */,
+				D3D6921321BF463800A238FD /* referencesLayoutTableViewHeader.swift in Sources */,
+				D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */,
 				D3D498B821B88AC1008ABCED /* contactLayoutViewController.swift in Sources */,
 				D3D498E221B89545008ABCED /* volunteerLayoutTableViewController.swift in Sources */,
 			);

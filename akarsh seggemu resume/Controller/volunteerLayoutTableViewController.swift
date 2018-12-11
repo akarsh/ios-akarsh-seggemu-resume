@@ -8,8 +8,10 @@
 
 import UIKit
 
-class volunteerLayoutTableViewController: UITableViewController {
+class volunteerLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: volunteerLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,15 @@ class volunteerLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setVolunteerLayoutTableViewHeader()
+    }
+    
+    // set the table view header
+    func setVolunteerLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentVolunteerLayoutTableViewHeader.text = labelContentHeader!
+        }
     }
 
     // MARK: - Table view data source

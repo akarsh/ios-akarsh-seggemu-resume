@@ -8,7 +8,7 @@
 
 import UIKit
 
-class languagesLayoutTableViewController: UITableViewController {
+class languagesLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
     
     @IBOutlet weak var tableViewHeader: languagesLayoutTableViewHeader!

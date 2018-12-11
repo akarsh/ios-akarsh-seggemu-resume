@@ -8,7 +8,7 @@
 
 import UIKit
 
-class profilesLayoutViewController: UIViewController {
+class profilesLayoutViewController: UIViewController, LabelHeader {
     var labelContentHeader: String?
 
     @IBOutlet var viewHeader: profilesLayoutView!

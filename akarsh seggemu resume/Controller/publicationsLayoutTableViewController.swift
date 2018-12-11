@@ -8,8 +8,10 @@
 
 import UIKit
 
-class publicationsLayoutTableViewController: UITableViewController {
+class publicationsLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: publicationsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,8 +20,17 @@ class publicationsLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setPublicationsLayoutTableViewHeader()
     }
 
+    // set the table view header
+    func setPublicationsLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentPublicationsLayoutTableViewHeader.text = labelContentHeader!
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -8,8 +8,10 @@
 
 import UIKit
 
-class experienceLayoutTableViewController: UITableViewController {
+class experienceLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: experienceLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +20,17 @@ class experienceLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setExperienceLayoutTableViewHeader()
     }
+    
+    // set the table view header
+    func setExperienceLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentExperienceLayoutTableViewHeader.text = labelContentHeader!
+        }
+    }
+    
 
     // MARK: - Table view data source
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class contactLayoutViewController: UIViewController {
+class contactLayoutViewController: UIViewController, LabelHeader {
     var labelContentHeader: String?
     
     @IBOutlet var viewHeader: contactLayoutView!

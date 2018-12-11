@@ -153,59 +153,40 @@ extension ResumeSchemaTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcName = identitiesOfStoryboards[indexPath.row]
-        if vcName == "contactLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "infoLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! infoLayoutViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "summaryLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! summaryLayoutViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "profilesLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! profilesLayoutViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "skillsLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! skillsLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "languagesLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! languagesLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "educationLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! educationLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "experienceLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! experienceLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "volunteerLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! volunteerLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "awardsLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! awardsLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "publicationsLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! publicationsLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "interestsLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! interestsLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        } else if vcName == "referencesLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
-            viewController.labelContentHeader = data[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
-        }
-        
+//        let viewController: UIViewController
+
+//        if vcName == "contactLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
+//        } else if vcName == "infoLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! infoLayoutViewController
+//        } else if vcName == "summaryLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! summaryLayoutViewController
+//        } else if vcName == "profilesLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! profilesLayoutViewController
+//        } else if vcName == "skillsLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! skillsLayoutTableViewController
+//        } else if vcName == "languagesLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! languagesLayoutTableViewController
+//        } else if vcName == "educationLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! educationLayoutTableViewController
+//        } else if vcName == "experienceLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! experienceLayoutTableViewController
+//        } else if vcName == "volunteerLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! volunteerLayoutTableViewController
+//        } else if vcName == "awardsLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! awardsLayoutTableViewController
+//        } else if vcName == "publicationsLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! publicationsLayoutTableViewController
+//        } else if vcName == "interestsLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! interestsLayoutTableViewController
+//        } else if vcName == "referencesLayout" {
+//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
+//        }
+
+        var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
+        viewController.labelContentHeader = data[indexPath.row]
+        self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
     }
 }
+
+

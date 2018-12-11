@@ -8,7 +8,7 @@
 
 import UIKit
 
-class infoLayoutViewController: UIViewController {
+class infoLayoutViewController: UIViewController, LabelHeader {
     var labelContentHeader: String?
     
     @IBOutlet var viewHeader: infoLayoutView!

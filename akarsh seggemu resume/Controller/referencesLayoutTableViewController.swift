@@ -8,8 +8,10 @@
 
 import UIKit
 
-class referencesLayoutTableViewController: UITableViewController {
+class referencesLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: referencesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,15 @@ class referencesLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setReferencesLayoutTableViewHeader()
+    }
+    
+    // set the table view header
+    func setReferencesLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentReferencesLayoutTableViewHeader.text = labelContentHeader!
+        }
     }
 
     // MARK: - Table view data source

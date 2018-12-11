@@ -8,7 +8,7 @@
 
 import UIKit
 
-class summaryLayoutViewController: UIViewController {
+class summaryLayoutViewController: UIViewController, LabelHeader {
     var labelContentHeader: String?
     
     @IBOutlet var viewHeader: summaryLayoutView!

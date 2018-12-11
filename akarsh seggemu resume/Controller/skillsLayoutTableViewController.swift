@@ -8,7 +8,7 @@
 
 import UIKit
 
-class skillsLayoutTableViewController: UITableViewController {
+class skillsLayoutTableViewController: UITableViewController, LabelHeader {
     
     var labelContentHeader: String?
     @IBOutlet weak var tableViewHeader: skillsLayoutTableViewHeader!

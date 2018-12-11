@@ -8,8 +8,10 @@
 
 import UIKit
 
-class awardsLayoutTableViewController: UITableViewController {
+class awardsLayoutTableViewController: UITableViewController, LabelHeader {
     var labelContentHeader: String?
+    
+    @IBOutlet weak var tableViewHeader: awardsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,15 @@ class awardsLayoutTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.setAwardsLayoutTableViewHeader()
+    }
+    
+    // set the table view header
+    func setAwardsLayoutTableViewHeader() {
+        if labelContentHeader != nil {
+            tableViewHeader.labelContentAwardsLayoutTableViewHeader.text = labelContentHeader!
+        }
     }
 
     // MARK: - Table view data source
