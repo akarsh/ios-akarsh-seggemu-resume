@@ -10,4 +10,5 @@ import UIKit
 
 protocol LabelHeader where Self: UIViewController {
     var labelContentHeader: String? { get set }
+    var basicsContent: Resume? { get set }
 }

@@ -91,10 +91,10 @@ class ResumeSchemaTableViewController: UITableViewController {
     func setResumeFileToChosenLanguage() {
         if chosenLanguage! == "en" {
             self.resumeFileName = "englishResume.json"
-            self.readData()
+            self.readData{ basicsStorage in
+                self.basicsStorage = basicsStorage }
         } else if chosenLanguage! == "de" {
             self.resumeFileName = "deutschResume.json"
-            self.readData()
         } else {
             return
         }
@@ -105,7 +105,7 @@ class ResumeSchemaTableViewController: UITableViewController {
     }
     
     // read the JSON data file
-    func readData() {
+    func readData(completionHandler: @escaping (Resume) -> ()) {
         // Find documents directory on device
         let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
         
@@ -117,7 +117,13 @@ class ResumeSchemaTableViewController: UITableViewController {
                 self.filePath = dir.appendingFormat("/" + self.resumeFileName)
                 // Read file content
                 let contentFromFile = try String(contentsOfFile: self.filePath, encoding: String.Encoding.utf8)
+                let jsonDataParsed = contentFromFile.data(using: .utf8)!
 //                print(contentFromFile)
+                let jsonDecoder = JSONDecoder()
+                do {
+                    let basicsStorage = try jsonDecoder.decode(Resume.self, from: jsonDataParsed)
+                    completionHandler(basicsStorage)
+                } catch {}
             } else {
                 print("Could not find local directory to store file")
                 return
@@ -153,38 +159,40 @@ extension ResumeSchemaTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcName = identitiesOfStoryboards[indexPath.row]
-//        let viewController: UIViewController
-
-//        if vcName == "contactLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
-//        } else if vcName == "infoLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! infoLayoutViewController
-//        } else if vcName == "summaryLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! summaryLayoutViewController
-//        } else if vcName == "profilesLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! profilesLayoutViewController
-//        } else if vcName == "skillsLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! skillsLayoutTableViewController
-//        } else if vcName == "languagesLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! languagesLayoutTableViewController
-//        } else if vcName == "educationLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! educationLayoutTableViewController
-//        } else if vcName == "experienceLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! experienceLayoutTableViewController
-//        } else if vcName == "volunteerLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! volunteerLayoutTableViewController
-//        } else if vcName == "awardsLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! awardsLayoutTableViewController
-//        } else if vcName == "publicationsLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! publicationsLayoutTableViewController
-//        } else if vcName == "interestsLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! interestsLayoutTableViewController
-//        } else if vcName == "referencesLayout" {
-//            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
-//        }
-
+        
         var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
         viewController.labelContentHeader = data[indexPath.row]
+        viewController.basicsContent = basicsStorage
+
+//        if vcName == "contactLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
+//        } else if vcName == "infoLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! infoLayoutViewController
+//        } else if vcName == "summaryLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! summaryLayoutViewController
+//        } else if vcName == "profilesLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! profilesLayoutViewController
+//        } else if vcName == "skillsLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! skillsLayoutTableViewController
+//        } else if vcName == "languagesLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! languagesLayoutTableViewController
+//        } else if vcName == "educationLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! educationLayoutTableViewController
+//        } else if vcName == "experienceLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! experienceLayoutTableViewController
+//        } else if vcName == "volunteerLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! volunteerLayoutTableViewController
+//        } else if vcName == "awardsLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! awardsLayoutTableViewController
+//        } else if vcName == "publicationsLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! publicationsLayoutTableViewController
+//        } else if vcName == "interestsLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! interestsLayoutTableViewController
+//        } else if vcName == "referencesLayout" {
+////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
+//        }
+
+
         self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
     }
 }

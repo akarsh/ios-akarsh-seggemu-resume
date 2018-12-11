@@ -17,6 +17,7 @@ class contactLayoutView: UIView {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelEmail: UILabel!
+    @IBOutlet weak var labelPhone: UILabel!
     @IBOutlet weak var labelWebsite: UILabel!
     @IBOutlet weak var labelAddress: UILabel!
     @IBOutlet weak var labelCity: UILabel!

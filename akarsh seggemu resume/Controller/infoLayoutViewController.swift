@@ -9,6 +9,7 @@
 import UIKit
 
 class infoLayoutViewController: UIViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
     
     @IBOutlet var viewHeader: infoLayoutView!
@@ -20,13 +21,15 @@ class infoLayoutViewController: UIViewController, LabelHeader {
         self.setInfoLayoutHeader()
     }
     
-    // set the view header
+    
     func setInfoLayoutHeader() {
+        // set the view header
         if labelContentHeader != nil {
             viewHeader.labelInfoLayoutHeader.text = labelContentHeader!
         }
     }
-
+    
+    
     /*
     // MARK: - Navigation
 

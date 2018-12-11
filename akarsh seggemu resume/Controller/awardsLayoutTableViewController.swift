@@ -9,6 +9,7 @@
 import UIKit
 
 class awardsLayoutTableViewController: UITableViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
     
     @IBOutlet weak var tableViewHeader: awardsLayoutTableViewHeader!

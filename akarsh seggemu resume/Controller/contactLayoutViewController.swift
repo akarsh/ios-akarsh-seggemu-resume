@@ -9,6 +9,7 @@
 import UIKit
 
 class contactLayoutViewController: UIViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
     
     @IBOutlet var viewHeader: contactLayoutView!
@@ -19,10 +20,27 @@ class contactLayoutViewController: UIViewController, LabelHeader {
         self.setContactViewHeader()
     }
     
-    // set the view header
+    
     func setContactViewHeader() {
+        // set the view header
         if labelContentHeader != nil {
             viewHeader.labelContactLayoutHeader.text = labelContentHeader!
+        }
+        if basicsContent?.basics != nil {
+            
+            // The picture value is a string which is a file path
+            //            viewHeader.imageViewProfilePicture.image = basicsContent?.basics.picture
+            
+            viewHeader.labelName.text = basicsContent?.basics.name
+            viewHeader.labelTitle.text = basicsContent?.basics.label
+            viewHeader.labelEmail.text = basicsContent?.basics.email
+            viewHeader.labelPhone.text = basicsContent?.basics.phone
+            viewHeader.labelWebsite.text = basicsContent?.basics.website
+            viewHeader.labelAddress.text = basicsContent?.basics.location.address
+            viewHeader.labelPostalCode.text = basicsContent?.basics.location.postalCode
+            viewHeader.labelCity.text = basicsContent?.basics.location.city
+            viewHeader.labelCountryCode.text = basicsContent?.basics.location.countryCode
+            viewHeader.labelRegion.text = basicsContent?.basics.location.region
         }
     }
 

@@ -9,6 +9,7 @@
 import UIKit
 
 class publicationsLayoutTableViewController: UITableViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
     
     @IBOutlet weak var tableViewHeader: publicationsLayoutTableViewHeader!

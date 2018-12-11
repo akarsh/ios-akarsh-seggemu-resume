@@ -44,9 +44,15 @@ struct work: Codable {
     var highlights: [String]
 }
 
-// struct volunteer: Codable {
-//
-// }
+ struct volunteer: Codable {
+    var organization: String
+    var position: String
+    var website: String
+    var startDate: String
+    var endDate: String
+    var summary: String
+    var highlights: [String]
+ }
 
 struct education: Codable {
     var institution: String
@@ -58,13 +64,20 @@ struct education: Codable {
     var courses: [String]
 }
 
-// struct awards: Codable {
-//
-// }
+struct awards: Codable {
+    var title: String
+    var date: String
+    var awarder: String
+    var summary: String
+}
 
-// struct publications: Codable {
-//
-// }
+struct publications: Codable {
+    var name: String
+    var publisher: String
+    var releaseDate: String
+    var website: String
+    var summary: String
+}
 
 struct skills: Codable {
     var name: String
@@ -77,23 +90,25 @@ struct languages: Codable {
     var fluency: String
 }
 
-// struct interests: Codable {
-//
-// }
+struct interests: Codable {
+    var name: String
+    var keywords: [String]
+}
 
-// struct references: Codable {
-//
-// }
+struct references: Codable {
+    var name: String
+    var reference: [String]
+}
 
 struct Resume: Codable {
     var basics: basics
     var work: [work]
-    //    var volunteer: [volunteer]
+    var volunteer: [volunteer]
     var education: [education]
-    //    var awards: [awards]
-    //    var publications: [publications]
+    var awards: [awards]
+    var publications: [publications]
     var skills: [skills]
     var languages: [languages]
-    //    var interests: [interests]
-    //    var references: [references]
+    var interests: [interests]
+    var references: [references]
 }

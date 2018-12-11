@@ -158,12 +158,6 @@ extension MainTableViewController {
         cell.emojiLabelOfLanguage.text = emojiOfLanaguageArrays[indexPath.row]
         cell.nameLabelOfLanguage.text = resumeNameArrays[indexPath.row]
         cell.languageCode = languageCode[indexPath.row]
-        
-        // MARK: - appending JSON parsed value to cell
-        
-        //        let basicInfoLabelValue = basicsStorage?.basics.profiles[indexPath.row]
-        //        cell.basicsInfoLabel.text = basicInfoLabelValue?.network
-        
         return cell
     }
 }

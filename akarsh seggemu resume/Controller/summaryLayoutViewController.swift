@@ -9,6 +9,7 @@
 import UIKit
 
 class summaryLayoutViewController: UIViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
     
     @IBOutlet var viewHeader: summaryLayoutView!
@@ -20,10 +21,15 @@ class summaryLayoutViewController: UIViewController, LabelHeader {
         self.setSummaryViewHeader()
     }
     
-    // set the view header
+    
     func setSummaryViewHeader() {
+        // set the view header
         if labelContentHeader != nil {
             viewHeader.labelSummaryHeader.text = labelContentHeader!
+        }
+        // set the summary text view
+        if basicsContent?.basics.summary != nil {
+            viewHeader.labelSummary.text = basicsContent?.basics.summary
         }
     }
 

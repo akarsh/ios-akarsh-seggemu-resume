@@ -9,6 +9,7 @@
 import UIKit
 
 class profilesLayoutViewController: UIViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
 
     @IBOutlet var viewHeader: profilesLayoutView!
@@ -20,10 +21,33 @@ class profilesLayoutViewController: UIViewController, LabelHeader {
         self.setProfilesLayoutViewHeader()
     }
     
-    // set the view header
+    
     func setProfilesLayoutViewHeader() {
+        // set the view header
         if labelContentHeader != nil {
             viewHeader.labelProfilesHeader.text = labelContentHeader!
+        }
+        // set the profile usernames
+        if basicsContent?.basics.profiles != nil {
+            // get the profiles array size
+            let profileCount = basicsContent?.basics.profiles.count
+            for index in 0 ..< profileCount! {
+                if basicsContent?.basics.profiles[index].network == "GitHub" {
+                    viewHeader.labelGithub.text = basicsContent?.basics.profiles[index].username
+                }
+                
+                if basicsContent?.basics.profiles[index].network == "Twitter" {
+                    viewHeader.labelTwitter.text = basicsContent?.basics.profiles[index].username
+                }
+                
+                if basicsContent?.basics.profiles[index].network == "LinkedIn" {
+                    viewHeader.labelLinkedin.text = basicsContent?.basics.profiles[index].username
+                }
+                
+                if basicsContent?.basics.profiles[index].network == "stackoverflow" {
+                    viewHeader.labelStackoverflow.text = basicsContent?.basics.profiles[index].username
+                }
+            }
         }
     }
 

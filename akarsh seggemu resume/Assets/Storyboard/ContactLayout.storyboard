@@ -208,6 +208,7 @@
                             <outlet property="labelCountryCode" destination="qhh-gk-o30" id="PqE-E6-dgc"/>
                             <outlet property="labelEmail" destination="Gbz-fT-pZ3" id="smU-VH-myQ"/>
                             <outlet property="labelName" destination="rb7-5h-cr3" id="Epb-36-tjX"/>
+                            <outlet property="labelPhone" destination="Ozw-1k-6we" id="cJr-U4-hh6"/>
                             <outlet property="labelPostalCode" destination="tgu-Jz-aVk" id="jlE-Ez-k6N"/>
                             <outlet property="labelRegion" destination="040-UL-GCL" id="fqY-HE-fDz"/>
                             <outlet property="labelTitle" destination="OLw-IX-nvI" id="HFl-2L-zcR"/>

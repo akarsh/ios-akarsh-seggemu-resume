@@ -9,7 +9,7 @@
 import UIKit
 
 class skillsLayoutTableViewController: UITableViewController, LabelHeader {
-    
+    var basicsContent: Resume?
     var labelContentHeader: String?
     @IBOutlet weak var tableViewHeader: skillsLayoutTableViewHeader!
     override func viewDidLoad() {
@@ -21,11 +21,18 @@ class skillsLayoutTableViewController: UITableViewController, LabelHeader {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
+        // FooterView is added so the UIKit does not create empty rows
+        tableView.tableFooterView = UIView(frame: .zero)
+        
         self.setSkillsTableViewHeader()
     }
     
-    // set table view header
+    
     func setSkillsTableViewHeader() {
+        // set table view header
         if labelContentHeader != nil {
             tableViewHeader?.labelSkillsLayoutTableViewHeader.text = labelContentHeader!
         }
@@ -35,23 +42,23 @@ class skillsLayoutTableViewController: UITableViewController, LabelHeader {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return basicsContent?.skills.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "skillsLayoutTableViewCell", for: indexPath) as! skillsLayoutTableViewCell
+        
+            cell.labelName.text = basicsContent?.skills[indexPath.row].name
+            // TODO: - Populate the cell with multiple labels
+//            cell.textViewKeywords.text = basicsContent?.skills[indexPath.row]
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

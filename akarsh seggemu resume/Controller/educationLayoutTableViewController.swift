@@ -9,6 +9,7 @@
 import UIKit
 
 class educationLayoutTableViewController: UITableViewController, LabelHeader {
+    var basicsContent: Resume?
     var labelContentHeader: String?
     
     @IBOutlet weak var tableViewHeader: educationLayoutTableViewHeader!
