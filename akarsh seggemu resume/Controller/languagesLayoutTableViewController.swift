@@ -22,6 +22,11 @@ class languagesLayoutTableViewController: UITableViewController, LabelHeader {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.setlanguagesLayoutTableViewHeader()
+        
+        // FooterView is added so the UIKit does not create empty rows
+        tableView.tableFooterView = UIView(frame: .zero)
+        
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
 
     // set the table view header
@@ -34,24 +39,21 @@ class languagesLayoutTableViewController: UITableViewController, LabelHeader {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return basicsContent?.languages.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "languagesLayoutTableViewCell", for: indexPath) as! languagesLayoutTableViewCell
+        
+        cell.textLabel?.text = basicsContent?.languages[indexPath.row].language
+        cell.detailTextLabel?.text = basicsContent?.languages[indexPath.row].fluency
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

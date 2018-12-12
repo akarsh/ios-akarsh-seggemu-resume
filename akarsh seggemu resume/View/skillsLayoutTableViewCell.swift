@@ -9,8 +9,6 @@
 import UIKit
 
 class skillsLayoutTableViewCell: UITableViewCell {
-    @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var textViewKeywords: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

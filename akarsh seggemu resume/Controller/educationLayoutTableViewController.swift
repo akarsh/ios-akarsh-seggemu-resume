@@ -23,6 +23,12 @@ class educationLayoutTableViewController: UITableViewController, LabelHeader {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         self.setEducationLayoutTableViewHeader()
+        
+        // FooterView is added so the UIKit does not create empty rows
+        tableView.tableFooterView = UIView(frame: .zero)
+        
+        tableView.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
     }
 
     // set the table view header
@@ -35,24 +41,25 @@ class educationLayoutTableViewController: UITableViewController, LabelHeader {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return basicsContent?.education.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "educationLayoutTableViewCell", for: indexPath) as! educationLayoutTableViewCell
+        
+        cell.labelInstitution.text = basicsContent?.education[indexPath.row].institution
+        cell.labelArea.text = basicsContent?.education[indexPath.row].area
+        cell.labelStudyType.text = basicsContent?.education[indexPath.row].studyType
+        cell.labelStartDate.text = basicsContent?.education[indexPath.row].startDate
+        cell.labelEndDate.text = basicsContent?.education[indexPath.row].endDate
+        cell.labelGpa.text = basicsContent?.education[indexPath.row].gpa
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
