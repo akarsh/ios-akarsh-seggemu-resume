@@ -1,5 +1,5 @@
 //
-//  languagesLayoutTableViewHeader.swift
+//  LanguagesLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 10.12.18.

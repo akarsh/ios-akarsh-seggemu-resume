@@ -12,7 +12,7 @@ class EducationLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: educationLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: EducationLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,7 +49,7 @@ class EducationLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "educationLayoutTableViewCell", for: indexPath) as! educationLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "educationLayoutTableViewCell", for: indexPath) as! EducationLayoutTableViewCell
         
         cell.labelInstitution.text = basicsContent?.education[indexPath.row].institution
         cell.labelArea.text = basicsContent?.education[indexPath.row].area

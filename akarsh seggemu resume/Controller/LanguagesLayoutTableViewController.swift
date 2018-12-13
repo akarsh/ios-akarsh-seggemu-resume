@@ -47,7 +47,7 @@ class LanguagesLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "languagesLayoutTableViewCell", for: indexPath) as! languagesLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "languagesLayoutTableViewCell", for: indexPath) as! LanguagesLayoutTableViewCell
         
         cell.textLabel?.text = basicsContent?.languages[indexPath.row].language
         cell.detailTextLabel?.text = basicsContent?.languages[indexPath.row].fluency

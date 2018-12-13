@@ -12,7 +12,7 @@ class ExperienceLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: experienceLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: ExperienceLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +44,7 @@ class ExperienceLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "experienceLayoutTableViewCell", for: indexPath) as! experienceLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "experienceLayoutTableViewCell", for: indexPath) as! ExperienceLayoutTableViewCell
         
         cell.labelCompany.text = basicsContent?.work[indexPath.row].company
         cell.labelPosition.text = basicsContent?.work[indexPath.row].position
