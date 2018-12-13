@@ -1,5 +1,5 @@
 //
-//  contactLayoutView.swift
+//  ContactLayoutView.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 05.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class contactLayoutView: UIView {
+class ContactLayoutView: UIView {
 
     
     @IBOutlet weak var labelContactLayoutHeader: UILabel!

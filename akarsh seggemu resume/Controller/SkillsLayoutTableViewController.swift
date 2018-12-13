@@ -11,7 +11,7 @@ import UIKit
 class SkillsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    @IBOutlet weak var tableViewHeader: skillsLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: SkillsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,7 +51,7 @@ class SkillsLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "skillsLayoutTableViewCell", for: indexPath) as! skillsLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "skillsLayoutTableViewCell", for: indexPath) as! SkillsLayoutTableViewCell
         
         cell.textLabel?.text = basicsContent?.skills[indexPath.row].name
         cell.detailTextLabel?.text = (basicsContent?.skills[indexPath.row].keywords.joined(separator: ", "))!

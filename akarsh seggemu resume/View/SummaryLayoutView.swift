@@ -1,5 +1,5 @@
 //
-//  summaryLayoutView.swift
+//  SummaryLayoutView.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 05.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class summaryLayoutView: UIView {
+class SummaryLayoutView: UIView {
 
     @IBOutlet weak var labelSummaryHeader: UILabel!
     @IBOutlet weak var labelSummary: UITextView!

@@ -1,5 +1,5 @@
 //
-//  profilesLayoutView.swift
+//  ProfilesLayoutView.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class profilesLayoutView: UIView {
+class ProfilesLayoutView: UIView {
 
     @IBOutlet weak var labelProfilesHeader: UILabel!
     @IBOutlet weak var labelTwitter: UILabel!

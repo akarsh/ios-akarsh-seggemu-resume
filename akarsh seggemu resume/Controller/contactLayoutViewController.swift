@@ -12,7 +12,7 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet var viewHeader: contactLayoutView!
+    @IBOutlet var viewHeader: ContactLayoutView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

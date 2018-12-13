@@ -10,7 +10,7 @@
         <scene sceneID="8Xt-oD-obO">
             <objects>
                 <viewController storyboardIdentifier="profilesLayout" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rC-YH-btT" customClass="ProfilesLayoutViewController" customModule="akarsh_seggemu_resume" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="33e-gE-t2x" customClass="profilesLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="33e-gE-t2x" customClass="ProfilesLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

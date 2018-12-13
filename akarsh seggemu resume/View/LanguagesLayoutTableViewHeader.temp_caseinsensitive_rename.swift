@@ -8,7 +8,7 @@
 
 import UIKit
 
-class languagesLayoutTableViewHeader: UIView {
+class LanguagesLayoutTableViewHeader: UIView {
     @IBOutlet weak var labelContentLanguagesLayoutTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.

@@ -10,7 +10,7 @@
         <scene sceneID="Nyb-o8-Scf">
             <objects>
                 <viewController storyboardIdentifier="infoLayout" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rul-4T-OwR" customClass="InfoLayoutViewController" customModule="akarsh_seggemu_resume" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k4p-Jn-MAR" customClass="infoLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="k4p-Jn-MAR" customClass="InfoLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

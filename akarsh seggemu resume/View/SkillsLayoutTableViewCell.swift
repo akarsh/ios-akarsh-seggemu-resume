@@ -1,5 +1,5 @@
 //
-//  skillsLayoutTableViewCell.swift
+//  SkillsLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class skillsLayoutTableViewCell: UITableViewCell {
+class SkillsLayoutTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()

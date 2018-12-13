@@ -31,7 +31,7 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="skillsLayoutTableViewCell" textLabel="qKh-W9-hSh" detailTextLabel="EyL-Ze-anA" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="sUy-bn-LE4" customClass="skillsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="skillsLayoutTableViewCell" textLabel="qKh-W9-hSh" detailTextLabel="EyL-Ze-anA" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="sUy-bn-LE4" customClass="SkillsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sUy-bn-LE4" id="RUh-Rh-IM9">

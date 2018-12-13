@@ -12,7 +12,7 @@ class SummaryLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet var viewHeader: summaryLayoutView!
+    @IBOutlet var viewHeader: SummaryLayoutView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

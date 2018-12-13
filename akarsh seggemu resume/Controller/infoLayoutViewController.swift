@@ -12,7 +12,7 @@ class InfoLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet var viewHeader: infoLayoutView!
+    @IBOutlet var viewHeader: InfoLayoutView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

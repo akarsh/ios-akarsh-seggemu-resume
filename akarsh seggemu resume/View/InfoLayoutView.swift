@@ -1,5 +1,5 @@
 //
-//  infoLayoutView.swift
+//  InfoLayoutView.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 05.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class infoLayoutView: UIView {
+class InfoLayoutView: UIView {
 
     @IBOutlet weak var labelInfoLayoutHeader: UILabel!
     @IBOutlet weak var labelNationality: UILabel!

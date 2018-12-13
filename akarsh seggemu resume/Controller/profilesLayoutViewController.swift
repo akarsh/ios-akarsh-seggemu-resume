@@ -12,7 +12,7 @@ class ProfilesLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
 
-    @IBOutlet var viewHeader: profilesLayoutView!
+    @IBOutlet var viewHeader: ProfilesLayoutView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,7 @@
         <scene sceneID="U20-m9-dAW">
             <objects>
                 <viewController storyboardIdentifier="contactLayout" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s3J-HB-enU" customClass="ContactLayoutViewController" customModule="akarsh_seggemu_resume" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aHk-BA-yPq" customClass="contactLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="aHk-BA-yPq" customClass="ContactLayoutView" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
