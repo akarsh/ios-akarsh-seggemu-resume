@@ -1,5 +1,5 @@
 //
-//  languagesLayoutTableViewController.swift
+//  LanguagesLayoutTableViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 09.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class languagesLayoutTableViewController: UITableViewController, LabelHeader {
+class LanguagesLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     

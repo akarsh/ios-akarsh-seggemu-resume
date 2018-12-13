@@ -1,5 +1,5 @@
 //
-//  educationLayoutTableViewController.swift
+//  EducationLayoutTableViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class educationLayoutTableViewController: UITableViewController, LabelHeader {
+class EducationLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     

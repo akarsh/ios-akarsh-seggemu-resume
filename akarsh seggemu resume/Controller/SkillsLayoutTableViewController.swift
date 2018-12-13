@@ -1,5 +1,5 @@
 //
-//  skillsLayoutTableViewController.swift
+//  SkillsLayoutTableViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class skillsLayoutTableViewController: UITableViewController, LabelHeader {
+class SkillsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     @IBOutlet weak var tableViewHeader: skillsLayoutTableViewHeader!

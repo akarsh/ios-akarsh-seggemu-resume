@@ -11,7 +11,7 @@
 		D32273FA218535AE0068A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32273F9218535AE0068A69D /* Assets.xcassets */; };
 		D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324D66021860B9D0089CD44 /* MainTableViewController.swift */; };
 		D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */; };
-		D352110B21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110A21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift */; };
+		D352110B21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */; };
 		D352110D21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110C21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift */; };
 		D353A2D921B5BCDF002D9DC9 /* UILabel+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */; };
 		D353A2DC21B5BE89002D9DC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D353A2DE21B5BE89002D9DC9 /* Localizable.strings */; };
@@ -44,7 +44,7 @@
 		D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */; };
 		D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */; };
 		D3D498CA21B89459008ABCED /* profilesLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C921B89459008ABCED /* profilesLayoutView.swift */; };
-		D3D498CC21B89473008ABCED /* skillsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */; };
+		D3D498CC21B89473008ABCED /* SkillsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CB21B89473008ABCED /* SkillsLayoutTableViewController.swift */; };
 		D3D498CE21B89489008ABCED /* skillsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CD21B89489008ABCED /* skillsLayoutTableViewCell.swift */; };
 		D3D498D021B8949E008ABCED /* educationLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CF21B8949E008ABCED /* educationLayoutTableViewCell.swift */; };
 		D3D498D221B894AE008ABCED /* experienceLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D121B894AE008ABCED /* experienceLayoutTableViewCell.swift */; };
@@ -53,7 +53,7 @@
 		D3D498D821B894F6008ABCED /* publicationsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D721B894F6008ABCED /* publicationsLayoutTableViewCell.swift */; };
 		D3D498DA21B89506008ABCED /* interestsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */; };
 		D3D498DC21B89513008ABCED /* referencesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */; };
-		D3D498DE21B8952D008ABCED /* educationLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */; };
+		D3D498DE21B8952D008ABCED /* EducationLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DD21B8952D008ABCED /* EducationLayoutTableViewController.swift */; };
 		D3D498E021B89539008ABCED /* ExperienceLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */; };
 		D3D498E221B89545008ABCED /* VolunteerLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */; };
 		D3D498E421B89551008ABCED /* AwardsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E321B89551008ABCED /* AwardsLayoutTableViewController.swift */; };
@@ -79,7 +79,7 @@
 		D324D66021860B9D0089CD44 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D324D66221860C880089CD44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResumeSchemaTableViewHeader.swift; path = "akarsh seggemu resume/View/ResumeSchemaTableViewHeader.swift"; sourceTree = SOURCE_ROOT; };
-		D352110A21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languagesLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D352110C21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = languagesLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Localization.swift"; sourceTree = "<group>"; };
 		D353A2DD21B5BE89002D9DC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryLayoutView.swift; sourceTree = "<group>"; };
 		D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498C921B89459008ABCED /* profilesLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesLayoutView.swift; sourceTree = "<group>"; };
-		D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillsLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498CB21B89473008ABCED /* SkillsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498CD21B89489008ABCED /* skillsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillsLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498CF21B8949E008ABCED /* educationLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498D121B894AE008ABCED /* experienceLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceLayoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		D3D498D721B894F6008ABCED /* publicationsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationsLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498DD21B8952D008ABCED /* EducationLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E321B89551008ABCED /* AwardsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsLayoutTableViewController.swift; sourceTree = "<group>"; };
@@ -199,9 +199,9 @@
 				D3D498BD21B88B24008ABCED /* InfoLayoutViewController.swift */,
 				D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */,
 				D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */,
-				D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */,
-				D352110A21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift */,
-				D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */,
+				D3D498CB21B89473008ABCED /* SkillsLayoutTableViewController.swift */,
+				D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */,
+				D3D498DD21B8952D008ABCED /* EducationLayoutTableViewController.swift */,
 				D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */,
 				D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */,
 				D3D498E321B89551008ABCED /* AwardsLayoutTableViewController.swift */,
@@ -372,7 +372,7 @@
 				D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */,
 				D3D6920921BF43BE00A238FD /* experienceLayoutTableViewHeader.swift in Sources */,
 				D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */,
-				D3D498CC21B89473008ABCED /* skillsLayoutTableViewController.swift in Sources */,
+				D3D498CC21B89473008ABCED /* SkillsLayoutTableViewController.swift in Sources */,
 				D3D498BC21B88B14008ABCED /* infoLayoutView.swift in Sources */,
 				D3B42ABC21867BC500F183B9 /* Resume.swift in Sources */,
 				D3D498D821B894F6008ABCED /* publicationsLayoutTableViewCell.swift in Sources */,
@@ -381,10 +381,10 @@
 				D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */,
 				D3D498E821B89569008ABCED /* InterestsLayoutTableViewController.swift in Sources */,
 				D3D498E421B89551008ABCED /* AwardsLayoutTableViewController.swift in Sources */,
-				D3D498DE21B8952D008ABCED /* educationLayoutTableViewController.swift in Sources */,
+				D3D498DE21B8952D008ABCED /* EducationLayoutTableViewController.swift in Sources */,
 				D3D498D621B894EA008ABCED /* awardsLayoutTableViewCell.swift in Sources */,
 				D3AAD5B421BDC291004876FF /* skillsLayoutTableViewHeader.swift in Sources */,
-				D352110B21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift in Sources */,
+				D352110B21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift in Sources */,
 				D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */,
 				D359DC7B21AB7593008011EE /* ResumeSchemaTableViewController.swift in Sources */,
 				D3B28BE721A6236000029A3F /* MainTableViewCell.swift in Sources */,
