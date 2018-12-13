@@ -35,19 +35,19 @@ class ResumeSchemaTableViewController: UITableViewController {
     let emojiOfSchemaKeys = ["📇", "ℹ️", "💬", "👤", "🛠", "🌐", "🎓", "⏳", "🏵", "🏆", "📚", "❤️", "📝"]
     
     let identitiesOfStoryboards = [
-        "contactLayout",
-        "infoLayout",
-        "summaryLayout",
-        "profilesLayout",
-        "skillsLayout",
-        "languagesLayout",
-        "educationLayout",
-        "experienceLayout",
-        "volunteerLayout",
-        "awardsLayout",
-        "publicationsLayout",
-        "interestsLayout",
-        "referencesLayout"
+        "ContactLayout",
+        "InfoLayout",
+        "SummaryLayout",
+        "ProfilesLayout",
+        "SkillsLayout",
+        "LanguagesLayout",
+        "EducationLayout",
+        "ExperienceLayout",
+        "VolunteerLayout",
+        "AwardsLayout",
+        "PublicationsLayout",
+        "InterestsLayout",
+        "ReferencesLayout"
     ]
     
     // file path
