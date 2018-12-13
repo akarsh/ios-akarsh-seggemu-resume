@@ -12,7 +12,7 @@ class LanguagesLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: languagesLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: LanguagesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
