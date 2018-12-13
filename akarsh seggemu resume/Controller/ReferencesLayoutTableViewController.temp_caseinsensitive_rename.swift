@@ -1,5 +1,5 @@
 //
-//  experienceLayoutTableViewController.swift
+//  ReferencesLayoutTableViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class experienceLayoutTableViewController: UITableViewController, LabelHeader {
+class ReferencesLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: experienceLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: referencesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,16 +22,15 @@ class experienceLayoutTableViewController: UITableViewController, LabelHeader {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        self.setExperienceLayoutTableViewHeader()
+        self.setReferencesLayoutTableViewHeader()
     }
     
     // set the table view header
-    func setExperienceLayoutTableViewHeader() {
+    func setReferencesLayoutTableViewHeader() {
         if labelContentHeader != nil {
-            tableViewHeader.labelContentExperienceLayoutTableViewHeader.text = labelContentHeader!
+            tableViewHeader.labelContentReferencesLayoutTableViewHeader.text = labelContentHeader!
         }
     }
-    
 
     // MARK: - Table view data source
 
@@ -40,28 +39,14 @@ class experienceLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return basicsContent?.work.count ?? 0
+        return basicsContent?.references.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "experienceLayoutTableViewCell", for: indexPath) as! experienceLayoutTableViewCell
-        
-        cell.labelCompany.text = basicsContent?.work[indexPath.row].company
-        cell.labelPosition.text = basicsContent?.work[indexPath.row].position
-        cell.labelWebsite.text = basicsContent?.work[indexPath.row].website
-        cell.labelStartDate.text = basicsContent?.work[indexPath.row].startDate
-        cell.labelEndDate.text = basicsContent?.work[indexPath.row].endDate
-        
-        // adding attributes to the attributed text
-        var attributes = [NSAttributedString.Key: Any]()
-        // setting the head indent for the paragraph style
-        let paragraphStyle = NSMutableParagraphStyle()
-        // "unicode character plus space" as string
-        paragraphStyle.headIndent = ("\u{2022} " as NSString).size(withAttributes: attributes).width
-        attributes[.paragraphStyle] = paragraphStyle
-        // "a bullet point is added to the string" as string
-        // array of strings are joined with the separator two newline spaces followed by bullet point
-        cell.labelHighlights.attributedText = NSAttributedString(string: "\u{2022} \((basicsContent?.work[indexPath.row].highlights.joined(separator: "\n\n\u{2022} "))!)", attributes: attributes)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "referencesLayoutTableViewCell", for: indexPath) as! referencesLayoutTableViewCell
+
+        cell.textLabel?.text = basicsContent?.references[indexPath.row].name
+        cell.detailTextLabel?.text = basicsContent?.references[indexPath.row].reference
 
         return cell
     }

@@ -54,12 +54,12 @@
 		D3D498DA21B89506008ABCED /* interestsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */; };
 		D3D498DC21B89513008ABCED /* referencesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */; };
 		D3D498DE21B8952D008ABCED /* educationLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */; };
-		D3D498E021B89539008ABCED /* experienceLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DF21B89539008ABCED /* experienceLayoutTableViewController.swift */; };
-		D3D498E221B89545008ABCED /* volunteerLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E121B89545008ABCED /* volunteerLayoutTableViewController.swift */; };
-		D3D498E421B89551008ABCED /* awardsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E321B89551008ABCED /* awardsLayoutTableViewController.swift */; };
+		D3D498E021B89539008ABCED /* ExperienceLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */; };
+		D3D498E221B89545008ABCED /* VolunteerLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */; };
+		D3D498E421B89551008ABCED /* AwardsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E321B89551008ABCED /* AwardsLayoutTableViewController.swift */; };
 		D3D498E621B8955C008ABCED /* PublicationsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E521B8955C008ABCED /* PublicationsLayoutTableViewController.swift */; };
 		D3D498E821B89569008ABCED /* InterestsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E721B89569008ABCED /* InterestsLayoutTableViewController.swift */; };
-		D3D498EA21B89576008ABCED /* referencesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */; };
+		D3D498EA21B89576008ABCED /* ReferencesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */; };
 		D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920621BF31AA00A238FD /* LabelHeader.swift */; };
 		D3D6920921BF43BE00A238FD /* experienceLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */; };
 		D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */; };
@@ -123,12 +123,12 @@
 		D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = educationLayoutTableViewController.swift; sourceTree = "<group>"; };
-		D3D498DF21B89539008ABCED /* experienceLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceLayoutTableViewController.swift; sourceTree = "<group>"; };
-		D3D498E121B89545008ABCED /* volunteerLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerLayoutTableViewController.swift; sourceTree = "<group>"; };
-		D3D498E321B89551008ABCED /* awardsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awardsLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498E321B89551008ABCED /* AwardsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E521B8955C008ABCED /* PublicationsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E721B89569008ABCED /* InterestsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsLayoutTableViewController.swift; sourceTree = "<group>"; };
-		D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D6920621BF31AA00A238FD /* LabelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeader.swift; sourceTree = "<group>"; };
 		D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerLayoutTableViewHeader.swift; sourceTree = "<group>"; };
@@ -202,12 +202,12 @@
 				D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */,
 				D352110A21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift */,
 				D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */,
-				D3D498DF21B89539008ABCED /* experienceLayoutTableViewController.swift */,
-				D3D498E121B89545008ABCED /* volunteerLayoutTableViewController.swift */,
-				D3D498E321B89551008ABCED /* awardsLayoutTableViewController.swift */,
+				D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */,
+				D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */,
+				D3D498E321B89551008ABCED /* AwardsLayoutTableViewController.swift */,
 				D3D498E521B8955C008ABCED /* PublicationsLayoutTableViewController.swift */,
 				D3D498E721B89569008ABCED /* InterestsLayoutTableViewController.swift */,
-				D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */,
+				D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				D3D6921121BF45D400A238FD /* interestsLayoutTableViewHeader.swift in Sources */,
 				D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */,
 				D3D498E821B89569008ABCED /* InterestsLayoutTableViewController.swift in Sources */,
-				D3D498E421B89551008ABCED /* awardsLayoutTableViewController.swift in Sources */,
+				D3D498E421B89551008ABCED /* AwardsLayoutTableViewController.swift in Sources */,
 				D3D498DE21B8952D008ABCED /* educationLayoutTableViewController.swift in Sources */,
 				D3D498D621B894EA008ABCED /* awardsLayoutTableViewCell.swift in Sources */,
 				D3AAD5B421BDC291004876FF /* skillsLayoutTableViewHeader.swift in Sources */,
@@ -401,14 +401,14 @@
 				D3646F3221BE414100E726D8 /* languagesLayoutTableViewHeader.swift in Sources */,
 				D3D6920D21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift in Sources */,
 				D352110D21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift in Sources */,
-				D3D498E021B89539008ABCED /* experienceLayoutTableViewController.swift in Sources */,
-				D3D498EA21B89576008ABCED /* referencesLayoutTableViewController.swift in Sources */,
+				D3D498E021B89539008ABCED /* ExperienceLayoutTableViewController.swift in Sources */,
+				D3D498EA21B89576008ABCED /* ReferencesLayoutTableViewController.swift in Sources */,
 				D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */,
 				D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */,
 				D3D6921321BF463800A238FD /* referencesLayoutTableViewHeader.swift in Sources */,
 				D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */,
 				D3D498B821B88AC1008ABCED /* ContactLayoutViewController.swift in Sources */,
-				D3D498E221B89545008ABCED /* volunteerLayoutTableViewController.swift in Sources */,
+				D3D498E221B89545008ABCED /* VolunteerLayoutTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

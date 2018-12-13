@@ -1,5 +1,5 @@
 //
-//  awardsLayoutTableViewController.swift
+//  VolunteerLayoutTableViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class awardsLayoutTableViewController: UITableViewController, LabelHeader {
+class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: awardsLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: volunteerLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,13 +22,13 @@ class awardsLayoutTableViewController: UITableViewController, LabelHeader {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        self.setAwardsLayoutTableViewHeader()
+        self.setVolunteerLayoutTableViewHeader()
     }
     
     // set the table view header
-    func setAwardsLayoutTableViewHeader() {
+    func setVolunteerLayoutTableViewHeader() {
         if labelContentHeader != nil {
-            tableViewHeader.labelContentAwardsLayoutTableViewHeader.text = labelContentHeader!
+            tableViewHeader.labelContentVolunteerLayoutTableViewHeader.text = labelContentHeader!
         }
     }
 
@@ -39,16 +39,29 @@ class awardsLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return basicsContent?.awards.count ?? 0
+        return basicsContent?.volunteer.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "awardsLayoutTableViewCell", for: indexPath) as! awardsLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "volunteerLayoutTableViewCell", for: indexPath) as! volunteerLayoutTableViewCell
         
-        cell.labelTitle.text = basicsContent?.awards[indexPath.row].title
-        cell.labelAwarder.text = basicsContent?.awards[indexPath.row].awarder
-        cell.labelDate.text = basicsContent?.awards[indexPath.row].date
-        cell.labelSummary.text = basicsContent?.awards[indexPath.row].summary
+        cell.labelOrganisation.text = basicsContent?.volunteer[indexPath.row].organization
+        cell.labelPosition.text = basicsContent?.volunteer[indexPath.row].position
+        cell.labelWebsite.text = basicsContent?.volunteer[indexPath.row].website
+        cell.labelStartDate.text = basicsContent?.volunteer[indexPath.row].startDate
+        cell.labelEndDate.text = basicsContent?.volunteer[indexPath.row].endDate
+        cell.labelSummary.text = basicsContent?.volunteer[indexPath.row].summary
+
+        // adding attributes to the attributed text
+        var attributes = [NSAttributedString.Key: Any]()
+        // setting the head indent for the paragraph style
+        let paragraphStyle = NSMutableParagraphStyle()
+        // "unicode character plus space" as string
+        paragraphStyle.headIndent = ("\u{2022} " as NSString).size(withAttributes: attributes).width
+        attributes[.paragraphStyle] = paragraphStyle
+        // "a bullet point is added to the string" as string
+        // array of strings are joined with the separator two newline spaces followed by bullet point
+        cell.labelHighlights.attributedText = NSAttributedString(string: "\u{2022} \((basicsContent?.volunteer[indexPath.row].highlights.joined(separator: "\n\n\u{2022} "))!)", attributes: attributes)
         
         return cell
     }
