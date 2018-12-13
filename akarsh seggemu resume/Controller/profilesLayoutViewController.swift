@@ -1,5 +1,5 @@
 //
-//  profilesLayoutViewController.swift
+//  ProfilesLayoutViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class profilesLayoutViewController: UIViewController, LabelHeader {
+class ProfilesLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
 

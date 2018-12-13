@@ -42,7 +42,7 @@
 		D3D498BE21B88B24008ABCED /* infoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */; };
 		D3D498C021B88B38008ABCED /* summaryLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BF21B88B38008ABCED /* summaryLayoutViewController.swift */; };
 		D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */; };
-		D3D498C821B89443008ABCED /* profilesLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C721B89443008ABCED /* profilesLayoutViewController.swift */; };
+		D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */; };
 		D3D498CA21B89459008ABCED /* profilesLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C921B89459008ABCED /* profilesLayoutView.swift */; };
 		D3D498CC21B89473008ABCED /* skillsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */; };
 		D3D498CE21B89489008ABCED /* skillsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CD21B89489008ABCED /* skillsLayoutTableViewCell.swift */; };
@@ -111,7 +111,7 @@
 		D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498BF21B88B38008ABCED /* summaryLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryLayoutView.swift; sourceTree = "<group>"; };
-		D3D498C721B89443008ABCED /* profilesLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesLayoutViewController.swift; sourceTree = "<group>"; };
+		D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498C921B89459008ABCED /* profilesLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesLayoutView.swift; sourceTree = "<group>"; };
 		D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498CD21B89489008ABCED /* skillsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skillsLayoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,7 +198,7 @@
 				D3D498B721B88AC1008ABCED /* contactLayoutViewController.swift */,
 				D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */,
 				D3D498BF21B88B38008ABCED /* summaryLayoutViewController.swift */,
-				D3D498C721B89443008ABCED /* profilesLayoutViewController.swift */,
+				D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */,
 				D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */,
 				D352110A21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift */,
 				D3D498DD21B8952D008ABCED /* educationLayoutTableViewController.swift */,
@@ -385,7 +385,7 @@
 				D3D498D621B894EA008ABCED /* awardsLayoutTableViewCell.swift in Sources */,
 				D3AAD5B421BDC291004876FF /* skillsLayoutTableViewHeader.swift in Sources */,
 				D352110B21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift in Sources */,
-				D3D498C821B89443008ABCED /* profilesLayoutViewController.swift in Sources */,
+				D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */,
 				D359DC7B21AB7593008011EE /* ResumeSchemaTableViewController.swift in Sources */,
 				D3B28BE721A6236000029A3F /* MainTableViewCell.swift in Sources */,
 				D3D498E621B8955C008ABCED /* publicationsLayoutTableViewController.swift in Sources */,
