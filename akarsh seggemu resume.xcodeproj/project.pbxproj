@@ -40,7 +40,7 @@
 		D3D498BA21B88AF5008ABCED /* contactLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498B921B88AF5008ABCED /* contactLayoutView.swift */; };
 		D3D498BC21B88B14008ABCED /* infoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BB21B88B14008ABCED /* infoLayoutView.swift */; };
 		D3D498BE21B88B24008ABCED /* infoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */; };
-		D3D498C021B88B38008ABCED /* summaryLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BF21B88B38008ABCED /* summaryLayoutViewController.swift */; };
+		D3D498C021B88B38008ABCED /* SummaryLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */; };
 		D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */; };
 		D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */; };
 		D3D498CA21B89459008ABCED /* profilesLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C921B89459008ABCED /* profilesLayoutView.swift */; };
@@ -109,7 +109,7 @@
 		D3D498B921B88AF5008ABCED /* contactLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactLayoutView.swift; sourceTree = "<group>"; };
 		D3D498BB21B88B14008ABCED /* infoLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoLayoutView.swift; sourceTree = "<group>"; };
 		D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoLayoutViewController.swift; sourceTree = "<group>"; };
-		D3D498BF21B88B38008ABCED /* summaryLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryLayoutViewController.swift; sourceTree = "<group>"; };
+		D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryLayoutView.swift; sourceTree = "<group>"; };
 		D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498C921B89459008ABCED /* profilesLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesLayoutView.swift; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 				D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */,
 				D3D498B721B88AC1008ABCED /* contactLayoutViewController.swift */,
 				D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */,
-				D3D498BF21B88B38008ABCED /* summaryLayoutViewController.swift */,
+				D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */,
 				D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */,
 				D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */,
 				D352110A21BD3C4D009EFD09 /* languagesLayoutTableViewController.swift */,
@@ -368,7 +368,7 @@
 				D3646F3421BE429000E726D8 /* educationLayoutTableViewHeader.swift in Sources */,
 				D3D6920F21BF457100A238FD /* publicationsLayoutTableViewHeader.swift in Sources */,
 				D3D498BA21B88AF5008ABCED /* contactLayoutView.swift in Sources */,
-				D3D498C021B88B38008ABCED /* summaryLayoutViewController.swift in Sources */,
+				D3D498C021B88B38008ABCED /* SummaryLayoutViewController.swift in Sources */,
 				D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */,
 				D3D6920921BF43BE00A238FD /* experienceLayoutTableViewHeader.swift in Sources */,
 				D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */,

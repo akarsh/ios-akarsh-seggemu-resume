@@ -1,5 +1,5 @@
 //
-//  summaryLayoutViewController.swift
+//  SummaryLayoutViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 05.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class summaryLayoutViewController: UIViewController, LabelHeader {
+class SummaryLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
