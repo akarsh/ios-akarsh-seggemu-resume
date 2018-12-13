@@ -36,10 +36,10 @@
 		D3D498B221B88190008ABCED /* publicationsLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D498B121B88190008ABCED /* publicationsLayout.storyboard */; };
 		D3D498B421B88199008ABCED /* interestsLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D498B321B88199008ABCED /* interestsLayout.storyboard */; };
 		D3D498B621B881A4008ABCED /* referencesLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3D498B521B881A4008ABCED /* referencesLayout.storyboard */; };
-		D3D498B821B88AC1008ABCED /* contactLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498B721B88AC1008ABCED /* contactLayoutViewController.swift */; };
+		D3D498B821B88AC1008ABCED /* ContactLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498B721B88AC1008ABCED /* ContactLayoutViewController.swift */; };
 		D3D498BA21B88AF5008ABCED /* contactLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498B921B88AF5008ABCED /* contactLayoutView.swift */; };
 		D3D498BC21B88B14008ABCED /* infoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BB21B88B14008ABCED /* infoLayoutView.swift */; };
-		D3D498BE21B88B24008ABCED /* infoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */; };
+		D3D498BE21B88B24008ABCED /* InfoLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BD21B88B24008ABCED /* InfoLayoutViewController.swift */; };
 		D3D498C021B88B38008ABCED /* SummaryLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */; };
 		D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */; };
 		D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */; };
@@ -59,7 +59,7 @@
 		D3D498E421B89551008ABCED /* awardsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E321B89551008ABCED /* awardsLayoutTableViewController.swift */; };
 		D3D498E621B8955C008ABCED /* publicationsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E521B8955C008ABCED /* publicationsLayoutTableViewController.swift */; };
 		D3D498E821B89569008ABCED /* interestsLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E721B89569008ABCED /* interestsLayoutTableViewController.swift */; };
-		D3D498EA21B89576008ABCED /* referencesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */; };
+		D3D498EA21B89576008ABCED /* ReferencesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */; };
 		D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920621BF31AA00A238FD /* LabelHeader.swift */; };
 		D3D6920921BF43BE00A238FD /* experienceLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */; };
 		D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */; };
@@ -105,10 +105,10 @@
 		D3D498B121B88190008ABCED /* publicationsLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = publicationsLayout.storyboard; sourceTree = "<group>"; };
 		D3D498B321B88199008ABCED /* interestsLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = interestsLayout.storyboard; sourceTree = "<group>"; };
 		D3D498B521B881A4008ABCED /* referencesLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = referencesLayout.storyboard; sourceTree = "<group>"; };
-		D3D498B721B88AC1008ABCED /* contactLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactLayoutViewController.swift; sourceTree = "<group>"; };
+		D3D498B721B88AC1008ABCED /* ContactLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498B921B88AF5008ABCED /* contactLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactLayoutView.swift; sourceTree = "<group>"; };
 		D3D498BB21B88B14008ABCED /* infoLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoLayoutView.swift; sourceTree = "<group>"; };
-		D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoLayoutViewController.swift; sourceTree = "<group>"; };
+		D3D498BD21B88B24008ABCED /* InfoLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryLayoutViewController.swift; sourceTree = "<group>"; };
 		D3D498C121B88B4A008ABCED /* summaryLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryLayoutView.swift; sourceTree = "<group>"; };
 		D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesLayoutViewController.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		D3D498E321B89551008ABCED /* awardsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awardsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E521B8955C008ABCED /* publicationsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationsLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E721B89569008ABCED /* interestsLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewController.swift; sourceTree = "<group>"; };
-		D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D6920621BF31AA00A238FD /* LabelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeader.swift; sourceTree = "<group>"; };
 		D3D6920821BF43BE00A238FD /* experienceLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = experienceLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerLayoutTableViewHeader.swift; sourceTree = "<group>"; };
@@ -195,8 +195,8 @@
 			children = (
 				D324D66021860B9D0089CD44 /* MainTableViewController.swift */,
 				D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */,
-				D3D498B721B88AC1008ABCED /* contactLayoutViewController.swift */,
-				D3D498BD21B88B24008ABCED /* infoLayoutViewController.swift */,
+				D3D498B721B88AC1008ABCED /* ContactLayoutViewController.swift */,
+				D3D498BD21B88B24008ABCED /* InfoLayoutViewController.swift */,
 				D3D498BF21B88B38008ABCED /* SummaryLayoutViewController.swift */,
 				D3D498C721B89443008ABCED /* ProfilesLayoutViewController.swift */,
 				D3D498CB21B89473008ABCED /* skillsLayoutTableViewController.swift */,
@@ -207,7 +207,7 @@
 				D3D498E321B89551008ABCED /* awardsLayoutTableViewController.swift */,
 				D3D498E521B8955C008ABCED /* publicationsLayoutTableViewController.swift */,
 				D3D498E721B89569008ABCED /* interestsLayoutTableViewController.swift */,
-				D3D498E921B89576008ABCED /* referencesLayoutTableViewController.swift */,
+				D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,19 +395,19 @@
 				D3D498D421B894DE008ABCED /* volunteerLayoutTableViewCell.swift in Sources */,
 				D3D498CA21B89459008ABCED /* profilesLayoutView.swift in Sources */,
 				D353A2D921B5BCDF002D9DC9 /* UILabel+Localization.swift in Sources */,
-				D3D498BE21B88B24008ABCED /* infoLayoutViewController.swift in Sources */,
+				D3D498BE21B88B24008ABCED /* InfoLayoutViewController.swift in Sources */,
 				D3D498CE21B89489008ABCED /* skillsLayoutTableViewCell.swift in Sources */,
 				D3D498DA21B89506008ABCED /* interestsLayoutTableViewCell.swift in Sources */,
 				D3646F3221BE414100E726D8 /* languagesLayoutTableViewHeader.swift in Sources */,
 				D3D6920D21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift in Sources */,
 				D352110D21BD3C5F009EFD09 /* languagesLayoutTableViewCell.swift in Sources */,
 				D3D498E021B89539008ABCED /* experienceLayoutTableViewController.swift in Sources */,
-				D3D498EA21B89576008ABCED /* referencesLayoutTableViewController.swift in Sources */,
+				D3D498EA21B89576008ABCED /* ReferencesLayoutTableViewController.swift in Sources */,
 				D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */,
 				D3D498C221B88B4A008ABCED /* summaryLayoutView.swift in Sources */,
 				D3D6921321BF463800A238FD /* referencesLayoutTableViewHeader.swift in Sources */,
 				D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */,
-				D3D498B821B88AC1008ABCED /* contactLayoutViewController.swift in Sources */,
+				D3D498B821B88AC1008ABCED /* ContactLayoutViewController.swift in Sources */,
 				D3D498E221B89545008ABCED /* volunteerLayoutTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
