@@ -35,24 +35,21 @@ class referencesLayoutTableViewController: UITableViewController, LabelHeader {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return basicsContent?.references.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "referencesLayoutTableViewCell", for: indexPath) as! referencesLayoutTableViewCell
 
-        // Configure the cell...
+        cell.textLabel?.text = basicsContent?.references[indexPath.row].name
+        cell.detailTextLabel?.text = basicsContent?.references[indexPath.row].reference
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

@@ -97,7 +97,7 @@ struct interests: Codable {
 
 struct references: Codable {
     var name: String
-    var reference: [String]
+    var reference: String
 }
 
 struct Resume: Codable {

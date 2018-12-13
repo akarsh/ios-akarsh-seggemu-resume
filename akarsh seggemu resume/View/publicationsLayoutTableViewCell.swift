@@ -9,7 +9,12 @@
 import UIKit
 
 class publicationsLayoutTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelPublisher: UILabel!
+    @IBOutlet weak var labelReleaseDate: UILabel!
+    @IBOutlet weak var labelWebsite: UILabel!
+    @IBOutlet weak var labelSummary: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

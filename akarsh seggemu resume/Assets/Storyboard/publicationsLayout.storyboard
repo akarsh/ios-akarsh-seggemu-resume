@@ -35,13 +35,63 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="baI-7I-X5S" customClass="publicationsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="publicationsLayoutTableViewCell" id="baI-7I-X5S" customClass="publicationsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="baI-7I-X5S" id="RyN-bs-GVv">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yhX-KA-dQR">
+                                            <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfj-AM-sqT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="747" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51t-G1-Ged">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3j-tk-R7H">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="0.0"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzY-f2-M2T">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="1.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esB-ar-xID">
+                                                    <rect key="frame" x="0.0" y="1.5" width="343" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yhX-KA-dQR" firstAttribute="top" secondItem="RyN-bs-GVv" secondAttribute="topMargin" id="6gB-8X-D6P"/>
+                                        <constraint firstItem="yhX-KA-dQR" firstAttribute="leading" secondItem="RyN-bs-GVv" secondAttribute="leadingMargin" id="TWM-Uo-cTg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yhX-KA-dQR" secondAttribute="trailing" id="U8E-Qx-m1V"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yhX-KA-dQR" secondAttribute="bottom" id="nWE-eR-cNL"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelName" destination="Kfj-AM-sqT" id="Ggo-zt-umV"/>
+                                    <outlet property="labelPublisher" destination="51t-G1-Ged" id="yPG-0a-A6J"/>
+                                    <outlet property="labelReleaseDate" destination="e3j-tk-R7H" id="mFP-0k-qS6"/>
+                                    <outlet property="labelSummary" destination="esB-ar-xID" id="tgR-CT-W5g"/>
+                                    <outlet property="labelWebsite" destination="NzY-f2-M2T" id="M7C-Uw-6GX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
