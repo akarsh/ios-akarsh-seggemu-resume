@@ -1,5 +1,5 @@
 //
-//  languagesLayoutTableViewCell.swift
+//  LanguagesLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 09.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class languagesLayoutTableViewCell: UITableViewCell {
+class LanguagesLayoutTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

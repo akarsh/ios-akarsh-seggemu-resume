@@ -1,5 +1,5 @@
 //
-//  educationLayoutTableViewCell.swift
+//  ExperienceLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,15 +8,14 @@
 
 import UIKit
 
-class educationLayoutTableViewCell: UITableViewCell {
+class ExperienceLayoutTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var labelInstitution: UILabel!
-    @IBOutlet weak var labelArea: UILabel!
-    @IBOutlet weak var labelStudyType: UILabel!
+    @IBOutlet weak var labelCompany: UILabel!
+    @IBOutlet weak var labelPosition: UILabel!
+    @IBOutlet weak var labelWebsite: UILabel!
     @IBOutlet weak var labelStartDate: UILabel!
     @IBOutlet weak var labelEndDate: UILabel!
-    @IBOutlet weak var labelGpa: UILabel!
-    
+    @IBOutlet weak var labelHighlights: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

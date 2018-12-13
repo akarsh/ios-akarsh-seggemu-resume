@@ -1,5 +1,5 @@
 //
-//  experienceLayoutTableViewHeader.swift
+//  ExperienceLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 11.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class experienceLayoutTableViewHeader: UIView {
+class ExperienceLayoutTableViewHeader: UIView {
     @IBOutlet weak var labelContentExperienceLayoutTableViewHeader: UILabel!
 
     /*

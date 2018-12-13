@@ -1,5 +1,5 @@
 //
-//  educationLayoutTableViewHeader.swift
+//  EducationLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 10.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class educationLayoutTableViewHeader: UIView {
+class EducationLayoutTableViewHeader: UIView {
     @IBOutlet weak var labelContentEducationLayoutTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
