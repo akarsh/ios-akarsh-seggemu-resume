@@ -1,5 +1,5 @@
 //
-//  publicationsLayoutTableViewController.swift
+//  PublicationsLayoutTableViewController.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class publicationsLayoutTableViewController: UITableViewController, LabelHeader {
+class PublicationsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
