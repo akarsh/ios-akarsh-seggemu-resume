@@ -35,24 +35,23 @@ class awardsLayoutTableViewController: UITableViewController, LabelHeader {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return basicsContent?.awards.count ?? 0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "awardsLayoutTableViewCell", for: indexPath) as! awardsLayoutTableViewCell
+        
+        cell.labelTitle.text = basicsContent?.awards[indexPath.row].title
+        cell.labelAwarder.text = basicsContent?.awards[indexPath.row].awarder
+        cell.labelDate.text = basicsContent?.awards[indexPath.row].date
+        cell.labelSummary.text = basicsContent?.awards[indexPath.row].summary
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

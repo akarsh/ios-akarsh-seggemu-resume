@@ -9,7 +9,14 @@
 import UIKit
 
 class volunteerLayoutTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var labelOrganisation: UILabel!
+    @IBOutlet weak var labelPosition: UILabel!
+    @IBOutlet weak var labelWebsite: UILabel!
+    @IBOutlet weak var labelStartDate: UILabel!
+    @IBOutlet weak var labelEndDate: UILabel!
+    @IBOutlet weak var labelSummary: UILabel!
+    @IBOutlet weak var labelHighlights: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

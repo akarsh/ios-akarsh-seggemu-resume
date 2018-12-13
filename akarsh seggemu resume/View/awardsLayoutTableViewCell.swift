@@ -9,7 +9,11 @@
 import UIKit
 
 class awardsLayoutTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelAwarder: UILabel!
+    @IBOutlet weak var labelDate: UILabel!
+    @IBOutlet weak var labelSummary: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
