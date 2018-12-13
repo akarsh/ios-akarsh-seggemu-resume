@@ -48,11 +48,11 @@
 		D3D498CE21B89489008ABCED /* SkillsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CD21B89489008ABCED /* SkillsLayoutTableViewCell.swift */; };
 		D3D498D021B8949E008ABCED /* EducationLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498CF21B8949E008ABCED /* EducationLayoutTableViewCell.swift */; };
 		D3D498D221B894AE008ABCED /* ExperienceLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D121B894AE008ABCED /* ExperienceLayoutTableViewCell.swift */; };
-		D3D498D421B894DE008ABCED /* volunteerLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D321B894DE008ABCED /* volunteerLayoutTableViewCell.swift */; };
-		D3D498D621B894EA008ABCED /* awardsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D521B894EA008ABCED /* awardsLayoutTableViewCell.swift */; };
-		D3D498D821B894F6008ABCED /* publicationsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D721B894F6008ABCED /* publicationsLayoutTableViewCell.swift */; };
-		D3D498DA21B89506008ABCED /* interestsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */; };
-		D3D498DC21B89513008ABCED /* referencesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */; };
+		D3D498D421B894DE008ABCED /* VolunteerLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D321B894DE008ABCED /* VolunteerLayoutTableViewCell.swift */; };
+		D3D498D621B894EA008ABCED /* AwardsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D521B894EA008ABCED /* AwardsLayoutTableViewCell.swift */; };
+		D3D498D821B894F6008ABCED /* PublicationsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D721B894F6008ABCED /* PublicationsLayoutTableViewCell.swift */; };
+		D3D498DA21B89506008ABCED /* InterestsLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498D921B89506008ABCED /* InterestsLayoutTableViewCell.swift */; };
+		D3D498DC21B89513008ABCED /* ReferencesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DB21B89513008ABCED /* ReferencesLayoutTableViewCell.swift */; };
 		D3D498DE21B8952D008ABCED /* EducationLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DD21B8952D008ABCED /* EducationLayoutTableViewController.swift */; };
 		D3D498E021B89539008ABCED /* ExperienceLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */; };
 		D3D498E221B89545008ABCED /* VolunteerLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */; };
@@ -62,11 +62,11 @@
 		D3D498EA21B89576008ABCED /* ReferencesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */; };
 		D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920621BF31AA00A238FD /* LabelHeader.swift */; };
 		D3D6920921BF43BE00A238FD /* ExperienceLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920821BF43BE00A238FD /* ExperienceLayoutTableViewHeader.swift */; };
-		D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */; };
-		D3D6920D21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920C21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift */; };
-		D3D6920F21BF457100A238FD /* publicationsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920E21BF457100A238FD /* publicationsLayoutTableViewHeader.swift */; };
-		D3D6921121BF45D400A238FD /* interestsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6921021BF45D400A238FD /* interestsLayoutTableViewHeader.swift */; };
-		D3D6921321BF463800A238FD /* referencesLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6921221BF463800A238FD /* referencesLayoutTableViewHeader.swift */; };
+		D3D6920B21BF445A00A238FD /* VolunteerLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920A21BF445A00A238FD /* VolunteerLayoutTableViewHeader.swift */; };
+		D3D6920D21BF44CA00A238FD /* AwardsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920C21BF44CA00A238FD /* AwardsLayoutTableViewHeader.swift */; };
+		D3D6920F21BF457100A238FD /* PublicationsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6920E21BF457100A238FD /* PublicationsLayoutTableViewHeader.swift */; };
+		D3D6921121BF45D400A238FD /* InterestsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6921021BF45D400A238FD /* InterestsLayoutTableViewHeader.swift */; };
+		D3D6921321BF463800A238FD /* ReferencesLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D6921221BF463800A238FD /* ReferencesLayoutTableViewHeader.swift */; };
 		D3E300D221A4D0980068D820 /* ResumeSchemaLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E300D121A4D0980068D820 /* ResumeSchemaLayout.storyboard */; };
 		D3E6BAC921B5FA35004F3F52 /* ContactLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E6BAC821B5FA35004F3F52 /* ContactLayout.storyboard */; };
 /* End PBXBuildFile section */
@@ -117,11 +117,11 @@
 		D3D498CD21B89489008ABCED /* SkillsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498CF21B8949E008ABCED /* EducationLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498D121B894AE008ABCED /* ExperienceLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D3D498D321B894DE008ABCED /* volunteerLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D3D498D521B894EA008ABCED /* awardsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awardsLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D3D498D721B894F6008ABCED /* publicationsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationsLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		D3D498D321B894DE008ABCED /* VolunteerLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		D3D498D521B894EA008ABCED /* AwardsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		D3D498D721B894F6008ABCED /* PublicationsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		D3D498D921B89506008ABCED /* InterestsLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		D3D498DB21B89513008ABCED /* ReferencesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D3D498DD21B8952D008ABCED /* EducationLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498DF21B89539008ABCED /* ExperienceLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D498E121B89545008ABCED /* VolunteerLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLayoutTableViewController.swift; sourceTree = "<group>"; };
@@ -131,11 +131,11 @@
 		D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D3D6920621BF31AA00A238FD /* LabelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelHeader.swift; sourceTree = "<group>"; };
 		D3D6920821BF43BE00A238FD /* ExperienceLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceLayoutTableViewHeader.swift; sourceTree = "<group>"; };
-		D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerLayoutTableViewHeader.swift; sourceTree = "<group>"; };
-		D3D6920C21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awardsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
-		D3D6920E21BF457100A238FD /* publicationsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicationsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
-		D3D6921021BF45D400A238FD /* interestsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = interestsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
-		D3D6921221BF463800A238FD /* referencesLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referencesLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6920A21BF445A00A238FD /* VolunteerLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6920C21BF44CA00A238FD /* AwardsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6920E21BF457100A238FD /* PublicationsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6921021BF45D400A238FD /* InterestsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D3D6921221BF463800A238FD /* ReferencesLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3E300D121A4D0980068D820 /* ResumeSchemaLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResumeSchemaLayout.storyboard; sourceTree = "<group>"; };
 		D3E6BAC821B5FA35004F3F52 /* ContactLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactLayout.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,16 +230,16 @@
 				D3D498CF21B8949E008ABCED /* EducationLayoutTableViewCell.swift */,
 				D3D6920821BF43BE00A238FD /* ExperienceLayoutTableViewHeader.swift */,
 				D3D498D121B894AE008ABCED /* ExperienceLayoutTableViewCell.swift */,
-				D3D6920A21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift */,
-				D3D498D321B894DE008ABCED /* volunteerLayoutTableViewCell.swift */,
-				D3D6920C21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift */,
-				D3D498D521B894EA008ABCED /* awardsLayoutTableViewCell.swift */,
-				D3D6920E21BF457100A238FD /* publicationsLayoutTableViewHeader.swift */,
-				D3D498D721B894F6008ABCED /* publicationsLayoutTableViewCell.swift */,
-				D3D6921021BF45D400A238FD /* interestsLayoutTableViewHeader.swift */,
-				D3D498D921B89506008ABCED /* interestsLayoutTableViewCell.swift */,
-				D3D6921221BF463800A238FD /* referencesLayoutTableViewHeader.swift */,
-				D3D498DB21B89513008ABCED /* referencesLayoutTableViewCell.swift */,
+				D3D6920A21BF445A00A238FD /* VolunteerLayoutTableViewHeader.swift */,
+				D3D498D321B894DE008ABCED /* VolunteerLayoutTableViewCell.swift */,
+				D3D6920C21BF44CA00A238FD /* AwardsLayoutTableViewHeader.swift */,
+				D3D498D521B894EA008ABCED /* AwardsLayoutTableViewCell.swift */,
+				D3D6920E21BF457100A238FD /* PublicationsLayoutTableViewHeader.swift */,
+				D3D498D721B894F6008ABCED /* PublicationsLayoutTableViewCell.swift */,
+				D3D6921021BF45D400A238FD /* InterestsLayoutTableViewHeader.swift */,
+				D3D498D921B89506008ABCED /* InterestsLayoutTableViewCell.swift */,
+				D3D6921221BF463800A238FD /* ReferencesLayoutTableViewHeader.swift */,
+				D3D498DB21B89513008ABCED /* ReferencesLayoutTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3646F3421BE429000E726D8 /* EducationLayoutTableViewHeader.swift in Sources */,
-				D3D6920F21BF457100A238FD /* publicationsLayoutTableViewHeader.swift in Sources */,
+				D3D6920F21BF457100A238FD /* PublicationsLayoutTableViewHeader.swift in Sources */,
 				D3D498BA21B88AF5008ABCED /* ContactLayoutView.swift in Sources */,
 				D3D498C021B88B38008ABCED /* SummaryLayoutViewController.swift in Sources */,
 				D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */,
@@ -375,14 +375,14 @@
 				D3D498CC21B89473008ABCED /* SkillsLayoutTableViewController.swift in Sources */,
 				D3D498BC21B88B14008ABCED /* InfoLayoutView.swift in Sources */,
 				D3B42ABC21867BC500F183B9 /* Resume.swift in Sources */,
-				D3D498D821B894F6008ABCED /* publicationsLayoutTableViewCell.swift in Sources */,
+				D3D498D821B894F6008ABCED /* PublicationsLayoutTableViewCell.swift in Sources */,
 				D3D498D021B8949E008ABCED /* EducationLayoutTableViewCell.swift in Sources */,
-				D3D6921121BF45D400A238FD /* interestsLayoutTableViewHeader.swift in Sources */,
+				D3D6921121BF45D400A238FD /* InterestsLayoutTableViewHeader.swift in Sources */,
 				D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */,
 				D3D498E821B89569008ABCED /* InterestsLayoutTableViewController.swift in Sources */,
 				D3D498E421B89551008ABCED /* AwardsLayoutTableViewController.swift in Sources */,
 				D3D498DE21B8952D008ABCED /* EducationLayoutTableViewController.swift in Sources */,
-				D3D498D621B894EA008ABCED /* awardsLayoutTableViewCell.swift in Sources */,
+				D3D498D621B894EA008ABCED /* AwardsLayoutTableViewCell.swift in Sources */,
 				D3AAD5B421BDC291004876FF /* SkillsLayoutTableViewHeader.swift in Sources */,
 				D352110B21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift in Sources */,
 				D3D498C821B89443008ABCED /* ProfilesLayoutViewController.swift in Sources */,
@@ -390,23 +390,23 @@
 				D3B28BE721A6236000029A3F /* MainTableViewCell.swift in Sources */,
 				D3D498E621B8955C008ABCED /* PublicationsLayoutTableViewController.swift in Sources */,
 				D3D498D221B894AE008ABCED /* ExperienceLayoutTableViewCell.swift in Sources */,
-				D3D498DC21B89513008ABCED /* referencesLayoutTableViewCell.swift in Sources */,
+				D3D498DC21B89513008ABCED /* ReferencesLayoutTableViewCell.swift in Sources */,
 				D32273F3218535AD0068A69D /* AppDelegate.swift in Sources */,
-				D3D498D421B894DE008ABCED /* volunteerLayoutTableViewCell.swift in Sources */,
+				D3D498D421B894DE008ABCED /* VolunteerLayoutTableViewCell.swift in Sources */,
 				D3D498CA21B89459008ABCED /* ProfilesLayoutView.swift in Sources */,
 				D353A2D921B5BCDF002D9DC9 /* UILabel+Localization.swift in Sources */,
 				D3D498BE21B88B24008ABCED /* InfoLayoutViewController.swift in Sources */,
 				D3D498CE21B89489008ABCED /* SkillsLayoutTableViewCell.swift in Sources */,
-				D3D498DA21B89506008ABCED /* interestsLayoutTableViewCell.swift in Sources */,
+				D3D498DA21B89506008ABCED /* InterestsLayoutTableViewCell.swift in Sources */,
 				D3646F3221BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift in Sources */,
-				D3D6920D21BF44CA00A238FD /* awardsLayoutTableViewHeader.swift in Sources */,
+				D3D6920D21BF44CA00A238FD /* AwardsLayoutTableViewHeader.swift in Sources */,
 				D352110D21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift in Sources */,
 				D3D498E021B89539008ABCED /* ExperienceLayoutTableViewController.swift in Sources */,
 				D3D498EA21B89576008ABCED /* ReferencesLayoutTableViewController.swift in Sources */,
 				D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */,
 				D3D498C221B88B4A008ABCED /* SummaryLayoutView.swift in Sources */,
-				D3D6921321BF463800A238FD /* referencesLayoutTableViewHeader.swift in Sources */,
-				D3D6920B21BF445A00A238FD /* volunteerLayoutTableViewHeader.swift in Sources */,
+				D3D6921321BF463800A238FD /* ReferencesLayoutTableViewHeader.swift in Sources */,
+				D3D6920B21BF445A00A238FD /* VolunteerLayoutTableViewHeader.swift in Sources */,
 				D3D498B821B88AC1008ABCED /* ContactLayoutViewController.swift in Sources */,
 				D3D498E221B89545008ABCED /* VolunteerLayoutTableViewController.swift in Sources */,
 			);

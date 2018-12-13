@@ -12,7 +12,7 @@ class InterestsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: interestsLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: InterestsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +43,7 @@ class InterestsLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "interestsLayoutTableViewCell", for: indexPath) as! publicationsLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "interestsLayoutTableViewCell", for: indexPath) as! PublicationsLayoutTableViewCell
 
         cell.textLabel?.text = basicsContent?.interests[indexPath.row].name
         cell.detailTextLabel?.text = (basicsContent?.interests[indexPath.row].keywords.joined(separator: ", "))!

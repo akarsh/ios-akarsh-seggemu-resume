@@ -1,5 +1,5 @@
 //
-//  publicationsLayoutTableViewHeader.swift
+//  PublicationsLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 11.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class publicationsLayoutTableViewHeader: UIView {
+class PublicationsLayoutTableViewHeader: UIView {
     @IBOutlet weak var labelContentPublicationsLayoutTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.

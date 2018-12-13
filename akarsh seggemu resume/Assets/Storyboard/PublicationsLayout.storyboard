@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="eEk-69-Qr7" customClass="publicationsLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="eEk-69-Qr7" customClass="PublicationsLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -31,7 +31,7 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="publicationsLayoutTableViewCell" id="baI-7I-X5S" customClass="publicationsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="publicationsLayoutTableViewCell" id="baI-7I-X5S" customClass="PublicationsLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="baI-7I-X5S" id="RyN-bs-GVv">

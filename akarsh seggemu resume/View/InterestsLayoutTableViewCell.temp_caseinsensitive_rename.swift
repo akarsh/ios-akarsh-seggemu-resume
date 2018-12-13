@@ -1,5 +1,5 @@
 //
-//  interestsLayoutTableViewCell.swift
+//  InterestsLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class interestsLayoutTableViewCell: UITableViewCell {
+class InterestsLayoutTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

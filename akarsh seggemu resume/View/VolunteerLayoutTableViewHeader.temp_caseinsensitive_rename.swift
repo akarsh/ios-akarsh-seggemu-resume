@@ -1,5 +1,5 @@
 //
-//  awardsLayoutTableViewHeader.swift
+//  VolunteerLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 11.12.18.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class awardsLayoutTableViewHeader: UIView {
-    @IBOutlet weak var labelContentAwardsLayoutTableViewHeader: UILabel!
-    
+class VolunteerLayoutTableViewHeader: UIView {
+    @IBOutlet weak var labelContentVolunteerLayoutTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

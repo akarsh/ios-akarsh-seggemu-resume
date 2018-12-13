@@ -12,7 +12,7 @@ class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: volunteerLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: VolunteerLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +43,7 @@ class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "volunteerLayoutTableViewCell", for: indexPath) as! volunteerLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "volunteerLayoutTableViewCell", for: indexPath) as! VolunteerLayoutTableViewCell
         
         cell.labelOrganisation.text = basicsContent?.volunteer[indexPath.row].organization
         cell.labelPosition.text = basicsContent?.volunteer[indexPath.row].position

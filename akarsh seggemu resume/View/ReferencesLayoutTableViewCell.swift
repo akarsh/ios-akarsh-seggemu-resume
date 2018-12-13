@@ -1,5 +1,5 @@
 //
-//  awardsLayoutTableViewCell.swift
+//  ReferencesLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class awardsLayoutTableViewCell: UITableViewCell {
-    @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var labelAwarder: UILabel!
-    @IBOutlet weak var labelDate: UILabel!
-    @IBOutlet weak var labelSummary: UILabel!
-    
+class ReferencesLayoutTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

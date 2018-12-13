@@ -1,5 +1,5 @@
 //
-//  referencesLayoutTableViewHeader.swift
+//  ReferencesLayoutTableViewHeader.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 11.12.18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class referencesLayoutTableViewHeader: UIView {
+class ReferencesLayoutTableViewHeader: UIView {
     @IBOutlet weak var labelContentReferencesLayoutTableViewHeader: UILabel!
     /*
     // Only override draw() if you perform custom drawing.

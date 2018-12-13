@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="tQi-dg-ozk" customClass="referencesLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="tQi-dg-ozk" customClass="ReferencesLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -31,7 +31,7 @@
                             </connections>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="referencesLayoutTableViewCell" textLabel="IBT-E2-Fae" detailTextLabel="Wkt-ff-ibz" style="IBUITableViewCellStyleSubtitle" id="joV-oI-La8" customClass="referencesLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="referencesLayoutTableViewCell" textLabel="IBT-E2-Fae" detailTextLabel="Wkt-ff-ibz" style="IBUITableViewCellStyleSubtitle" id="joV-oI-La8" customClass="ReferencesLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="joV-oI-La8" id="MsV-E3-cJf">

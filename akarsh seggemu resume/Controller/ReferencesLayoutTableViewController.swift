@@ -12,7 +12,7 @@ class ReferencesLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: referencesLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: ReferencesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +43,7 @@ class ReferencesLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "referencesLayoutTableViewCell", for: indexPath) as! referencesLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "referencesLayoutTableViewCell", for: indexPath) as! ReferencesLayoutTableViewCell
 
         cell.textLabel?.text = basicsContent?.references[indexPath.row].name
         cell.detailTextLabel?.text = basicsContent?.references[indexPath.row].reference

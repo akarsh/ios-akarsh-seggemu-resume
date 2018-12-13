@@ -1,5 +1,5 @@
 //
-//  volunteerLayoutTableViewCell.swift
+//  InterestsLayoutTableViewCell.swift
 //  akarsh seggemu resume
 //
 //  Created by Akarsh Seggemu on 06.12.18.
@@ -8,15 +8,8 @@
 
 import UIKit
 
-class volunteerLayoutTableViewCell: UITableViewCell {
-    @IBOutlet weak var labelOrganisation: UILabel!
-    @IBOutlet weak var labelPosition: UILabel!
-    @IBOutlet weak var labelWebsite: UILabel!
-    @IBOutlet weak var labelStartDate: UILabel!
-    @IBOutlet weak var labelEndDate: UILabel!
-    @IBOutlet weak var labelSummary: UILabel!
-    @IBOutlet weak var labelHighlights: UILabel!
-    
+class InterestsLayoutTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

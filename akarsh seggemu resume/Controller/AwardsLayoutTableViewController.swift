@@ -12,7 +12,7 @@ class AwardsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: awardsLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: AwardsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +43,7 @@ class AwardsLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "awardsLayoutTableViewCell", for: indexPath) as! awardsLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "awardsLayoutTableViewCell", for: indexPath) as! AwardsLayoutTableViewCell
         
         cell.labelTitle.text = basicsContent?.awards[indexPath.row].title
         cell.labelAwarder.text = basicsContent?.awards[indexPath.row].awarder

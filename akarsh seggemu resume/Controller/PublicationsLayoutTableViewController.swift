@@ -12,7 +12,7 @@ class PublicationsLayoutTableViewController: UITableViewController, LabelHeader 
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: publicationsLayoutTableViewHeader!
+    @IBOutlet weak var tableViewHeader: PublicationsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +43,7 @@ class PublicationsLayoutTableViewController: UITableViewController, LabelHeader 
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "publicationsLayoutTableViewCell", for: indexPath) as! publicationsLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "publicationsLayoutTableViewCell", for: indexPath) as! PublicationsLayoutTableViewCell
         
         cell.labelName.text = basicsContent?.publications[indexPath.row].name
         cell.labelPublisher.text = basicsContent?.publications[indexPath.row].publisher
