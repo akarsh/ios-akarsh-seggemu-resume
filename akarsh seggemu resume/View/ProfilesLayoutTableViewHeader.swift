@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ProfilesLayoutView: UIView {
+class ProfilesLayoutTableViewHeader: UIView {
 
-    @IBOutlet weak var labelProfilesHeader: UILabel!
-    @IBOutlet weak var labelTwitter: UILabel!
-    @IBOutlet weak var labelLinkedin: UILabel!
-    @IBOutlet weak var labelGithub: UILabel!
-    @IBOutlet weak var labelStackoverflow: UILabel!
+    @IBOutlet weak var labelProfilesLayoutTableViewHeader: UILabel!
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
