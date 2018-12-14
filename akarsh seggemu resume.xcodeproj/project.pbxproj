@@ -12,13 +12,13 @@
 		D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324D66021860B9D0089CD44 /* MainTableViewController.swift */; };
 		D34B24FC21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B24FB21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift */; };
 		D34B24FE21C3CF8700171E46 /* ProfilesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B24FD21C3CF8700171E46 /* ProfilesLayoutTableViewController.swift */; };
+		D34B250021C3E60D00171E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D34B24FF21C3E60D00171E46 /* LaunchScreen.storyboard */; };
 		D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */; };
 		D352110B21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */; };
 		D352110D21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110C21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift */; };
 		D353A2D921B5BCDF002D9DC9 /* UILabel+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */; };
 		D353A2DC21B5BE89002D9DC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D353A2DE21B5BE89002D9DC9 /* Localizable.strings */; };
 		D353A2E221B5BFAF002D9DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353A2E021B5BFAF002D9DC9 /* Main.storyboard */; };
-		D353A2E321B5BFAF002D9DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353A2E121B5BFAF002D9DC9 /* LaunchScreen.storyboard */; };
 		D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359DC7821AB74B4008011EE /* ResumeSchemaTableViewCell.swift */; };
 		D359DC7B21AB7593008011EE /* ResumeSchemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */; };
 		D3646F3221BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3646F3121BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift */; };
@@ -81,6 +81,7 @@
 		D324D66221860C880089CD44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D34B24FB21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesLayoutTableViewCell.swift; sourceTree = "<group>"; };
 		D34B24FD21C3CF8700171E46 /* ProfilesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesLayoutTableViewController.swift; sourceTree = "<group>"; };
+		D34B24FF21C3E60D00171E46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResumeSchemaTableViewHeader.swift; path = "akarsh seggemu resume/View/ResumeSchemaTableViewHeader.swift"; sourceTree = SOURCE_ROOT; };
 		D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D352110C21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		D353A2DD21B5BE89002D9DC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D353A2DF21B5BE94002D9DC9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D353A2E021B5BFAF002D9DC9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D353A2E121B5BFAF002D9DC9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D359DC7821AB74B4008011EE /* ResumeSchemaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeSchemaTableViewCell.swift; sourceTree = "<group>"; };
 		D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeSchemaTableViewController.swift; sourceTree = "<group>"; };
 		D3646F3121BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewHeader.swift; sourceTree = "<group>"; };
@@ -261,7 +261,7 @@
 		D3B42AB421866A1900F183B9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				D353A2E121B5BFAF002D9DC9 /* LaunchScreen.storyboard */,
+				D34B24FF21C3E60D00171E46 /* LaunchScreen.storyboard */,
 				D353A2E021B5BFAF002D9DC9 /* Main.storyboard */,
 				D3E300D121A4D0980068D820 /* ResumeSchemaLayout.storyboard */,
 				D3E6BAC821B5FA35004F3F52 /* ContactLayout.storyboard */,
@@ -352,10 +352,10 @@
 				D3D498B021B88185008ABCED /* AwardsLayout.storyboard in Resources */,
 				D39483EE21BA72510074430E /* ProfilesLayout.storyboard in Resources */,
 				D3D498AE21B8817B008ABCED /* VolunteerLayout.storyboard in Resources */,
+				D34B250021C3E60D00171E46 /* LaunchScreen.storyboard in Resources */,
 				D3D498B621B881A4008ABCED /* ReferencesLayout.storyboard in Resources */,
 				D3E300D221A4D0980068D820 /* ResumeSchemaLayout.storyboard in Resources */,
 				D32273FA218535AE0068A69D /* Assets.xcassets in Resources */,
-				D353A2E321B5BFAF002D9DC9 /* LaunchScreen.storyboard in Resources */,
 				D353A2E221B5BFAF002D9DC9 /* Main.storyboard in Resources */,
 				D3D498B221B88190008ABCED /* PublicationsLayout.storyboard in Resources */,
 			);
