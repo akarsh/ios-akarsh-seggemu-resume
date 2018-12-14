@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Uir-SD-jlv" customClass="ProfilesLayoutTableViewHeader" customModule="akarsh_seggemu_resume" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBw-6P-w1e">
-                                    <rect key="frame" x="8" y="0.0" width="304" height="36"/>
+                                    <rect key="frame" x="8" y="12" width="304" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                     <nil key="textColor"/>
@@ -36,7 +36,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ProfilesLayoutTableViewCell" rowHeight="70" id="hLl-W2-zXp" customClass="ProfilesLayoutTableViewCell" customModule="akarsh_seggemu_resume" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hLl-W2-zXp" id="ULX-ta-EPs">
                                     <rect key="frame" x="0.0" y="0.0" width="286" height="69.5"/>

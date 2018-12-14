@@ -95,6 +95,8 @@ class ResumeSchemaTableViewController: UITableViewController {
                 self.basicsStorage = basicsStorage }
         } else if chosenLanguage! == "de" {
             self.resumeFileName = "deutschResume.json"
+            self.readData{ basicsStorage in
+                self.basicsStorage = basicsStorage }
         } else {
             return
         }
@@ -118,7 +120,6 @@ class ResumeSchemaTableViewController: UITableViewController {
                 // Read file content
                 let contentFromFile = try String(contentsOfFile: self.filePath, encoding: String.Encoding.utf8)
                 let jsonDataParsed = contentFromFile.data(using: .utf8)!
-//                print(contentFromFile)
                 let jsonDecoder = JSONDecoder()
                 do {
                     let basicsStorage = try jsonDecoder.decode(Resume.self, from: jsonDataParsed)

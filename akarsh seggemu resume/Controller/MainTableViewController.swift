@@ -14,6 +14,7 @@ class MainTableViewController: UITableViewController {
     let languageCode = ["en", "de"]
     
     let englishResumeFile = "englishResume.json"
+    let germanResumeFile = "deutschResume.json"
     var filePath = ""
     
     override func viewDidLoad() {
@@ -43,6 +44,7 @@ class MainTableViewController: UITableViewController {
         
         // calling fetchData to download the englishResume.json
         self.fetchData()
+        self.fetchDataForDeutsch()
     }
     
     // MARK: - Navigation
@@ -102,7 +104,9 @@ class MainTableViewController: UITableViewController {
                 // adding the filename to the documents directory as file path
                 self.filePath = dir.appendingFormat("/" + self.englishResumeFile)
                 // delete the file if it exists
-                try FileManager.default.removeItem(atPath: self.filePath)
+                if FileManager.default.fileExists(atPath: self.filePath) {
+                    try FileManager.default.removeItem(atPath: self.filePath)
+                }
             } else {
                 print("Could not find local directory to store file")
                 return
@@ -113,6 +117,62 @@ class MainTableViewController: UITableViewController {
         
         // url to the resume JSON file
         let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified/master/resume.json"
+        if let urlString = URL(string: url) {
+            let sessionConfig = URLSession(configuration: .default)
+            let request = URLRequest(url: urlString)
+            // download task to download the resume JSON file
+            let dataTask = sessionConfig.downloadTask(with: request) { data, response, error in
+                if let tempLocalUrl = data, error == nil {
+                    // if success print the status code of 200
+                    if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                        print("Successfully downloaded. Status code: \(statusCode)")
+                    }
+                    
+                    do {
+                        // copying the file to the destination file path
+                        try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
+                        print("File created at \(destinationFileUrl)")
+                    } catch let writeError {
+                        print("Error creating a file \(destinationFileUrl) : \(writeError)")
+                    }
+                    
+                } else {
+                    print("Error took place while downloading a file. Error description: %@ \(String(describing: error?.localizedDescription))")
+                }
+            }
+            dataTask.resume()
+        }
+    }
+    
+    func fetchDataForDeutsch() {
+        // Create destination URL
+        let documentsUrl: URL = getDocumentsDirectory()
+        // Get the file path in documents directory
+        let destinationFileUrl = documentsUrl.appendingPathComponent(self.germanResumeFile)
+        
+        // Find documents directory on device
+        let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+        
+        do {
+            if dirs.count > 0 {
+                // documents directory
+                let dir = dirs[0]
+                // adding the filename to the documents directory as file path
+                self.filePath = dir.appendingFormat("/" + self.germanResumeFile)
+                // delete the file if it exists
+                if FileManager.default.fileExists(atPath: self.filePath) {
+                    try FileManager.default.removeItem(atPath: self.filePath)
+                }
+            } else {
+                print("Could not find local directory to store file")
+                return
+            }
+        } catch let error as NSError {
+            print("An error took place: \(error.localizedDescription)")
+        }
+        
+        // url to the resume JSON file
+        let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified-DE/master/resume.json"
         if let urlString = URL(string: url) {
             let sessionConfig = URLSession(configuration: .default)
             let request = URLRequest(url: urlString)
