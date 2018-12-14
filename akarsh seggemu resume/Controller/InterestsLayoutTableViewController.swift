@@ -43,7 +43,7 @@ class InterestsLayoutTableViewController: UITableViewController, LabelHeader {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "interestsLayoutTableViewCell", for: indexPath) as! PublicationsLayoutTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "interestsLayoutTableViewCell", for: indexPath) as! InterestsLayoutTableViewCell
 
         cell.textLabel?.text = basicsContent?.interests[indexPath.row].name
         cell.detailTextLabel?.text = (basicsContent?.interests[indexPath.row].keywords.joined(separator: ", "))!
