@@ -52,16 +52,18 @@ class ExperienceLayoutTableViewController: UITableViewController, LabelHeader {
         cell.labelStartDate.text = basicsContent?.work[indexPath.row].startDate
         cell.labelEndDate.text = basicsContent?.work[indexPath.row].endDate
         
-        // adding attributes to the attributed text
-        var attributes = [NSAttributedString.Key: Any]()
-        // setting the head indent for the paragraph style
-        let paragraphStyle = NSMutableParagraphStyle()
-        // "unicode character plus space" as string
-        paragraphStyle.headIndent = ("\u{2022} " as NSString).size(withAttributes: attributes).width
-        attributes[.paragraphStyle] = paragraphStyle
-        // "a bullet point is added to the string" as string
-        // array of strings are joined with the separator two newline spaces followed by bullet point
-        cell.labelHighlights.attributedText = NSAttributedString(string: "\u{2022} \((basicsContent?.work[indexPath.row].highlights.joined(separator: "\n\n\u{2022} "))!)", attributes: attributes)
+        if (basicsContent?.work[indexPath.row].highlights.count)! != 0 {
+            // adding attributes to the attributed text
+            var attributes = [NSAttributedString.Key: Any]()
+            // setting the head indent for the paragraph style
+            let paragraphStyle = NSMutableParagraphStyle()
+            // "unicode character plus space" as string
+            paragraphStyle.headIndent = ("\u{2022} " as NSString).size(withAttributes: attributes).width
+            attributes[.paragraphStyle] = paragraphStyle
+            // "a bullet point is added to the string" as string
+            // array of strings are joined with the separator two newline spaces followed by bullet point
+            cell.labelHighlights.attributedText = NSAttributedString(string: "\u{2022} \((basicsContent?.work[indexPath.row].highlights.joined(separator: "\n\n\u{2022} "))!)", attributes: attributes)
+        }
 
         return cell
     }
