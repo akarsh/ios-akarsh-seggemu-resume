@@ -22,6 +22,9 @@ class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
+        // FooterView is added so the UIKit does not create empty rows
+        tableView.tableFooterView = UIView(frame: .zero)
+        
         self.setVolunteerLayoutTableViewHeader()
     }
     
