@@ -1,3 +1,5 @@
+![Resume application project app icon](https://raw.githubusercontent.com/akarsh/akarsh-seggemu-resume/master/akarsh%20seggemu%20resume/Assets/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png)
+
 # Resume application project
 
 This project is developed to show the resume in iOS.
