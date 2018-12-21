@@ -54,6 +54,8 @@ class ResumeSchemaTableViewController: UITableViewController {
     var filePath = ""
     var resumeFileName = ""
     
+    let imageFileName = "standard_profile.jpg"
+    
     @IBOutlet weak var tableViewHeader: ResumeSchemaTableViewHeader!
     
     override func viewDidLoad() {
@@ -71,6 +73,9 @@ class ResumeSchemaTableViewController: UITableViewController {
         // Adding separator Inset
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0)
         
+        //set the table veiw header
+        setTableViewHeader()
+        
         // set the resume file to chosen language
         self.setResumeFileToChosenLanguage()
         
@@ -87,23 +92,37 @@ class ResumeSchemaTableViewController: UITableViewController {
         return dict.value(forKey: key) as? String
     }
     
+    func setTableViewHeader() {
+        // set the table view header
+        if labelContentResumeSchemaTableViewHeader != nil {
+            tableViewHeader?.labelResumeSchemaTableViewHeader?.text = labelContentResumeSchemaTableViewHeader!
+        }
+    }
+    
     // set the resume file name according to the chosen language
     func setResumeFileToChosenLanguage() {
         if chosenLanguage! == "en" {
             self.resumeFileName = "englishResume.json"
             self.readData{ basicsStorage in
-                self.basicsStorage = basicsStorage }
+                self.basicsStorage = basicsStorage
+                self.downloadImageFromURL()
+            }
         } else if chosenLanguage! == "de" {
             self.resumeFileName = "deutschResume.json"
             self.readData{ basicsStorage in
-                self.basicsStorage = basicsStorage }
+                self.basicsStorage = basicsStorage
+                self.downloadImageFromURL()
+            }
         } else {
             return
         }
-        // set the table view header
-        if labelContentResumeSchemaTableViewHeader != nil {
-            tableViewHeader?.labelResumeSchemaTableViewHeader?.text = labelContentResumeSchemaTableViewHeader!
-        }
+    }
+    
+    // return documents directory as output
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
     }
     
     // read the JSON data file
@@ -132,6 +151,57 @@ class ResumeSchemaTableViewController: UITableViewController {
         }
         catch let error as NSError {
             print("An error took place: \(error)")
+        }
+    }
+    
+    func downloadImageFromURL() {
+        if basicsStorage?.basics.picture != nil {
+            // Create destination URL
+            let documentsUrl: URL = getDocumentsDirectory()
+            // Get the file path in documents directory
+            let destinationFileUrl = documentsUrl.appendingPathComponent(self.imageFileName)
+            // get the documents directory url
+            let dirs: [String] = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
+            if dirs.count > 0 {
+                // documents directory
+                let dir = dirs[0]
+                // adding the filename to the documents directory as file path
+                self.filePath = dir.appendingFormat("/" + self.imageFileName)
+                // check if the file does not exists
+                if !FileManager.default.fileExists(atPath: filePath) {
+                    // url to the resume JSON file
+                    guard let url = basicsStorage?.basics.picture else { return }
+                    if let urlString = URL(string: url) {
+                        let sessionConfig = URLSession(configuration: .default)
+                        let request = URLRequest(url: urlString)
+                        // download task to download the resume JSON file
+                        let dataTask = sessionConfig.downloadTask(with: request) { data, response, error in
+                            if let tempLocalUrl = data, error == nil {
+                                // if success print the status code of 200
+                                if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                                    print("Successfully downloaded. Status code: \(statusCode)")
+                                }
+                                
+                                do {
+                                    // copying the file to the destination file path
+                                    try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
+                                    print("File created at \(destinationFileUrl)")
+                                } catch let writeError {
+                                    print("Error creating a file \(destinationFileUrl) : \(writeError)")
+                                }
+                                
+                            } else {
+                                print("Error took place while downloading a file. Error description: %@ \(String(describing: error?.localizedDescription))")
+                            }
+                        }
+                        dataTask.resume()
+                    }
+                }
+            }  else {
+                print("Could not find local directory to store file")
+                return
+            }
+            
         }
     }
 }

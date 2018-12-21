@@ -12,6 +12,11 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
+    // file path
+    var filePath = ""
+    
+    let imageFileName = "standard_profile.jpg"
+    
     @IBOutlet var viewHeader: ContactLayoutView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +32,9 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
             viewHeader.labelContactLayoutHeader.text = labelContentHeader!
         }
         if basicsContent?.basics != nil {
-            
-            // The picture value is a string which is a file path
-            //            viewHeader.imageViewProfilePicture.image = basicsContent?.basics.picture
+            if basicsContent?.basics.picture != nil {
+                self.setImageViewToImageFile()
+            }
             
             viewHeader.labelName.text = basicsContent?.basics.name
             viewHeader.labelTitle.text = basicsContent?.basics.label
@@ -41,6 +46,23 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
             viewHeader.labelCity.text = basicsContent?.basics.location.city
             viewHeader.labelCountryCode.text = basicsContent?.basics.location.countryCode
             viewHeader.labelRegion.text = basicsContent?.basics.location.region
+        }
+    }
+    
+    // read the picture data file
+    func setImageViewToImageFile() {
+        // Find documents directory on device
+        let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
+        if dirs.count > 0 {
+            // documents directory
+            let dir = dirs[0]
+            // adding the filename to the documents directory as file path
+            self.filePath = dir.appendingFormat("/" + self.imageFileName)
+            // set the file to imageView
+            self.viewHeader.imageViewProfilePicture.image = UIImage(contentsOfFile: filePath)
+        } else {
+            print("Could not find local directory to store file")
+            return
         }
     }
 

@@ -116,7 +116,7 @@ class MainTableViewController: UITableViewController {
         }
         
         // url to the resume JSON file
-        let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified/master/resume.json"
+        let url = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/en/resume.json"
         if let urlString = URL(string: url) {
             let sessionConfig = URLSession(configuration: .default)
             let request = URLRequest(url: urlString)
@@ -172,7 +172,7 @@ class MainTableViewController: UITableViewController {
         }
         
         // url to the resume JSON file
-        let url = "https://raw.githubusercontent.com/akarsh/jsonresume-theme-onepage-simplified-DE/master/resume.json"
+        let url = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/de/resume.json"
         if let urlString = URL(string: url) {
             let sessionConfig = URLSession(configuration: .default)
             let request = URLRequest(url: urlString)
