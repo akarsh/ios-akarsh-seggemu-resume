@@ -231,9 +231,19 @@ extension ResumeSchemaTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vcName = identitiesOfStoryboards[indexPath.row]
         
-        var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
-        viewController.labelContentHeader = data[indexPath.row]
-        viewController.basicsContent = basicsStorage
+        if vcName == "InfoLayout" {
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! InfoLayoutViewController
+            viewController.labelContentHeader = data[indexPath.row]
+            viewController.basicsContent = basicsStorage
+            viewController.chosenLanguage = chosenLanguage
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        } else {
+            var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
+            viewController.labelContentHeader = data[indexPath.row]
+            viewController.basicsContent = basicsStorage
+            self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
+        }
 
 //        if vcName == "contactLayout" {
 ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
@@ -262,9 +272,6 @@ extension ResumeSchemaTableViewController {
 //        } else if vcName == "referencesLayout" {
 ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
 //        }
-
-
-        self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
     }
 }
 

@@ -23,3 +23,8 @@
 
 // MARK: - ContactLayout
 
+// MARK: - InfoLayout
+"nationality" = "Nationalität";
+"workPermit" = "Arbeitserlaubnis";
+"dateOfBirth" = "Geburtsdatum";
+"placeOfBirth" = "Geburtsort";

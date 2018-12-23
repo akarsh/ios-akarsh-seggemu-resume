@@ -12,9 +12,13 @@ class InfoLayoutView: UIView {
 
     @IBOutlet weak var labelInfoLayoutHeader: UILabel!
     @IBOutlet weak var labelNationality: UILabel!
-    @IBOutlet weak var labelArbeitserlaubnis: UILabel!
-    @IBOutlet weak var labelGeburtsdatum: UILabel!
-    @IBOutlet weak var labelGeburtsort: UILabel!
+    @IBOutlet weak var labelNationalityContent: UILabel!
+    @IBOutlet weak var labelWorkPermit: UILabel!
+    @IBOutlet weak var labelWorkPermitContent: UILabel!
+    @IBOutlet weak var labelDateOfBirth: UILabel!
+    @IBOutlet weak var labelDateOfBirthContent: UILabel!
+    @IBOutlet weak var labelPlaceOfBirth: UILabel!
+    @IBOutlet weak var labelPlaceOfBirthContent: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

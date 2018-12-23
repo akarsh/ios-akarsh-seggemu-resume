@@ -18,6 +18,7 @@ struct basics: Codable {
     var summary: String
     var location: location
     var profiles: [profiles]
+    var info: info
 }
 
 struct location: Codable {
@@ -32,6 +33,13 @@ struct profiles: Codable {
     var network: String
     var username: String
     var url: String
+}
+
+struct info: Codable {
+    var nationality: String
+    var workPermit: String
+    var dateOfBirth: String
+    var placeOfBirth: String
 }
 
 struct work: Codable {

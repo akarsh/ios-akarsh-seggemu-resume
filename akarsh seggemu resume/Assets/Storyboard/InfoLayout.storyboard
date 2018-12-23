@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNB-NR-c6Z">
-                                <rect key="frame" x="16" y="35" width="125" height="36"/>
+                                <rect key="frame" x="16" y="35" width="102" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nationality" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imf-ze-vgd">
-                                <rect key="frame" x="16" y="99" width="125" height="21"/>
+                                <rect key="frame" x="16" y="99" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,12 +35,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="e2N-nG-Ex3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arbeitserlaubnis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-My-BdP">
-                                <rect key="frame" x="16" y="186" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work permit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-My-BdP">
+                                <rect key="frame" x="16" y="186" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,12 +50,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="b6A-q8-Fj7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geburtsdatum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiR-UY-sYZ">
-                                <rect key="frame" x="16" y="269" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiR-UY-sYZ">
+                                <rect key="frame" x="16" y="269" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,12 +65,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="jY5-r5-wil"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geburtsort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwI-Nj-LKW">
-                                <rect key="frame" x="16" y="362" width="125" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwI-Nj-LKW">
+                                <rect key="frame" x="16" y="362" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="v0V-kw-cVK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -116,11 +116,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KW4-Jr-7Cg"/>
                         <connections>
-                            <outlet property="labelArbeitserlaubnis" destination="JEE-sX-kcW" id="xXJ-Zu-QqM"/>
-                            <outlet property="labelGeburtsdatum" destination="jUK-me-l43" id="cAB-VF-glm"/>
-                            <outlet property="labelGeburtsort" destination="HXS-Oi-aaG" id="awb-2u-2s5"/>
+                            <outlet property="labelDateOfBirth" destination="oiR-UY-sYZ" id="6Yd-XL-Zvz"/>
+                            <outlet property="labelDateOfBirthContent" destination="jUK-me-l43" id="cAB-VF-glm"/>
                             <outlet property="labelInfoLayoutHeader" destination="DNB-NR-c6Z" id="SyV-Vw-Qvv"/>
-                            <outlet property="labelNationality" destination="edv-gO-3mX" id="8bc-5V-Oy4"/>
+                            <outlet property="labelNationality" destination="Imf-ze-vgd" id="MAy-IY-AH0"/>
+                            <outlet property="labelNationalityContent" destination="edv-gO-3mX" id="8bc-5V-Oy4"/>
+                            <outlet property="labelPlaceOfBirth" destination="nwI-Nj-LKW" id="FLj-r2-Rbo"/>
+                            <outlet property="labelPlaceOfBirthContent" destination="HXS-Oi-aaG" id="awb-2u-2s5"/>
+                            <outlet property="labelWorkPermit" destination="wL1-My-BdP" id="G9H-hs-Qzx"/>
+                            <outlet property="labelWorkPermitContent" destination="JEE-sX-kcW" id="xXJ-Zu-QqM"/>
                         </connections>
                     </view>
                     <connections>

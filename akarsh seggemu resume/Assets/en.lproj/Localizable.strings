@@ -23,3 +23,8 @@
 
 // MARK: - ContactLayout
 
+// MARK: - InfoLayout
+"nationality" = "Nationality";
+"workPermit" = "Work permit";
+"dateOfBirth" = "Date of birth";
+"placeOfBirth" = "Place of birth";
