@@ -70,6 +70,9 @@ class ProfilesLayoutTableViewController: UITableViewController, LabelHeader {
         } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "duolingo" {
             cell.imageViewNetwork.image = UIImage(named: "duo")
             cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
+        } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "xing" {
+            cell.imageViewNetwork.image = UIImage(named: "XNG")
+            cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
         }
 
         return cell
