@@ -2,6 +2,8 @@
 
 # Resume application project
 
+[![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
+
 This project is developed to show the resume in iOS.
 The resume is maintained in a JSON format following resume JSON structure.
 
