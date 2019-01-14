@@ -9,7 +9,9 @@
 import UIKit
 
 class ResumeSchemaTableViewCell: UITableViewCell {
-    @IBOutlet var emojiSymbolLabelOfSchemaKeys: UILabel!
+
+    
+    @IBOutlet weak var imageOfSchemaKeys: UIImageView!
     @IBOutlet var contentLabelOfSchemaKeys: UILabel!
     
     override func awakeFromNib() {

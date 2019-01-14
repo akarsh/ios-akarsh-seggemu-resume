@@ -9,7 +9,7 @@
 import UIKit
 
 class MainTableViewCell: UITableViewCell {
-    @IBOutlet var emojiLabelOfLanguage: UILabel!
+    @IBOutlet weak var imageOfLanguage: UIImageView!
     @IBOutlet var nameLabelOfLanguage: UILabel!
     var languageCode: String!
     

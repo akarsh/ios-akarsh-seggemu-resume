@@ -10,7 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     let resumeNameArrays = ["English resume", "Deutsch Lebenslauf"]
-    let emojiOfLanaguageArrays = ["🇬🇧", "🇩🇪"]
+    let imageOfLanaguageArrays = ["flagUnitedKingdom.png", "flagGermany.png"]
     let languageCode = ["en", "de"]
     
     let englishResumeFile = "englishResume.json"
@@ -140,7 +140,7 @@ extension MainTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as! MainTableViewCell
         
-        cell.emojiLabelOfLanguage.text = emojiOfLanaguageArrays[indexPath.row]
+        cell.imageOfLanguage.image = UIImage(named: imageOfLanaguageArrays[indexPath.row])
         cell.nameLabelOfLanguage.text = resumeNameArrays[indexPath.row]
         cell.languageCode = languageCode[indexPath.row]
         return cell

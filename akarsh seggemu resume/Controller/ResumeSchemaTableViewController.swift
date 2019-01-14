@@ -32,7 +32,21 @@ class ResumeSchemaTableViewController: UITableViewController {
         ]
     }()
     
-    let emojiOfSchemaKeys = ["📇", "ℹ️", "💬", "👤", "🛠", "🌐", "🎓", "⏳", "🏵", "🏆", "📚", "❤️", "📝"]
+    let imageOfSchemaKeys = [
+        "cardIndex.png",
+        "informationSource.png",
+        "speechBalloon.png",
+        "bustInSilhouette.png",
+        "hammerAndWrench.png",
+        "globeWithMeridians.png",
+        "graduationCap.png",
+        "hourglassWithFlowingSand.png",
+        "rosette.png",
+        "trophy.png",
+        "books.png",
+        "heavyBlackHeart.png",
+        "memo.png"
+    ]
     
     let identitiesOfStoryboards = [
         "ContactLayout",
@@ -216,14 +230,14 @@ extension ResumeSchemaTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.emojiOfSchemaKeys.count
+        return self.imageOfSchemaKeys.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resumeSchemaTableCell", for: indexPath) as! ResumeSchemaTableViewCell
         
+        cell.imageOfSchemaKeys.image = UIImage(named: imageOfSchemaKeys[indexPath.row])
         cell.contentLabelOfSchemaKeys.text = data[indexPath.row]
-        cell.emojiSymbolLabelOfSchemaKeys.text = emojiOfSchemaKeys[indexPath.row]
         
         return cell
     }
