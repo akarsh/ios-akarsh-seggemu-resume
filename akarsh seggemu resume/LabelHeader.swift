@@ -9,6 +9,8 @@
 import UIKit
 
 protocol LabelHeader where Self: UIViewController {
+    //    setting the labels of the resume schema
     var labelContentHeader: String? { get set }
+    //    parsed resume data is stored in basicsContent
     var basicsContent: Resume? { get set }
 }

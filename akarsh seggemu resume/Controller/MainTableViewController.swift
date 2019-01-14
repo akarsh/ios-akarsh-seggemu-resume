@@ -9,26 +9,24 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
+    //    Array of resume language names
     let resumeNameArrays = ["English resume", "Deutsch Lebenslauf"]
+    //    Array of language image flags
     let imageOfLanaguageArrays = ["flagUnitedKingdom.png", "flagGermany.png"]
     let languageCode = ["en", "de"]
     
+    //    Filenames for the resume JSON files
     let englishResumeFile = "englishResume.json"
     let germanResumeFile = "deutschResume.json"
+    //    empty file path declaration
     var filePath = ""
     
+    //    URLs for the resume JSON files located in GitHub
     let englishResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/en/resume.json"
     let germanResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/de/resume.json"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
@@ -49,7 +47,7 @@ class MainTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mainCell = sender as? MainTableViewCell,
             let target = segue.destination as? ResumeSchemaTableViewController else {
-            return
+                return
         }
         
         target.chosenLanguage = mainCell.languageCode

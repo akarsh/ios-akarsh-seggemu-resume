@@ -16,7 +16,6 @@
 		D352110921BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */; };
 		D352110B21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */; };
 		D352110D21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D352110C21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift */; };
-		D353A2D921B5BCDF002D9DC9 /* UILabel+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */; };
 		D353A2DC21B5BE89002D9DC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D353A2DE21B5BE89002D9DC9 /* Localizable.strings */; };
 		D353A2E221B5BFAF002D9DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353A2E021B5BFAF002D9DC9 /* Main.storyboard */; };
 		D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359DC7821AB74B4008011EE /* ResumeSchemaTableViewCell.swift */; };
@@ -85,7 +84,6 @@
 		D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResumeSchemaTableViewHeader.swift; path = "akarsh seggemu resume/View/ResumeSchemaTableViewHeader.swift"; sourceTree = SOURCE_ROOT; };
 		D352110A21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewController.swift; sourceTree = "<group>"; };
 		D352110C21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewCell.swift; sourceTree = "<group>"; };
-		D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Localization.swift"; sourceTree = "<group>"; };
 		D353A2DD21B5BE89002D9DC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D353A2DF21B5BE94002D9DC9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D353A2E021B5BFAF002D9DC9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				D32273F2218535AD0068A69D /* AppDelegate.swift */,
-				D353A2D821B5BCDF002D9DC9 /* UILabel+Localization.swift */,
 				D3D6920621BF31AA00A238FD /* LabelHeader.swift */,
 				D35AA9D421A4D72D009F8BC8 /* Assets */,
 				D32274072185360A0068A69D /* Controller */,
@@ -397,7 +394,6 @@
 				D3D498D421B894DE008ABCED /* VolunteerLayoutTableViewCell.swift in Sources */,
 				D34B24FE21C3CF8700171E46 /* ProfilesLayoutTableViewController.swift in Sources */,
 				D3D498CA21B89459008ABCED /* ProfilesLayoutTableViewHeader.swift in Sources */,
-				D353A2D921B5BCDF002D9DC9 /* UILabel+Localization.swift in Sources */,
 				D3D498BE21B88B24008ABCED /* InfoLayoutViewController.swift in Sources */,
 				D3D498CE21B89489008ABCED /* SkillsLayoutTableViewCell.swift in Sources */,
 				D3D498DA21B89506008ABCED /* InterestsLayoutTableViewCell.swift in Sources */,

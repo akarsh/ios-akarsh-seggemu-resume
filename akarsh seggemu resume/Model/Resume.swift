@@ -52,7 +52,7 @@ struct work: Codable {
     var highlights: [String]
 }
 
- struct volunteer: Codable {
+struct volunteer: Codable {
     var organization: String
     var position: String
     var website: String
@@ -60,7 +60,7 @@ struct work: Codable {
     var endDate: String
     var summary: String
     var highlights: [String]
- }
+}
 
 struct education: Codable {
     var institution: String

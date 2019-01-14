@@ -1,12 +1,12 @@
 /* 
-  Localizable.strings
-  akarsh seggemu resume
+ Localizable.strings
+ akarsh seggemu resume
+ 
+ Created by Akarsh Seggemu on 03/12/2018.
+ Copyright © 2018 Akarsh Seggemu. All rights reserved.
+ */
 
-  Created by Akarsh Seggemu on 03/12/2018.
-  Copyright © 2018 Akarsh Seggemu. All rights reserved.
-*/
-
-// MARK: ResumeSchemaLayout
+    // MARK: ResumeSchemaLayout
 "contact" = "Kontakt";
 "info" = "Info";
 "summary" = "Zusammenfassung";
@@ -21,9 +21,9 @@
 "interests" = "Interessen";
 "references" = "Referenzen";
 
-// MARK: - ContactLayout
+    // MARK: - ContactLayout
 
-// MARK: - InfoLayout
+    // MARK: - InfoLayout
 "nationality" = "Nationalität";
 "workPermit" = "Arbeitserlaubnis";
 "dateOfBirth" = "Geburtsdatum";
