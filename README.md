@@ -12,7 +12,7 @@ The resume is maintained in a JSON format following resume JSON structure.
 - [Requirements](#requirements)
 - [Credits](#credits)
 
-<img align="left" height="480" src="Images/demoOfiOSapp.gif" alt="demo of ios resume application project">
+<img height="480" src="Images/demoOfiOSapp.gif" alt="demo of ios resume application project">
 
 ## Features
 
