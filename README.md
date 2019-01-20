@@ -1,6 +1,6 @@
-<img align="left" width="80" height="80" src="https://raw.githubusercontent.com/akarsh/akarsh-seggemu-resume/master/akarsh%20seggemu%20resume/Assets/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png" alt="Resume application project app icon">
+<img align="left" width="80" height="80" src="https://raw.githubusercontent.com/akarsh/akarsh-seggemu-resume/master/akarsh%20seggemu%20resume/Assets/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60%403x.png" alt="iOS resume application project app icon">
 
-# Resume application project
+# iOS - Resume application project
 
 [![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-10.0-blue.svg)](https://developer.apple.com/xcode)
@@ -11,6 +11,8 @@ The resume is maintained in a JSON format following resume JSON structure.
 - [Features](#features)
 - [Requirements](#requirements)
 - [Credits](#credits)
+
+<img align="left" height="480" src="Images/demoOfiOSapp.gif" alt="demo of ios resume application project">
 
 ## Features
 
