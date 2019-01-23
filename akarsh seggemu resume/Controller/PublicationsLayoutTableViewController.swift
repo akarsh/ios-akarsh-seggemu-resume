@@ -40,8 +40,9 @@ class PublicationsLayoutTableViewController: UITableViewController, LabelHeader 
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "publicationsLayoutTableViewCell", for: indexPath) as! PublicationsLayoutTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "publicationsLayoutTableViewCell", for: indexPath) as? PublicationsLayoutTableViewCell  else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         cell.labelName.text = basicsContent?.publications[indexPath.row].name
         cell.labelPublisher.text = basicsContent?.publications[indexPath.row].publisher
         cell.labelReleaseDate.text = basicsContent?.publications[indexPath.row].releaseDate

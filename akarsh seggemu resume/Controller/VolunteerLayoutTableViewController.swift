@@ -40,8 +40,9 @@ class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "volunteerLayoutTableViewCell", for: indexPath) as! VolunteerLayoutTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "volunteerLayoutTableViewCell", for: indexPath) as? VolunteerLayoutTableViewCell  else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         cell.labelOrganisation.text = basicsContent?.volunteer[indexPath.row].organization
         cell.labelPosition.text = basicsContent?.volunteer[indexPath.row].position
         cell.labelWebsite.text = basicsContent?.volunteer[indexPath.row].website

@@ -45,8 +45,9 @@ class SkillsLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "skillsLayoutTableViewCell", for: indexPath) as! SkillsLayoutTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "skillsLayoutTableViewCell", for: indexPath) as? SkillsLayoutTableViewCell  else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         cell.textLabel?.text = basicsContent?.skills[indexPath.row].name
         cell.detailTextLabel?.text = (basicsContent?.skills[indexPath.row].keywords.joined(separator: ", "))!
         return cell

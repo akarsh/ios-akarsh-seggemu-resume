@@ -41,8 +41,9 @@ class ExperienceLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "experienceLayoutTableViewCell", for: indexPath) as! ExperienceLayoutTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "experienceLayoutTableViewCell", for: indexPath) as? ExperienceLayoutTableViewCell  else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         cell.labelCompany.text = basicsContent?.work[indexPath.row].company
         cell.labelPosition.text = basicsContent?.work[indexPath.row].position
         cell.labelWebsite.text = basicsContent?.work[indexPath.row].website

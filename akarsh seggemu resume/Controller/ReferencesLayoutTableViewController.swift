@@ -40,8 +40,9 @@ class ReferencesLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "referencesLayoutTableViewCell", for: indexPath) as! ReferencesLayoutTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "referencesLayoutTableViewCell", for: indexPath) as? ReferencesLayoutTableViewCell  else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         cell.textLabel?.text = basicsContent?.references[indexPath.row].name
         cell.detailTextLabel?.text = basicsContent?.references[indexPath.row].reference
         

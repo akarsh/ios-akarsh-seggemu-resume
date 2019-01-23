@@ -243,7 +243,9 @@ extension ResumeSchemaTableViewController {
         let vcName = identitiesOfStoryboards[indexPath.row]
         
         if vcName == "InfoLayout" {
-            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! InfoLayoutViewController
+            guard let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as? InfoLayoutViewController  else {
+                fatalError("DequeueReusableCell failed while casting")
+            }
             viewController.labelContentHeader = data[indexPath.row]
             viewController.basicsContent = basicsStorage
             viewController.chosenLanguage = chosenLanguage

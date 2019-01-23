@@ -40,8 +40,9 @@ class AwardsLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "awardsLayoutTableViewCell", for: indexPath) as! AwardsLayoutTableViewCell
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "awardsLayoutTableViewCell", for: indexPath) as? AwardsLayoutTableViewCell  else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         cell.labelTitle.text = basicsContent?.awards[indexPath.row].title
         cell.labelAwarder.text = basicsContent?.awards[indexPath.row].awarder
         cell.labelDate.text = basicsContent?.awards[indexPath.row].date

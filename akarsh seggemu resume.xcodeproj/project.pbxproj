@@ -22,6 +22,8 @@
 		D359DC7B21AB7593008011EE /* ResumeSchemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */; };
 		D3646F3221BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3646F3121BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift */; };
 		D3646F3421BE429000E726D8 /* EducationLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3646F3321BE429000E726D8 /* EducationLayoutTableViewHeader.swift */; };
+		D366D5D321F9306B00822391 /* akarsh_seggemu_resumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366D5D221F9306B00822391 /* akarsh_seggemu_resumeTests.swift */; };
+		D366D5E121F9307500822391 /* akarsh_seggemu_resumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D366D5E021F9307500822391 /* akarsh_seggemu_resumeUITests.swift */; };
 		D39483EE21BA72510074430E /* ProfilesLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39483ED21BA72510074430E /* ProfilesLayout.storyboard */; };
 		D3AAD5B421BDC291004876FF /* SkillsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AAD5B321BDC291004876FF /* SkillsLayoutTableViewHeader.swift */; };
 		D3B28BE721A6236000029A3F /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B28BE621A6236000029A3F /* MainTableViewCell.swift */; };
@@ -71,6 +73,23 @@
 		D3E6BAC921B5FA35004F3F52 /* ContactLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E6BAC821B5FA35004F3F52 /* ContactLayout.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D366D5D521F9306B00822391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32273E7218535AD0068A69D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32273EE218535AD0068A69D;
+			remoteInfo = "akarsh seggemu resume";
+		};
+		D366D5E321F9307500822391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32273E7218535AD0068A69D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32273EE218535AD0068A69D;
+			remoteInfo = "akarsh seggemu resume";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D32273EF218535AD0068A69D /* akarsh seggemu resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "akarsh seggemu resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32273F2218535AD0068A69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +110,12 @@
 		D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeSchemaTableViewController.swift; sourceTree = "<group>"; };
 		D3646F3121BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3646F3321BE429000E726D8 /* EducationLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D366D5D021F9306B00822391 /* akarsh seggemu resumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "akarsh seggemu resumeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D366D5D221F9306B00822391 /* akarsh_seggemu_resumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = akarsh_seggemu_resumeTests.swift; sourceTree = "<group>"; };
+		D366D5D421F9306B00822391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D366D5DE21F9307500822391 /* akarsh seggemu resumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "akarsh seggemu resumeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D366D5E021F9307500822391 /* akarsh_seggemu_resumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = akarsh_seggemu_resumeUITests.swift; sourceTree = "<group>"; };
+		D366D5E221F9307500822391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39483ED21BA72510074430E /* ProfilesLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilesLayout.storyboard; sourceTree = "<group>"; };
 		D3AAD5B321BDC291004876FF /* SkillsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3B28BE621A6236000029A3F /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +173,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D366D5CD21F9306A00822391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D366D5DB21F9307500822391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -155,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				D32273F1218535AD0068A69D /* akarsh seggemu resume */,
+				D366D5D121F9306B00822391 /* akarsh seggemu resumeTests */,
+				D366D5DF21F9307500822391 /* akarsh seggemu resumeUITests */,
 				D32273F0218535AD0068A69D /* Products */,
 				D324D66221860C880089CD44 /* README.md */,
 			);
@@ -164,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				D32273EF218535AD0068A69D /* akarsh seggemu resume.app */,
+				D366D5D021F9306B00822391 /* akarsh seggemu resumeTests.xctest */,
+				D366D5DE21F9307500822391 /* akarsh seggemu resumeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,6 +298,24 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		D366D5D121F9306B00822391 /* akarsh seggemu resumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D366D5D221F9306B00822391 /* akarsh_seggemu_resumeTests.swift */,
+				D366D5D421F9306B00822391 /* Info.plist */,
+			);
+			path = "akarsh seggemu resumeTests";
+			sourceTree = "<group>";
+		};
+		D366D5DF21F9307500822391 /* akarsh seggemu resumeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D366D5E021F9307500822391 /* akarsh_seggemu_resumeUITests.swift */,
+				D366D5E221F9307500822391 /* Info.plist */,
+			);
+			path = "akarsh seggemu resumeUITests";
+			sourceTree = "<group>";
+		};
 		D3B42AB421866A1900F183B9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,18 +359,62 @@
 			productReference = D32273EF218535AD0068A69D /* akarsh seggemu resume.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D366D5CF21F9306A00822391 /* akarsh seggemu resumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D366D5D921F9306B00822391 /* Build configuration list for PBXNativeTarget "akarsh seggemu resumeTests" */;
+			buildPhases = (
+				D366D5CC21F9306A00822391 /* Sources */,
+				D366D5CD21F9306A00822391 /* Frameworks */,
+				D366D5CE21F9306A00822391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D366D5D621F9306B00822391 /* PBXTargetDependency */,
+			);
+			name = "akarsh seggemu resumeTests";
+			productName = "akarsh seggemu resumeTests";
+			productReference = D366D5D021F9306B00822391 /* akarsh seggemu resumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D366D5DD21F9307500822391 /* akarsh seggemu resumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D366D5E521F9307500822391 /* Build configuration list for PBXNativeTarget "akarsh seggemu resumeUITests" */;
+			buildPhases = (
+				D366D5DA21F9307500822391 /* Sources */,
+				D366D5DB21F9307500822391 /* Frameworks */,
+				D366D5DC21F9307500822391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D366D5E421F9307500822391 /* PBXTargetDependency */,
+			);
+			name = "akarsh seggemu resumeUITests";
+			productName = "akarsh seggemu resumeUITests";
+			productReference = D366D5DE21F9307500822391 /* akarsh seggemu resumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D32273E7218535AD0068A69D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Akarsh Seggemu";
 				TargetAttributes = {
 					D32273EE218535AD0068A69D = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					D366D5CF21F9306A00822391 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D32273EE218535AD0068A69D;
+					};
+					D366D5DD21F9307500822391 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D32273EE218535AD0068A69D;
 					};
 				};
 			};
@@ -328,6 +433,8 @@
 			projectRoot = "";
 			targets = (
 				D32273EE218535AD0068A69D /* akarsh seggemu resume */,
+				D366D5CF21F9306A00822391 /* akarsh seggemu resumeTests */,
+				D366D5DD21F9307500822391 /* akarsh seggemu resumeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,6 +462,20 @@
 				D32273FA218535AE0068A69D /* Assets.xcassets in Resources */,
 				D353A2E221B5BFAF002D9DC9 /* Main.storyboard in Resources */,
 				D3D498B221B88190008ABCED /* PublicationsLayout.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D366D5CE21F9306A00822391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D366D5DC21F9307500822391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +533,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D366D5CC21F9306A00822391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D366D5D321F9306B00822391 /* akarsh_seggemu_resumeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D366D5DA21F9307500822391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D366D5E121F9307500822391 /* akarsh_seggemu_resumeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D366D5D621F9306B00822391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32273EE218535AD0068A69D /* akarsh seggemu resume */;
+			targetProxy = D366D5D521F9306B00822391 /* PBXContainerItemProxy */;
+		};
+		D366D5E421F9307500822391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32273EE218535AD0068A69D /* akarsh seggemu resume */;
+			targetProxy = D366D5E321F9307500822391 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D353A2DE21B5BE89002D9DC9 /* Localizable.strings */ = {
@@ -581,6 +731,88 @@
 			};
 			name = Release;
 		};
+		D366D5D721F9306B00822391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZND2QNBTJ;
+				INFOPLIST_FILE = "akarsh seggemu resumeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakarsh.akarsh-seggemu-resumeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/akarsh seggemu resume.app/akarsh seggemu resume";
+			};
+			name = Debug;
+		};
+		D366D5D821F9306B00822391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZND2QNBTJ;
+				INFOPLIST_FILE = "akarsh seggemu resumeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakarsh.akarsh-seggemu-resumeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/akarsh seggemu resume.app/akarsh seggemu resume";
+			};
+			name = Release;
+		};
+		D366D5E621F9307500822391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZND2QNBTJ;
+				INFOPLIST_FILE = "akarsh seggemu resumeUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakarsh.akarsh-seggemu-resumeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "akarsh seggemu resume";
+			};
+			name = Debug;
+		};
+		D366D5E721F9307500822391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CZND2QNBTJ;
+				INFOPLIST_FILE = "akarsh seggemu resumeUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sakarsh.akarsh-seggemu-resumeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "akarsh seggemu resume";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -598,6 +830,24 @@
 			buildConfigurations = (
 				D3227402218535AE0068A69D /* Debug */,
 				D3227403218535AE0068A69D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D366D5D921F9306B00822391 /* Build configuration list for PBXNativeTarget "akarsh seggemu resumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D366D5D721F9306B00822391 /* Debug */,
+				D366D5D821F9306B00822391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D366D5E521F9307500822391 /* Build configuration list for PBXNativeTarget "akarsh seggemu resumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D366D5E621F9307500822391 /* Debug */,
+				D366D5E721F9307500822391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

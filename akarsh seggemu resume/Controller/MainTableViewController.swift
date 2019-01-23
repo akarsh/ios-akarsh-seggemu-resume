@@ -47,7 +47,7 @@ class MainTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mainCell = sender as? MainTableViewCell,
             let target = segue.destination as? ResumeSchemaTableViewController else {
-                return
+            return
         }
         
         target.chosenLanguage = mainCell.languageCode
@@ -136,11 +136,13 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as! MainTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as? MainTableViewCell else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         
-        cell.imageOfLanguage.image = UIImage(named: imageOfLanaguageArrays[indexPath.row])
-        cell.nameLabelOfLanguage.text = resumeNameArrays[indexPath.row]
-        cell.languageCode = languageCode[indexPath.row]
+        cell.imageOfLanguage.image = UIImage(named: self.imageOfLanaguageArrays[indexPath.row])
+        cell.nameLabelOfLanguage.text = self.resumeNameArrays[indexPath.row]
+        cell.languageCode = self.languageCode[indexPath.row]
         return cell
     }
 }
