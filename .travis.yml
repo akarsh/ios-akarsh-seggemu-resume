@@ -1,5 +1,9 @@
+os: osx
 language: swift
 osx_image: xcode10.1
-xcode_project: akarsh\ seggemu\ resume.xcodeproj
-xcode_scheme: akarsh\ seggemu\ resume
-xcode_destination: platform=iOS Simulator,OS=9.3,name=iPhone 5s
+sudo: required
+xcode_project: "akarsh seggemu resume.xcodeproj"
+xcode_scheme: "akarsh seggemu resume"
+# xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+script:
+  - xcodebuild -project "akarsh seggemu resume.xcodeproj" -scheme "akarsh seggemu resume" -sdk iphonesimulator12.1 -destination "platform=iOS Simulator,OS=12.1,name=iPhone Xs Max" -UseModernBuildSystem=NO test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
