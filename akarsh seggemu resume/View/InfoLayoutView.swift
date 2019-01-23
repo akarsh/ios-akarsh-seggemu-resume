@@ -19,12 +19,5 @@ class InfoLayoutView: UIView {
     @IBOutlet weak var labelDateOfBirthContent: UILabel!
     @IBOutlet weak var labelPlaceOfBirth: UILabel!
     @IBOutlet weak var labelPlaceOfBirthContent: UILabel!
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }

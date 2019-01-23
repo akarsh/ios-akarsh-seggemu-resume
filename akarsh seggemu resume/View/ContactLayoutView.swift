@@ -25,13 +25,4 @@ class ContactLayoutView: UIView {
     @IBOutlet weak var labelRegion: UILabel!
     @IBOutlet weak var labelCountryCode: UILabel!
     
-    
-    /*
-     // Only override draw() if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
-     */
-    
 }

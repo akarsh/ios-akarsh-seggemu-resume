@@ -75,9 +75,6 @@ class ResumeSchemaTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
@@ -258,34 +255,6 @@ extension ResumeSchemaTableViewController {
             viewController.basicsContent = basicsStorage
             self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
         }
-        
-        //        if vcName == "contactLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! contactLayoutViewController
-        //        } else if vcName == "infoLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! infoLayoutViewController
-        //        } else if vcName == "summaryLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! summaryLayoutViewController
-        //        } else if vcName == "profilesLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! profilesLayoutViewController
-        //        } else if vcName == "skillsLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! skillsLayoutTableViewController
-        //        } else if vcName == "languagesLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! languagesLayoutTableViewController
-        //        } else if vcName == "educationLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! educationLayoutTableViewController
-        //        } else if vcName == "experienceLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! experienceLayoutTableViewController
-        //        } else if vcName == "volunteerLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! volunteerLayoutTableViewController
-        //        } else if vcName == "awardsLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! awardsLayoutTableViewController
-        //        } else if vcName == "publicationsLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! publicationsLayoutTableViewController
-        //        } else if vcName == "interestsLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! interestsLayoutTableViewController
-        //        } else if vcName == "referencesLayout" {
-        ////            viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! referencesLayoutTableViewController
-        //        }
     }
 }
 
