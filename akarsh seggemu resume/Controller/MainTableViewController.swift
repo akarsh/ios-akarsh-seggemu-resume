@@ -136,7 +136,9 @@ extension MainTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as! MainTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as? MainTableViewCell else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         
         cell.imageOfLanguage.image = UIImage(named: imageOfLanaguageArrays[indexPath.row])
         cell.nameLabelOfLanguage.text = resumeNameArrays[indexPath.row]

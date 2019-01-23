@@ -43,7 +43,9 @@ class EducationLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "educationLayoutTableViewCell", for: indexPath) as! EducationLayoutTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "educationLayoutTableViewCell", for: indexPath) as? EducationLayoutTableViewCell else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         
         cell.labelInstitution.text = basicsContent?.education[indexPath.row].institution
         cell.labelArea.text = basicsContent?.education[indexPath.row].area
