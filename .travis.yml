@@ -6,4 +6,4 @@ xcode_project: "akarsh seggemu resume.xcodeproj"
 xcode_scheme: "akarsh seggemu resume"
 # xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
 script:
-  - xcodebuild -workspace sample.xcworkspace -scheme sample -sdk iphonesimulator12.1 -destination "platform=iOS Simulator,OS=12.1,name=iPhone Xs Max" -UseModernBuildSystem=NO test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
+  - xcodebuild -project "akarsh seggemu resume.xcodeproj" -scheme "akarsh seggemu resume" -sdk iphonesimulator12.1 -destination "platform=iOS Simulator,OS=12.1,name=iPhone Xs Max" -UseModernBuildSystem=NO test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
