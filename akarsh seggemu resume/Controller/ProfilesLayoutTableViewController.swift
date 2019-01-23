@@ -47,7 +47,9 @@ class ProfilesLayoutTableViewController: UITableViewController, LabelHeader {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfilesLayoutTableViewCell", for: indexPath) as! ProfilesLayoutTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfilesLayoutTableViewCell", for: indexPath) as? ProfilesLayoutTableViewCell else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         
         if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "twitter" {
             cell.imageViewNetwork.image = UIImage(named: "Twitter_Logo_WhiteOnBlue")
