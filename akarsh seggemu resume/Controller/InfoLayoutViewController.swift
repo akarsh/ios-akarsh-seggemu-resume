@@ -16,10 +16,10 @@ class InfoLayoutViewController: UIViewController {
     
     lazy var data: [String] = {
         [
-            locForKey("nationality")!,
-            locForKey("workPermit")!,
-            locForKey("dateOfBirth")!,
-            locForKey("placeOfBirth")!
+            TranslationHelper.locForKey(chosenLanguage!, "nationality")!,
+            TranslationHelper.locForKey(chosenLanguage!, "workPermit")!,
+            TranslationHelper.locForKey(chosenLanguage!, "dateOfBirth")!,
+            TranslationHelper.locForKey(chosenLanguage!, "placeOfBirth")!
         ]
     }()
     
@@ -30,17 +30,6 @@ class InfoLayoutViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.setInfoLayoutHeader()
-    }
-    
-    // returns the translated string based on the chosen language
-    func locForKey(_ key: String) -> String? {
-        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: chosenLanguage!) else {
-            return nil
-        }
-        guard let dict = NSDictionary(contentsOf: path) else {
-            return nil
-        }
-        return dict.value(forKey: key) as? String
     }
     
     func setInfoLayoutHeader() {
@@ -61,5 +50,4 @@ class InfoLayoutViewController: UIViewController {
             viewHeader.labelPlaceOfBirthContent.text = basicsContent?.basics.info.placeOfBirth
         }
     }
-    
 }

@@ -17,19 +17,19 @@ class ResumeSchemaTableViewController: UITableViewController {
     // Translated values are displayed as label in the cell
     lazy var data: [String] = {
         [
-            locForKey("contact")!,
-            locForKey("info")!,
-            locForKey("summary")!,
-            locForKey("profiles")!,
-            locForKey("skills")!,
-            locForKey("languages")!,
-            locForKey("education")!,
-            locForKey("experience")!,
-            locForKey("volunteer")!,
-            locForKey("awards")!,
-            locForKey("publications")!,
-            locForKey("interests")!,
-            locForKey("references")!
+            TranslationHelper.locForKey(chosenLanguage!, "contact")!,
+            TranslationHelper.locForKey(chosenLanguage!, "info")!,
+            TranslationHelper.locForKey(chosenLanguage!, "summary")!,
+            TranslationHelper.locForKey(chosenLanguage!, "profiles")!,
+            TranslationHelper.locForKey(chosenLanguage!, "skills")!,
+            TranslationHelper.locForKey(chosenLanguage!, "languages")!,
+            TranslationHelper.locForKey(chosenLanguage!, "education")!,
+            TranslationHelper.locForKey(chosenLanguage!, "experience")!,
+            TranslationHelper.locForKey(chosenLanguage!, "volunteer")!,
+            TranslationHelper.locForKey(chosenLanguage!, "awards")!,
+            TranslationHelper.locForKey(chosenLanguage!, "publications")!,
+            TranslationHelper.locForKey(chosenLanguage!, "interests")!,
+            TranslationHelper.locForKey(chosenLanguage!, "references")!
         ]
     }()
     // Emoji images filenames in the array imageOfSchemaKeys
@@ -91,17 +91,6 @@ class ResumeSchemaTableViewController: UITableViewController {
         // set the resume file to chosen language
         self.setResumeFileToChosenLanguage()
         
-    }
-    
-    // returns the translated string based on the chosen language
-    func locForKey(_ key: String) -> String? {
-        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: chosenLanguage!) else {
-            return nil
-        }
-        guard let dict = NSDictionary(contentsOf: path) else {
-            return nil
-        }
-        return dict.value(forKey: key) as? String
     }
     
     func setTableViewHeader() {
