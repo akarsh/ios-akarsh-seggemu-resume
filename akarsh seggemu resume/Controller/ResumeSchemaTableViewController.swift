@@ -131,7 +131,7 @@ class ResumeSchemaTableViewController: UITableViewController {
     }
     
     // read the JSON data file
-    func readData(completionHandler: @escaping (Resume) -> ()) {
+    func readData(completionHandler: @escaping (Resume) -> Void) {
         // Find documents directory on device
         let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
         
@@ -158,8 +158,6 @@ class ResumeSchemaTableViewController: UITableViewController {
             print("An error took place: \(error)")
         }
     }
-    
-    
     
     func downloadImageFromURL() {
         if basicsStorage?.basics.picture != nil {
@@ -224,7 +222,6 @@ extension ResumeSchemaTableViewController {
             viewController.basicsContent = basicsStorage
             viewController.chosenLanguage = chosenLanguage
             self.navigationController?.pushViewController(viewController, animated: true)
-            
         } else {
             var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
             viewController.labelContentHeader = data[indexPath.row]
@@ -233,5 +230,3 @@ extension ResumeSchemaTableViewController {
         }
     }
 }
-
-

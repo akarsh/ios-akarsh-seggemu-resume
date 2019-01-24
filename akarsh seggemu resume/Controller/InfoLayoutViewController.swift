@@ -23,7 +23,6 @@ class InfoLayoutViewController: UIViewController {
         ]
     }()
     
-    
     @IBOutlet var viewHeader: InfoLayoutView!
     
     override func viewDidLoad() {
@@ -43,7 +42,6 @@ class InfoLayoutViewController: UIViewController {
         }
         return dict.value(forKey: key) as? String
     }
-    
     
     func setInfoLayoutHeader() {
         // set the view header

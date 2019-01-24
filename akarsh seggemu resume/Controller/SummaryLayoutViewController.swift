@@ -21,7 +21,6 @@ class SummaryLayoutViewController: UIViewController, LabelHeader {
         self.setSummaryViewHeader()
     }
     
-    
     func setSummaryViewHeader() {
         // set the view header
         if labelContentHeader != nil {
