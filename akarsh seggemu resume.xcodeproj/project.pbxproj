@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30A00A921F9DA9A008FC4E7 /* TranslationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A00A821F9DA9A008FC4E7 /* TranslationHelper.swift */; };
 		D32273F3218535AD0068A69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32273F2218535AD0068A69D /* AppDelegate.swift */; };
 		D32273FA218535AE0068A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32273F9218535AE0068A69D /* Assets.xcassets */; };
 		D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324D66021860B9D0089CD44 /* MainTableViewController.swift */; };
@@ -93,6 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30A00A821F9DA9A008FC4E7 /* TranslationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationHelper.swift; sourceTree = "<group>"; };
 		D32273EF218535AD0068A69D /* akarsh seggemu resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "akarsh seggemu resume.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32273F2218535AD0068A69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D32273F9218535AE0068A69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				D3D6920621BF31AA00A238FD /* LabelHeader.swift */,
 				D32F098821F9CB160049FE31 /* DownloadHelper.swift */,
 				D389F7B321F9CF18008EAB55 /* DocumentHelper.swift */,
+				D30A00A821F9DA9A008FC4E7 /* TranslationHelper.swift */,
 				D35AA9D421A4D72D009F8BC8 /* Assets */,
 				D32274072185360A0068A69D /* Controller */,
 				D3227405218535F60068A69D /* Model */,
@@ -498,6 +501,7 @@
 				D3D498C021B88B38008ABCED /* SummaryLayoutViewController.swift in Sources */,
 				D3D6920721BF31AA00A238FD /* LabelHeader.swift in Sources */,
 				D3D6920921BF43BE00A238FD /* ExperienceLayoutTableViewHeader.swift in Sources */,
+				D30A00A921F9DA9A008FC4E7 /* TranslationHelper.swift in Sources */,
 				D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */,
 				D3D498CC21B89473008ABCED /* SkillsLayoutTableViewController.swift in Sources */,
 				D389F7B421F9CF18008EAB55 /* DocumentHelper.swift in Sources */,
