@@ -13,7 +13,8 @@ class ResumeSchemaTableViewController: UITableViewController {
     
     var chosenLanguage: String?
     var labelContentResumeSchemaTableViewHeader: String?
-    
+    // Data array contains the key values which are translated according to chosen language
+    // Translated values are displayed as label in the cell
     lazy var data: [String] = {
         [
             locForKey("contact")!,
@@ -31,7 +32,7 @@ class ResumeSchemaTableViewController: UITableViewController {
             locForKey("references")!
         ]
     }()
-    
+    // Emoji images filenames in the array imageOfSchemaKeys
     let imageOfSchemaKeys = [
         "cardIndex.png",
         "informationSource.png",
@@ -47,7 +48,7 @@ class ResumeSchemaTableViewController: UITableViewController {
         "heavyBlackHeart.png",
         "memo.png"
     ]
-    
+    // identitiesOfStoryboards array contains names of the storyboards
     let identitiesOfStoryboards = [
         "ContactLayout",
         "InfoLayout",
@@ -67,7 +68,7 @@ class ResumeSchemaTableViewController: UITableViewController {
     // file path
     var filePath = ""
     var resumeFileName = ""
-    
+    // filename of the profile image
     let imageFileName = "standard_profile.jpg"
     
     @IBOutlet weak var tableViewHeader: ResumeSchemaTableViewHeader!
@@ -129,15 +130,8 @@ class ResumeSchemaTableViewController: UITableViewController {
         }
     }
     
-    // return documents directory as output
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let documentsDirectory = paths[0]
-        return documentsDirectory
-    }
-    
     // read the JSON data file
-    func readData(completionHandler: @escaping (Resume) -> ()) {
+    func readData(completionHandler: @escaping (Resume) -> Void) {
         // Find documents directory on device
         let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
         
@@ -168,7 +162,7 @@ class ResumeSchemaTableViewController: UITableViewController {
     func downloadImageFromURL() {
         if basicsStorage?.basics.picture != nil {
             // Create destination URL
-            let documentsUrl: URL = getDocumentsDirectory()
+            let documentsUrl: URL = DocumentHelper.getDocumentsDirectory()
             // Get the file path in documents directory
             let destinationFileUrl = documentsUrl.appendingPathComponent(self.imageFileName)
             // get the documents directory url
@@ -182,31 +176,7 @@ class ResumeSchemaTableViewController: UITableViewController {
                 if !FileManager.default.fileExists(atPath: filePath) {
                     // url to the resume JSON file
                     guard let url = basicsStorage?.basics.picture else { return }
-                    if let urlString = URL(string: url) {
-                        let sessionConfig = URLSession(configuration: .default)
-                        let request = URLRequest(url: urlString)
-                        // download task to download the resume JSON file
-                        let dataTask = sessionConfig.downloadTask(with: request) { data, response, error in
-                            if let tempLocalUrl = data, error == nil {
-                                // if success print the status code of 200
-                                if let statusCode = (response as? HTTPURLResponse)?.statusCode {
-                                    print("Successfully downloaded. Status code: \(statusCode)")
-                                }
-                                
-                                do {
-                                    // copying the file to the destination file path
-                                    try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
-                                    print("File created at \(destinationFileUrl)")
-                                } catch let writeError {
-                                    print("Error creating a file \(destinationFileUrl) : \(writeError)")
-                                }
-                                
-                            } else {
-                                print("Error took place while downloading a file. Error description: %@ \(String(describing: error?.localizedDescription))")
-                            }
-                        }
-                        dataTask.resume()
-                    }
+                    DownloadHelper.extractedFunc(url, destinationFileUrl)
                 }
             }  else {
                 print("Could not find local directory to store file")
@@ -231,7 +201,9 @@ extension ResumeSchemaTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "resumeSchemaTableCell", for: indexPath) as! ResumeSchemaTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "resumeSchemaTableCell", for: indexPath) as? ResumeSchemaTableViewCell else {
+            fatalError("DequeueReusableCell failed while casting")
+        }
         
         cell.imageOfSchemaKeys.image = UIImage(named: imageOfSchemaKeys[indexPath.row])
         cell.contentLabelOfSchemaKeys.text = data[indexPath.row]
@@ -250,7 +222,6 @@ extension ResumeSchemaTableViewController {
             viewController.basicsContent = basicsStorage
             viewController.chosenLanguage = chosenLanguage
             self.navigationController?.pushViewController(viewController, animated: true)
-            
         } else {
             var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
             viewController.labelContentHeader = data[indexPath.row]
@@ -259,5 +230,3 @@ extension ResumeSchemaTableViewController {
         }
     }
 }
-
-
