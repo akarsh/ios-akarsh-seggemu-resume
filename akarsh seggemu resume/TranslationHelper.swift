@@ -10,8 +10,8 @@ import Foundation
 
 class TranslationHelper {
     // returns the translated string based on the chosen language
-    static func locForKey(_ key: String) -> String? {
-        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: chosenLanguage!) else {
+    static func locForKey(_ chosenLanguage: String, _ key: String) -> String? {
+        guard let path = Bundle.main.url(forResource: "Localizable", withExtension: "strings", subdirectory: nil, localization: chosenLanguage) else {
             return nil
         }
         guard let dict = NSDictionary(contentsOf: path) else {

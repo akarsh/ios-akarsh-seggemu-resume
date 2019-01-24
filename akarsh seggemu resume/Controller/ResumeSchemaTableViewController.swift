@@ -17,19 +17,19 @@ class ResumeSchemaTableViewController: UITableViewController {
     // Translated values are displayed as label in the cell
     lazy var data: [String] = {
         [
-            TranslationHelper.locForKey("contact")!,
-            TranslationHelper.locForKey("info")!,
-            TranslationHelper.locForKey("summary")!,
-            TranslationHelper.locForKey("profiles")!,
-            TranslationHelper.locForKey("skills")!,
-            TranslationHelper.locForKey("languages")!,
-            TranslationHelper.locForKey("education")!,
-            TranslationHelper.locForKey("experience")!,
-            TranslationHelper.locForKey("volunteer")!,
-            TranslationHelper.locForKey("awards")!,
-            TranslationHelper.locForKey("publications")!,
-            TranslationHelper.locForKey("interests")!,
-            TranslationHelper.locForKey("references")!
+            TranslationHelper.locForKey(chosenLanguage!, "contact")!,
+            TranslationHelper.locForKey(chosenLanguage!, "info")!,
+            TranslationHelper.locForKey(chosenLanguage!, "summary")!,
+            TranslationHelper.locForKey(chosenLanguage!, "profiles")!,
+            TranslationHelper.locForKey(chosenLanguage!, "skills")!,
+            TranslationHelper.locForKey(chosenLanguage!, "languages")!,
+            TranslationHelper.locForKey(chosenLanguage!, "education")!,
+            TranslationHelper.locForKey(chosenLanguage!, "experience")!,
+            TranslationHelper.locForKey(chosenLanguage!, "volunteer")!,
+            TranslationHelper.locForKey(chosenLanguage!, "awards")!,
+            TranslationHelper.locForKey(chosenLanguage!, "publications")!,
+            TranslationHelper.locForKey(chosenLanguage!, "interests")!,
+            TranslationHelper.locForKey(chosenLanguage!, "references")!
         ]
     }()
     // Emoji images filenames in the array imageOfSchemaKeys
