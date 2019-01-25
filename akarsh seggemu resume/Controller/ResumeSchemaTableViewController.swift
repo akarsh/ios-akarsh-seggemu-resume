@@ -17,19 +17,19 @@ class ResumeSchemaTableViewController: UITableViewController {
     // Translated values are displayed as label in the cell
     lazy var data: [String] = {
         [
-            TranslationHelper.locForKey(chosenLanguage!, "contact")!,
-            TranslationHelper.locForKey(chosenLanguage!, "info")!,
-            TranslationHelper.locForKey(chosenLanguage!, "summary")!,
-            TranslationHelper.locForKey(chosenLanguage!, "profiles")!,
-            TranslationHelper.locForKey(chosenLanguage!, "skills")!,
-            TranslationHelper.locForKey(chosenLanguage!, "languages")!,
-            TranslationHelper.locForKey(chosenLanguage!, "education")!,
-            TranslationHelper.locForKey(chosenLanguage!, "experience")!,
-            TranslationHelper.locForKey(chosenLanguage!, "volunteer")!,
-            TranslationHelper.locForKey(chosenLanguage!, "awards")!,
-            TranslationHelper.locForKey(chosenLanguage!, "publications")!,
-            TranslationHelper.locForKey(chosenLanguage!, "interests")!,
-            TranslationHelper.locForKey(chosenLanguage!, "references")!
+            TranslationHelper.locForKey(chosenLanguage, "contact")!,
+            TranslationHelper.locForKey(chosenLanguage, "info")!,
+            TranslationHelper.locForKey(chosenLanguage, "summary")!,
+            TranslationHelper.locForKey(chosenLanguage, "profiles")!,
+            TranslationHelper.locForKey(chosenLanguage, "skills")!,
+            TranslationHelper.locForKey(chosenLanguage, "languages")!,
+            TranslationHelper.locForKey(chosenLanguage, "education")!,
+            TranslationHelper.locForKey(chosenLanguage, "experience")!,
+            TranslationHelper.locForKey(chosenLanguage, "volunteer")!,
+            TranslationHelper.locForKey(chosenLanguage, "awards")!,
+            TranslationHelper.locForKey(chosenLanguage, "publications")!,
+            TranslationHelper.locForKey(chosenLanguage, "interests")!,
+            TranslationHelper.locForKey(chosenLanguage, "references")!
         ]
     }()
     // Emoji images filenames in the array imageOfSchemaKeys
@@ -102,20 +102,10 @@ class ResumeSchemaTableViewController: UITableViewController {
     
     // set the resume file name according to the chosen language
     func setResumeFileToChosenLanguage() {
-        if chosenLanguage! == "en" {
-            self.resumeFileName = "englishResume.json"
-            self.readData{ basicsStorage in
-                self.basicsStorage = basicsStorage
-                self.downloadImageFromURL()
-            }
-        } else if chosenLanguage! == "de" {
-            self.resumeFileName = "deutschResume.json"
-            self.readData{ basicsStorage in
-                self.basicsStorage = basicsStorage
-                self.downloadImageFromURL()
-            }
-        } else {
-            return
+        chosenLanguage! == "en" ? (self.resumeFileName = "englishResume.json") : (self.resumeFileName = "deutschResume.json")
+        self.readData{ basicsStorage in
+            self.basicsStorage = basicsStorage
+            self.downloadImageFromURL()
         }
     }
     
@@ -171,7 +161,6 @@ class ResumeSchemaTableViewController: UITableViewController {
                 print("Could not find local directory to store file")
                 return
             }
-            
         }
     }
 }

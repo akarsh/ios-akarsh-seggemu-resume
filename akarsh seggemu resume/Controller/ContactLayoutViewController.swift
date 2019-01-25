@@ -14,7 +14,7 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
     
     // file path
     var filePath = ""
-    
+    // profile image file name
     let imageFileName = "standard_profile.jpg"
     
     @IBOutlet var viewHeader: ContactLayoutView!
@@ -65,5 +65,4 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
             return
         }
     }
-    
 }

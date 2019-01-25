@@ -9,19 +9,20 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    //    Array of resume language names
+    // Array of resume language names
     let resumeNameArrays = ["English resume", "Deutsch Lebenslauf"]
-    //    Array of language image flags
+    // Array of language image flags
     let imageOfLanaguageArrays = ["flagUnitedKingdom.png", "flagGermany.png"]
+    // Array of language codes
     let languageCode = ["en", "de"]
     
-    //    Filenames for the resume JSON files
+    // Filenames for the resume JSON files
     let englishResumeFile = "englishResume.json"
     let germanResumeFile = "deutschResume.json"
-    //    empty file path declaration
+    // empty file path declaration
     var filePath = ""
     
-    //    URLs for the resume JSON files located in GitHub
+    // URLs for the resume JSON files located in GitHub
     let englishResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/en/resume.json"
     let germanResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/de/resume.json"
     
