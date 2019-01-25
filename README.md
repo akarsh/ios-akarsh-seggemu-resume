@@ -9,6 +9,8 @@
 This project is developed to show the resume in iOS.
 The resume is maintained in a JSON format following resume JSON structure.
 
+## Table of Contents
+
 - [Features](#features)
 - [Requirements](#requirements)
 - [Credits](#credits)
@@ -17,10 +19,14 @@ The resume is maintained in a JSON format following resume JSON structure.
 
 ## Features
 
-- [x] Download a remote JSON file in the application.
-- [x] Store the downloaded remote JSON file in the application.
+- [x] Download a remote JSON file and profile image file in the application.
+- [x] Store the downloaded remote JSON file and profile image in the application.
 - [x] Read the stored JSON file in the application.
 - [x] Pass data from resume schema layout view controller to other view controllers.
+- [x] Translate the contents in the application based on the resume language selected by the user.
+- [x] Application adapts to different screen sizes of iPhones models (iPhone SE +).
+    - [x] Use autolayout for all storyboards.
+- [x] Continuous Integration (Travis-CI) to test the application.
 
 ## Requirements
 
