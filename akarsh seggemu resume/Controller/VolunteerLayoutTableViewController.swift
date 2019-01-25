@@ -62,7 +62,6 @@ class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
             // "a bullet point is added to the string" as string
             // array of strings are joined with the separator two newline spaces followed by bullet point
             cell.labelHighlights.attributedText = NSAttributedString(string: "\u{2022} \((basicsContent?.volunteer[indexPath.row].highlights.joined(separator: "\n\n\u{2022} "))!)", attributes: attributes)
-            
         }
         
         return cell

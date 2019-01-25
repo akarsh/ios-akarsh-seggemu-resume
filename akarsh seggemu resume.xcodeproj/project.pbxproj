@@ -221,13 +221,11 @@
 			isa = PBXGroup;
 			children = (
 				D32273F2218535AD0068A69D /* AppDelegate.swift */,
-				D3D6920621BF31AA00A238FD /* LabelHeader.swift */,
-				D32F098821F9CB160049FE31 /* DownloadHelper.swift */,
-				D389F7B321F9CF18008EAB55 /* DocumentHelper.swift */,
-				D30A00A821F9DA9A008FC4E7 /* TranslationHelper.swift */,
 				D35AA9D421A4D72D009F8BC8 /* Assets */,
 				D32274072185360A0068A69D /* Controller */,
+				D32C357121FBB18C000A501F /* Helper */,
 				D3227405218535F60068A69D /* Model */,
+				D32C357221FBB1AC000A501F /* Protocol */,
 				D359DC7721AB72E5008011EE /* View */,
 			);
 			path = "akarsh seggemu resume";
@@ -261,6 +259,24 @@
 				D3D498E921B89576008ABCED /* ReferencesLayoutTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D32C357121FBB18C000A501F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D32F098821F9CB160049FE31 /* DownloadHelper.swift */,
+				D389F7B321F9CF18008EAB55 /* DocumentHelper.swift */,
+				D30A00A821F9DA9A008FC4E7 /* TranslationHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D32C357221FBB1AC000A501F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D3D6920621BF31AA00A238FD /* LabelHeader.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		D359DC7721AB72E5008011EE /* View */ = {
@@ -711,6 +727,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZND2QNBTJ;
 				INFOPLIST_FILE = "$(SRCROOT)/akarsh seggemu resume/Assets/Info.plist";
@@ -720,6 +737,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sakarsh.akarsh-seggemu-resume";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -729,6 +747,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CZND2QNBTJ;
 				INFOPLIST_FILE = "$(SRCROOT)/akarsh seggemu resume/Assets/Info.plist";
@@ -738,6 +757,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sakarsh.akarsh-seggemu-resume";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

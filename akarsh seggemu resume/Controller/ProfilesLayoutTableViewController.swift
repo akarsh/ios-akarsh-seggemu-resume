@@ -12,6 +12,24 @@ class ProfilesLayoutTableViewController: UITableViewController, LabelHeader {
     
     var basicsContent: Resume?
     var labelContentHeader: String?
+    // array of network names
+    let networkNames = [
+        "twitter",
+        "linkedin",
+        "github",
+        "stackoverflow",
+        "duolingo",
+        "xing"
+    ]
+    // array of containing network images
+    let imagesOfNetworks = [
+        "Twitter_Logo_WhiteOnBlue",
+        "In-2C-128px-TM",
+        "GitHub",
+        "stackoverflow",
+        "duo",
+        "XNG"
+    ]
     
     @IBOutlet weak var tableViewHeader: ProfilesLayoutTableViewHeader!
     override func viewDidLoad() {
@@ -51,23 +69,8 @@ class ProfilesLayoutTableViewController: UITableViewController, LabelHeader {
             fatalError("DequeueReusableCell failed while casting")
         }
         
-        if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "twitter" {
-            cell.imageViewNetwork.image = UIImage(named: "Twitter_Logo_WhiteOnBlue")
-            cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
-        } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "linkedin" {
-            cell.imageViewNetwork.image = UIImage(named: "In-2C-128px-TM")
-            cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
-        } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "github" {
-            cell.imageViewNetwork.image = UIImage(named: "GitHub")
-            cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
-        } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "stackoverflow" {
-            cell.imageViewNetwork.image = UIImage(named: "stackoverflow")
-            cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
-        } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "duolingo" {
-            cell.imageViewNetwork.image = UIImage(named: "duo")
-            cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
-        } else if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == "xing" {
-            cell.imageViewNetwork.image = UIImage(named: "XNG")
+        if basicsContent?.basics.profiles[indexPath.row].network.lowercased() == networkNames[indexPath.row] {
+            cell.imageViewNetwork.image = UIImage(named: imagesOfNetworks[indexPath.row])
             cell.labelUsername.text = basicsContent?.basics.profiles[indexPath.row].username
         }
         

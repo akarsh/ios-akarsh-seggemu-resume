@@ -16,10 +16,10 @@ class InfoLayoutViewController: UIViewController {
     
     lazy var data: [String] = {
         [
-            TranslationHelper.locForKey(chosenLanguage!, "nationality")!,
-            TranslationHelper.locForKey(chosenLanguage!, "workPermit")!,
-            TranslationHelper.locForKey(chosenLanguage!, "dateOfBirth")!,
-            TranslationHelper.locForKey(chosenLanguage!, "placeOfBirth")!
+            TranslationHelper.locForKey(chosenLanguage, "nationality")!,
+            TranslationHelper.locForKey(chosenLanguage, "workPermit")!,
+            TranslationHelper.locForKey(chosenLanguage, "dateOfBirth")!,
+            TranslationHelper.locForKey(chosenLanguage, "placeOfBirth")!
         ]
     }()
     
