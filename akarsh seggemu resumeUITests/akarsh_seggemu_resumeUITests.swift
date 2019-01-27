@@ -64,5 +64,39 @@ class akarsh_seggemu_resumeUITests: XCTestCase {
         app.navigationBars["akarsh_seggemu_resume.ReferencesLayoutTableView"].buttons["Back"].tap()
         
     }
+    
+    func testNavigationintoIntoDeutschLebenslauf() {
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Deutsch Lebenslauf"]/*[[".cells.staticTexts[\"Deutsch Lebenslauf\"]",".staticTexts[\"Deutsch Lebenslauf\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Kontakt"]/*[[".cells.staticTexts[\"Kontakt\"]",".staticTexts[\"Kontakt\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.ContactLayoutView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Info"]/*[[".cells.staticTexts[\"Info\"]",".staticTexts[\"Info\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.InfoLayoutView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Zusammenfassung"]/*[[".cells.staticTexts[\"Zusammenfassung\"]",".staticTexts[\"Zusammenfassung\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.SummaryLayoutView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Profil"]/*[[".cells.staticTexts[\"Profil\"]",".staticTexts[\"Profil\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.ProfilesLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Fähigkeiten"]/*[[".cells.staticTexts[\"Fähigkeiten\"]",".staticTexts[\"Fähigkeiten\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.SkillsLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Sprachen"]/*[[".cells.staticTexts[\"Sprachen\"]",".staticTexts[\"Sprachen\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.LanguagesLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Ausbildung"]/*[[".cells.staticTexts[\"Ausbildung\"]",".staticTexts[\"Ausbildung\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.EducationLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Berufserfahrung"]/*[[".cells.staticTexts[\"Berufserfahrung\"]",".staticTexts[\"Berufserfahrung\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.ExperienceLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Gemeinnützig"]/*[[".cells.staticTexts[\"Gemeinnützig\"]",".staticTexts[\"Gemeinnützig\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.VolunteerLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Auszeichnung"]/*[[".cells.staticTexts[\"Auszeichnung\"]",".staticTexts[\"Auszeichnung\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.AwardsLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Publikation"]/*[[".cells.staticTexts[\"Publikation\"]",".staticTexts[\"Publikation\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.PublicationsLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Interessen"]/*[[".cells.staticTexts[\"Interessen\"]",".staticTexts[\"Interessen\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.InterestsLayoutTableView"].buttons["Back"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Referenzen"]/*[[".cells.staticTexts[\"Referenzen\"]",".staticTexts[\"Referenzen\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["akarsh_seggemu_resume.ReferencesLayoutTableView"].buttons["Back"].tap()
+        
+    }
 
 }
