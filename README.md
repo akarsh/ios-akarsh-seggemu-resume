@@ -4,7 +4,7 @@
 
 [![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-10.0-blue.svg)](https://developer.apple.com/xcode)
-[![travis-ci](https://travis-ci.com/akarsh/ios-akarsh-seggemu-resume.svg?branch=master)](https://travis-ci.com/akarsh/ios-akarsh-seggemu-resume)
+[![Build Status](https://travis-ci.com/akarsh/ios-akarsh-seggemu-resume.svg?branch=master)](https://travis-ci.com/akarsh/ios-akarsh-seggemu-resume)
 
 This project is developed to show the resume in iOS.
 The resume is maintained in a JSON format following resume JSON structure.
@@ -14,6 +14,7 @@ The resume is maintained in a JSON format following resume JSON structure.
 - [Features](#features)
 - [Requirements](#requirements)
 - [Credits](#credits)
+- [License](#license)
 
 <img height="480" src="Images/demoOfiOSapp.gif" alt="demo of ios resume application project">
 
