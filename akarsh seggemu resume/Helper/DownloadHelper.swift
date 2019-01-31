@@ -25,7 +25,7 @@ class DownloadHelper {
                         // copying the file to the destination file path
                         try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
 //                        print("File created at \(destinationFileUrl)")
-                    } catch let writeError {
+                    } catch (let writeError) {
                         print("Error creating a file \(destinationFileUrl) : \(writeError)")
                     }
                 } else {

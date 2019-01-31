@@ -64,7 +64,6 @@ class ResumeSchemaTableViewController: UITableViewController {
         "InterestsLayout",
         "ReferencesLayout"
     ]
-    
     // file path
     var filePath = ""
     var resumeFileName = ""
@@ -103,7 +102,7 @@ class ResumeSchemaTableViewController: UITableViewController {
     // set the resume file name according to the chosen language
     func setResumeFileToChosenLanguage() {
         chosenLanguage! == "en" ? (self.resumeFileName = "englishResume.json") : (self.resumeFileName = "deutschResume.json")
-        self.readData{ basicsStorage in
+        self.readData { basicsStorage in
             self.basicsStorage = basicsStorage
             self.downloadImageFromURL()
         }
@@ -132,8 +131,7 @@ class ResumeSchemaTableViewController: UITableViewController {
                 print("Could not find local directory to store file")
                 return
             }
-        }
-        catch let error as NSError {
+        } catch (let error as NSError) {
             print("An error took place: \(error)")
         }
     }
@@ -157,7 +155,7 @@ class ResumeSchemaTableViewController: UITableViewController {
                     guard let url = basicsStorage?.basics.picture else { return }
                     DownloadHelper.downloadFromURL(url, destinationFileUrl)
                 }
-            }  else {
+            } else {
                 print("Could not find local directory to store file")
                 return
             }
