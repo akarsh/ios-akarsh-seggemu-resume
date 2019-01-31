@@ -155,7 +155,7 @@ class ResumeSchemaTableViewController: UITableViewController {
                 if !FileManager.default.fileExists(atPath: filePath) {
                     // url to the resume JSON file
                     guard let url = basicsStorage?.basics.picture else { return }
-                    DownloadHelper.extractedFunc(url, destinationFileUrl)
+                    DownloadHelper.downloadFromURL(url, destinationFileUrl)
                 }
             }  else {
                 print("Could not find local directory to store file")

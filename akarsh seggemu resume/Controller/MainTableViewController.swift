@@ -85,7 +85,7 @@ class MainTableViewController: UITableViewController {
         }
         
         // url to the resume JSON file
-        DownloadHelper.extractedFunc(resumeURL, destinationFileUrl)
+        DownloadHelper.downloadFromURL(resumeURL, destinationFileUrl)
     }
 }
 
