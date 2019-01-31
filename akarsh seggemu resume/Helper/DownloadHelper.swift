@@ -18,13 +18,13 @@ class DownloadHelper {
             let dataTask = sessionConfig.downloadTask(with: request) { data, response, error in
                 if let tempLocalUrl = data, error == nil {
                     // if success print the status code of 200
-                    if let statusCode = (response as? HTTPURLResponse)?.statusCode {
-                        print("Successfully downloaded. Status code: \(statusCode)")
-                    }
+//                    if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+//                        print("Successfully downloaded. Status code: \(statusCode)")
+//                    }
                     do {
                         // copying the file to the destination file path
                         try FileManager.default.copyItem(at: tempLocalUrl, to: destinationFileUrl)
-                        print("File created at \(destinationFileUrl)")
+//                        print("File created at \(destinationFileUrl)")
                     } catch let writeError {
                         print("Error creating a file \(destinationFileUrl) : \(writeError)")
                     }
