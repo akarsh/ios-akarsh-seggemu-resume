@@ -5,6 +5,8 @@
 [![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)](https://swift.org)
 [![Xcode](https://img.shields.io/badge/Xcode-10.0-blue.svg)](https://developer.apple.com/xcode)
 [![Build Status](https://travis-ci.com/akarsh/ios-akarsh-seggemu-resume.svg?branch=master)](https://travis-ci.com/akarsh/ios-akarsh-seggemu-resume)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1e33a56e35ad20e93206/maintainability)](https://codeclimate.com/github/akarsh/ios-akarsh-seggemu-resume/maintainability)
+[![codecov](https://codecov.io/gh/akarsh/ios-akarsh-seggemu-resume/branch/master/graph/badge.svg)](https://codecov.io/gh/akarsh/ios-akarsh-seggemu-resume)
 
 This project is developed to show the resume in iOS.
 The resume is maintained in a JSON format following resume JSON structure.
