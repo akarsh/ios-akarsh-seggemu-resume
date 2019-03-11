@@ -137,28 +137,26 @@ class ResumeSchemaTableViewController: UITableViewController {
     }
     
     func downloadImageFromURL() {
-        if basicsStorage?.basics.picture != nil {
-            // Create destination URL
-            let documentsUrl: URL = DocumentHelper.getDocumentsDirectory()
-            // Get the file path in documents directory
-            let destinationFileUrl = documentsUrl.appendingPathComponent(self.imageFileName)
-            // get the documents directory url
-            let dirs: [String] = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
-            if dirs.count > 0 {
-                // documents directory
-                let dir = dirs[0]
-                // adding the filename to the documents directory as file path
-                self.filePath = dir.appendingFormat("/" + self.imageFileName)
-                // check if the file does not exists
-                if !FileManager.default.fileExists(atPath: filePath) {
-                    // url to the resume JSON file
-                    guard let url = basicsStorage?.basics.picture else { return }
-                    DownloadHelper.downloadFromURL(url, destinationFileUrl)
-                }
-            } else {
-                print("Could not find local directory to store file")
-                return
+        guard let url = basicsStorage?.basics.picture else { return }
+        // Create destination URL
+        let documentsUrl: URL = DocumentHelper.getDocumentsDirectory()
+        // Get the file path in documents directory
+        let destinationFileUrl = documentsUrl.appendingPathComponent(self.imageFileName)
+        // get the documents directory url
+        let dirs: [String] = NSSearchPathForDirectoriesInDomains(.documentDirectory, .allDomainsMask, true)
+        if dirs.count > 0 {
+            // documents directory
+            let dir = dirs[0]
+            // adding the filename to the documents directory as file path
+            self.filePath = dir.appendingFormat("/" + self.imageFileName)
+            // check if the file does not exists
+            if !FileManager.default.fileExists(atPath: filePath) {
+                // url to the resume JSON file
+                DownloadHelper.downloadFromURL(url, destinationFileUrl)
             }
+        } else {
+            print("Could not find local directory to store file")
+            return
         }
     }
 }
