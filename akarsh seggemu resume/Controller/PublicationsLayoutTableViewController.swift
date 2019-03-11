@@ -11,15 +11,12 @@ import UIKit
 class PublicationsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
-    @IBOutlet weak var tableViewHeader: PublicationsLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: PublicationsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
-        self.setPublicationsLayoutTableViewHeader()
+        setPublicationsLayoutTableViewHeader()
     }
     
     // set the table view header

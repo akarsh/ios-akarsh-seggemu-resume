@@ -12,14 +12,12 @@ class VolunteerLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
     
-    @IBOutlet weak var tableViewHeader: VolunteerLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: VolunteerLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
-        self.setVolunteerLayoutTableViewHeader()
+        setVolunteerLayoutTableViewHeader()
     }
     
     // set the table view header

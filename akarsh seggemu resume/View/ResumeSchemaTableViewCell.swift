@@ -9,15 +9,13 @@
 import UIKit
 
 class ResumeSchemaTableViewCell: UITableViewCell {
-
-    
-    @IBOutlet weak var imageOfSchemaKeys: UIImageView!
+    @IBOutlet var imageOfSchemaKeys: UIImageView!
     @IBOutlet var contentLabelOfSchemaKeys: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

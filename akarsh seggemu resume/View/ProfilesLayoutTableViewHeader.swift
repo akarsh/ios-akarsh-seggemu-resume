@@ -9,7 +9,5 @@
 import UIKit
 
 class ProfilesLayoutTableViewHeader: UIView {
-
     @IBOutlet weak var labelProfilesLayoutTableViewHeader: UILabel!
-
 }

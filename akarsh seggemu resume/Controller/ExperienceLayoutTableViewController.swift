@@ -11,15 +11,12 @@ import UIKit
 class ExperienceLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
-    @IBOutlet weak var tableViewHeader: ExperienceLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: ExperienceLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
-        self.setExperienceLayoutTableViewHeader()
+        setExperienceLayoutTableViewHeader()
     }
     
     // set the table view header

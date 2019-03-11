@@ -11,15 +11,12 @@ import UIKit
 class InterestsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
-    @IBOutlet weak var tableViewHeader: InterestsLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: InterestsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
-        self.setInterestsLayoutTableViewHeader()
+        setInterestsLayoutTableViewHeader()
     }
     
     // set the table view header

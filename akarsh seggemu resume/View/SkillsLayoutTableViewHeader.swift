@@ -9,6 +9,5 @@
 import UIKit
 
 class SkillsLayoutTableViewHeader: UIView {
-    
     @IBOutlet weak var labelSkillsLayoutTableViewHeader: UILabel!
 }
