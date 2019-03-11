@@ -15,13 +15,11 @@ class MainTableViewController: UITableViewController {
     let imageOfLanaguageArrays = ["flagUnitedKingdom.png", "flagGermany.png"]
     // Array of language codes
     let languageCode = ["en", "de"]
-    
     // Filenames for the resume JSON files
     let englishResumeFile = "englishResume.json"
     let germanResumeFile = "deutschResume.json"
     // empty file path declaration
     var filePath = ""
-    
     // URLs for the resume JSON files located in GitHub
     let englishResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/en/resume.json"
     let germanResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/de/resume.json"
@@ -30,13 +28,10 @@ class MainTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
         // Adding separator Inset
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0)
-        
         // calling fetchData to download the englishResume.json
         self.fetchData(self.englishResumeFile, self.englishResumeURL)
         self.fetchData(self.germanResumeFile, self.germanResumeURL)
@@ -62,7 +57,6 @@ class MainTableViewController: UITableViewController {
         let documentsUrl: URL = DocumentHelper.getDocumentsDirectory()
         // Get the file path in documents directory
         let destinationFileUrl = documentsUrl.appendingPathComponent(resumeFileName)
-        
         // Find documents directory on device
         let dirs: [String] = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.allDomainsMask, true)
         
@@ -83,7 +77,6 @@ class MainTableViewController: UITableViewController {
         } catch let error as NSError {
             print("An error took place: \(error.localizedDescription)")
         }
-        
         // url to the resume JSON file
         DownloadHelper.downloadFromURL(resumeURL, destinationFileUrl)
     }
@@ -104,7 +97,6 @@ extension MainTableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "mainTableCell", for: indexPath) as? MainTableViewCell else {
             fatalError("DequeueReusableCell failed while casting")
         }
-        
         cell.imageOfLanguage.image = UIImage(named: imageOfLanaguageArrays[indexPath.row])
         cell.nameLabelOfLanguage.text = resumeNameArrays[indexPath.row]
         cell.languageCode = languageCode[indexPath.row]

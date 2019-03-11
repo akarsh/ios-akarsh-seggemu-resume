@@ -10,12 +10,9 @@ import Foundation
 
 class DownloadHelper {
     // Download file from the URL and store it in the destination File URL
-    static func downloadFromURL(_ url: String, _ destinationFileUrl: URL) {
-        guard let urlString = URL(string: url) else { return }
-        let sessionConfig = URLSession(configuration: .default)
-        let request = URLRequest(url: urlString)
+    fileprivate static func downloadData(_ sessionConfig: URLSession, _ request: URLRequest, _ destinationFileUrl: URL) {
         // download task to download the resume JSON file
-        let dataTask = sessionConfig.downloadTask(with: request) { data, response, error in
+        let dataTask = sessionConfig.downloadTask(with: request) { data, _, error in
             if let tempLocalUrl = data, error == nil {
                 // if success print the status code of 200
                 //                    if let statusCode = (response as? HTTPURLResponse)?.statusCode {
@@ -33,5 +30,12 @@ class DownloadHelper {
             }
         }
         dataTask.resume()
+    }
+    
+    static func downloadFromURL(_ url: String, _ destinationFileUrl: URL) {
+        guard let urlString = URL(string: url) else { return }
+        let sessionConfig = URLSession(configuration: .default)
+        let request = URLRequest(url: urlString)
+        downloadData(sessionConfig, request, destinationFileUrl)
     }
 }
