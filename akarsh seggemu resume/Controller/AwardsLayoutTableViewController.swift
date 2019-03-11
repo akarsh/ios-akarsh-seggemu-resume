@@ -11,15 +11,12 @@ import UIKit
 class AwardsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
-    @IBOutlet weak var tableViewHeader: AwardsLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: AwardsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
-        self.setAwardsLayoutTableViewHeader()
+        setAwardsLayoutTableViewHeader()
     }
     
     // set the table view header

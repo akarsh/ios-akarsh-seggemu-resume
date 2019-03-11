@@ -11,20 +11,15 @@ import UIKit
 class ContactLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
     // file path
     var filePath = ""
     // profile image file name
     let imageFileName = "standard_profile.jpg"
-    
     @IBOutlet var viewHeader: ContactLayoutView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        self.setContactViewHeader()
+        setContactViewHeader()
     }
-    
     
     func setContactViewHeader() {
         // set the view header
@@ -33,7 +28,7 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
         }
         if basicsContent?.basics != nil {
             if basicsContent?.basics.picture != nil {
-                self.setImageViewToImageFile()
+                setImageViewToImageFile()
             }
             
             viewHeader.labelName.text = basicsContent?.basics.name
@@ -57,9 +52,9 @@ class ContactLayoutViewController: UIViewController, LabelHeader {
             // documents directory
             let dir = dirs[0]
             // adding the filename to the documents directory as file path
-            self.filePath = dir.appendingFormat("/" + self.imageFileName)
+            filePath = dir.appendingFormat("/" + imageFileName)
             // set the file to imageView
-            self.viewHeader.imageViewProfilePicture.image = UIImage(contentsOfFile: filePath)
+            viewHeader.imageViewProfilePicture.image = UIImage(contentsOfFile: filePath)
         } else {
             print("Could not find local directory to store file")
             return

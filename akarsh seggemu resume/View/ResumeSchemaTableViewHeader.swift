@@ -9,6 +9,5 @@
 import UIKit
 
 class ResumeSchemaTableViewHeader: UIView {
-    
-    @IBOutlet weak var labelResumeSchemaTableViewHeader: UILabel!
+    @IBOutlet var labelResumeSchemaTableViewHeader: UILabel!
 }

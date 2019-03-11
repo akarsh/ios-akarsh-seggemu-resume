@@ -9,8 +9,6 @@
 import UIKit
 
 class SummaryLayoutView: UIView {
-
     @IBOutlet weak var labelSummaryHeader: UILabel!
     @IBOutlet weak var labelSummary: UITextView!
-
 }

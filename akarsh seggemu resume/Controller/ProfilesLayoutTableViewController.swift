@@ -9,7 +9,6 @@
 import UIKit
 
 class ProfilesLayoutTableViewController: UITableViewController, LabelHeader {
-    
     var basicsContent: Resume?
     var labelContentHeader: String?
     // array of network names
@@ -30,21 +29,16 @@ class ProfilesLayoutTableViewController: UITableViewController, LabelHeader {
         "duo",
         "XNG"
     ]
-    
-    @IBOutlet weak var tableViewHeader: ProfilesLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: ProfilesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        
+        tableView.dataSource = self
+        tableView.delegate = self
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
         // Adding separator Inset
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 80, bottom: 0, right: 0)
-        
-        self.setProfilesTableViewHeader()
+        setProfilesTableViewHeader()
     }
     
     func setProfilesTableViewHeader() {

@@ -10,7 +10,6 @@ import UIKit
 
 class ResumeSchemaTableViewController: UITableViewController {
     var basicsStorage: Resume?
-    
     var chosenLanguage: String?
     var labelContentResumeSchemaTableViewHeader: String?
     // Data array contains the key values which are translated according to chosen language
@@ -32,6 +31,7 @@ class ResumeSchemaTableViewController: UITableViewController {
             TranslationHelper.locForKey(chosenLanguage, "references")!
         ]
     }()
+    
     // Emoji images filenames in the array imageOfSchemaKeys
     let imageOfSchemaKeys = [
         "cardIndex.png",
@@ -69,39 +69,31 @@ class ResumeSchemaTableViewController: UITableViewController {
     var resumeFileName = ""
     // filename of the profile image
     let imageFileName = "standard_profile.jpg"
-    
-    @IBOutlet weak var tableViewHeader: ResumeSchemaTableViewHeader!
-    
+    @IBOutlet var tableViewHeader: ResumeSchemaTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
         // Adding separator Inset
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0)
-        
-        //set the table veiw header
-        setTableViewHeader()
-        
+        // set the table veiw header
+        self.setTableViewHeader()
         // set the resume file to chosen language
         self.setResumeFileToChosenLanguage()
-        
     }
     
     func setTableViewHeader() {
         // set the table view header
-        if labelContentResumeSchemaTableViewHeader != nil {
-            tableViewHeader?.labelResumeSchemaTableViewHeader?.text = labelContentResumeSchemaTableViewHeader!
+        if self.labelContentResumeSchemaTableViewHeader != nil {
+            self.tableViewHeader?.labelResumeSchemaTableViewHeader?.text = self.labelContentResumeSchemaTableViewHeader!
         }
     }
     
     // set the resume file name according to the chosen language
     func setResumeFileToChosenLanguage() {
-        chosenLanguage! == "en" ? (self.resumeFileName = "englishResume.json") : (self.resumeFileName = "deutschResume.json")
+        self.chosenLanguage! == "en" ? (self.resumeFileName = "englishResume.json") : (self.resumeFileName = "deutschResume.json")
         self.readData { basicsStorage in
             self.basicsStorage = basicsStorage
             self.downloadImageFromURL()
@@ -131,7 +123,7 @@ class ResumeSchemaTableViewController: UITableViewController {
                 print("Could not find local directory to store file")
                 return
             }
-        } catch (let error as NSError) {
+        } catch let error as NSError {
             print("An error took place: \(error)")
         }
     }
@@ -150,7 +142,7 @@ class ResumeSchemaTableViewController: UITableViewController {
             // adding the filename to the documents directory as file path
             self.filePath = dir.appendingFormat("/" + self.imageFileName)
             // check if the file does not exists
-            if !FileManager.default.fileExists(atPath: filePath) {
+            if !FileManager.default.fileExists(atPath: self.filePath) {
                 // url to the resume JSON file
                 DownloadHelper.downloadFromURL(url, destinationFileUrl)
             }
@@ -179,8 +171,8 @@ extension ResumeSchemaTableViewController {
             fatalError("DequeueReusableCell failed while casting")
         }
         
-        cell.imageOfSchemaKeys.image = UIImage(named: imageOfSchemaKeys[indexPath.row])
-        cell.contentLabelOfSchemaKeys.text = data[indexPath.row]
+        cell.imageOfSchemaKeys.image = UIImage(named: self.imageOfSchemaKeys[indexPath.row])
+        cell.contentLabelOfSchemaKeys.text = self.data[indexPath.row]
         
         return cell
     }
@@ -192,7 +184,7 @@ extension ResumeSchemaTableViewController {
             guard let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as? InfoLayoutViewController else {
                 fatalError("DequeueReusableCell failed while casting")
             }
-            viewController.labelContentHeader = data[indexPath.row]
+            viewController.labelContentHeader = self.data[indexPath.row]
             viewController.basicsContent = basicsStorage
             viewController.chosenLanguage = chosenLanguage
             self.navigationController?.pushViewController(viewController, animated: true)

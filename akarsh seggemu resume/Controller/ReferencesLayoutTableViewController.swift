@@ -11,14 +11,11 @@ import UIKit
 class ReferencesLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
     @IBOutlet var tableViewHeader: ReferencesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
         setReferencesLayoutTableViewHeader()
     }
     

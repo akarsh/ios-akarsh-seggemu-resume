@@ -9,7 +9,6 @@
 import UIKit
 
 class InfoLayoutView: UIView {
-
     @IBOutlet weak var labelInfoLayoutHeader: UILabel!
     @IBOutlet weak var labelNationality: UILabel!
     @IBOutlet weak var labelNationalityContent: UILabel!
@@ -19,5 +18,4 @@ class InfoLayoutView: UIView {
     @IBOutlet weak var labelDateOfBirthContent: UILabel!
     @IBOutlet weak var labelPlaceOfBirth: UILabel!
     @IBOutlet weak var labelPlaceOfBirthContent: UILabel!
-
 }

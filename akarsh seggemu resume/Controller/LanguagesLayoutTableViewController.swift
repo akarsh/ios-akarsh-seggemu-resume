@@ -11,16 +11,12 @@ import UIKit
 class LanguagesLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
-    @IBOutlet weak var tableViewHeader: LanguagesLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: LanguagesLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.setlanguagesLayoutTableViewHeader()
-        
+        setlanguagesLayoutTableViewHeader()
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
     

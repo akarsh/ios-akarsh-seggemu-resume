@@ -11,14 +11,11 @@ import UIKit
 class SummaryLayoutViewController: UIViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
     @IBOutlet var viewHeader: SummaryLayoutView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        self.setSummaryViewHeader()
+        setSummaryViewHeader()
     }
     
     func setSummaryViewHeader() {

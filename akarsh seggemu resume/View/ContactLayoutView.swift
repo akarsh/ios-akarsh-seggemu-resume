@@ -9,19 +9,16 @@
 import UIKit
 
 class ContactLayoutView: UIView {
-    
-    @IBOutlet weak var labelContactLayoutHeader: UILabel!
-    
-    @IBOutlet weak var imageViewProfilePicture: UIImageView!
-    @IBOutlet weak var labelName: UILabel!
-    @IBOutlet weak var labelTitle: UILabel!
-    @IBOutlet weak var labelEmail: UILabel!
-    @IBOutlet weak var labelPhone: UILabel!
-    @IBOutlet weak var labelWebsite: UILabel!
-    @IBOutlet weak var labelAddress: UILabel!
-    @IBOutlet weak var labelCity: UILabel!
-    @IBOutlet weak var labelPostalCode: UILabel!
-    @IBOutlet weak var labelRegion: UILabel!
-    @IBOutlet weak var labelCountryCode: UILabel!
-    
+    @IBOutlet var labelContactLayoutHeader: UILabel!
+    @IBOutlet var imageViewProfilePicture: UIImageView!
+    @IBOutlet var labelName: UILabel!
+    @IBOutlet var labelTitle: UILabel!
+    @IBOutlet var labelEmail: UILabel!
+    @IBOutlet var labelPhone: UILabel!
+    @IBOutlet var labelWebsite: UILabel!
+    @IBOutlet var labelAddress: UILabel!
+    @IBOutlet var labelCity: UILabel!
+    @IBOutlet var labelPostalCode: UILabel!
+    @IBOutlet var labelRegion: UILabel!
+    @IBOutlet var labelCountryCode: UILabel!
 }

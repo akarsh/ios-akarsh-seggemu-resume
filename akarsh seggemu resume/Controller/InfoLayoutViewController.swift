@@ -11,9 +11,7 @@ import UIKit
 class InfoLayoutViewController: UIViewController {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    
     var chosenLanguage: String?
-    
     lazy var data: [String] = {
         [
             TranslationHelper.locForKey(chosenLanguage, "nationality")!,
@@ -27,9 +25,7 @@ class InfoLayoutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        self.setInfoLayoutHeader()
+        setInfoLayoutHeader()
     }
     
     func setInfoLayoutHeader() {

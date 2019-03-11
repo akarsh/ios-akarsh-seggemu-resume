@@ -9,7 +9,6 @@
 import UIKit
 
 class EducationLayoutTableViewCell: UITableViewCell {
-
     @IBOutlet weak var labelInstitution: UILabel!
     @IBOutlet weak var labelArea: UILabel!
     @IBOutlet weak var labelStudyType: UILabel!
@@ -19,13 +18,10 @@ class EducationLayoutTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

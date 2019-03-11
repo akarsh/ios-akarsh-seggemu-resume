@@ -11,21 +11,16 @@ import UIKit
 class SkillsLayoutTableViewController: UITableViewController, LabelHeader {
     var basicsContent: Resume?
     var labelContentHeader: String?
-    @IBOutlet weak var tableViewHeader: SkillsLayoutTableViewHeader!
+    @IBOutlet var tableViewHeader: SkillsLayoutTableViewHeader!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        
+        tableView.dataSource = self
+        tableView.delegate = self
         // FooterView is added so the UIKit does not create empty rows
         tableView.tableFooterView = UIView(frame: .zero)
-        
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-        
-        self.setSkillsTableViewHeader()
+        setSkillsTableViewHeader()
     }
-    
     
     func setSkillsTableViewHeader() {
         // set table view header
