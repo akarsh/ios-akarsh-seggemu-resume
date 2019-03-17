@@ -1,5 +1,5 @@
 //
-//  ASR_BaseUITests.swift
+//  ASRBaseUITests.swift
 //  akarsh seggemu resumeUITests
 //
 //  Created by Akarsh Seggemu on 16.03.19.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ASR_BaseUITests: XCTestCase {
+class ASRBaseUITests: XCTestCase {
     var app: XCUIApplication!
     override func setUp() {
         continueAfterFailure = false

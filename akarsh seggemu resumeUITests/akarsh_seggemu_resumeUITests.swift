@@ -8,7 +8,7 @@
 
 import XCTest
 
-class akarsh_seggemu_resumeUITests: ASR_BaseUITests {
+class akarsh_seggemu_resumeUITests: ASRBaseUITests {
     let resumeMainCellContent = [
         "English resume",
         "Deutsch Lebenslauf"
@@ -59,21 +59,27 @@ class akarsh_seggemu_resumeUITests: ASR_BaseUITests {
         "Referenzen"
     ]
     func testNavigationintoIntoEnglishResume() {
+        testNavigation(resumeLanguage: "English")
+    }
+    fileprivate func testNavigation(resumeLanguage: String) {
         let app = XCUIApplication()
         let tablesQuery = app.tables
-        tablesQuery.staticTexts[resumeMainCellContent[0]].tap()
-        for (index, element) in englishResumeCellContent.enumerated() {
+        var arraylistName: [String]
+        if resumeLanguage == "English" {
+            tablesQuery.staticTexts[resumeMainCellContent[0]].tap()
+            arraylistName = englishResumeCellContent
+        } else {
+            tablesQuery.staticTexts[resumeMainCellContent[1]].tap()
+            arraylistName = deutschLebenslaufCellContent
+        }
+        
+        for (index, element) in arraylistName.enumerated() {
             tablesQuery.staticTexts[element].tap()
             app.navigationBars[resumeNavigationBarsContent[index]].buttons["Back"].tap()
         }
     }
+    
     func testNavigationintoIntoDeutschLebenslauf() {
-        let app = XCUIApplication()
-        let tablesQuery = app.tables
-        tablesQuery.staticTexts[resumeMainCellContent[1]].tap()
-        for (index, element) in deutschLebenslaufCellContent.enumerated() {
-            tablesQuery.staticTexts[element].tap()
-            app.navigationBars[resumeNavigationBarsContent[index]].buttons["Back"].tap()
-        }
+        testNavigation(resumeLanguage: "Deutsch")
     }
 }
