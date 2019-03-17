@@ -72,13 +72,11 @@ class akarsh_seggemu_resumeUITests: ASRBaseUITests {
             tablesQuery.staticTexts[resumeMainCellContent[1]].tap()
             arraylistName = deutschLebenslaufCellContent
         }
-        
         for (index, element) in arraylistName.enumerated() {
             tablesQuery.staticTexts[element].tap()
             app.navigationBars[resumeNavigationBarsContent[index]].buttons["Back"].tap()
         }
     }
-    
     func testNavigationintoIntoDeutschLebenslauf() {
         testNavigation(resumeLanguage: "Deutsch")
     }
