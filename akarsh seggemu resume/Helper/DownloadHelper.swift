@@ -30,7 +30,7 @@ class DownloadHelper {
         }
         dataTask.resume()
     }
-    
+    // Conversion of the url data type from String to URL
     static func downloadFromURL(_ url: String, _ destinationFileUrl: URL) {
         guard let urlString = URL(string: url) else { return }
         let sessionConfig = URLSession(configuration: .default)
