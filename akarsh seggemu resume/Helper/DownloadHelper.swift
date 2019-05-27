@@ -15,11 +15,14 @@ class DownloadHelper {
         let dataTask = sessionConfig.downloadTask(with: request) { data, _, error in
             if let error = error {
                 print("Error while downloading a file: %@ \(error.localizedDescription)")
-            } else if let tempLocalUrl = data, error == nil {
+            } else {
+                guard let data = data, error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return
+                }
                 do {
                     // copying the file to the destination file path
-                    try FileManager.default.copyItem(at: tempLocalUrl, to: destinationURL)
-                    //                        print("File created at \(destinationFileUrl)")
+                    try FileManager.default.copyItem(at: data, to: destinationURL)
                 } catch let writeError {
                     print("Error creating a file \(destinationURL) : \(writeError)")
                 }
@@ -27,7 +30,7 @@ class DownloadHelper {
         }
         dataTask.resume()
     }
-
+    
     static func downloadFromURL(_ url: String, _ destinationFileUrl: URL) {
         guard let urlString = URL(string: url) else { return }
         let sessionConfig = URLSession(configuration: .default)
