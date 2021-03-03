@@ -15,12 +15,16 @@ struct MainView: View {
     ]
     var body: some View {
         List(languages, id: \.id) { language in
-            HStack(spacing: 10) {
+            HStack(alignment: .center, spacing: 10) {
                 Image(language.flag)
                     .resizable()
                     .frame(width: 50, height: 50, alignment: .center)
                     .scaledToFit()
                 Text(language.name)
+                    .lineLimit(1)
+                    .frame(width:160, alignment: .leading)
+            }
+            NavigationLink(destination: ResumeSchemaView()) {
             }
         }
     }
