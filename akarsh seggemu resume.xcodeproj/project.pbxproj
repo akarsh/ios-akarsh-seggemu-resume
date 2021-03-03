@@ -12,6 +12,7 @@
 		D32273FA218535AE0068A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32273F9218535AE0068A69D /* Assets.xcassets */; };
 		D323388225F0213D0054A4EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323388125F0213D0054A4EE /* SceneDelegate.swift */; };
 		D323388725F02A170054A4EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323388625F02A170054A4EE /* MainView.swift */; };
+		D323388F25F02FE00054A4EE /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323388E25F02FE00054A4EE /* Language.swift */; };
 		D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324D66021860B9D0089CD44 /* MainTableViewController.swift */; };
 		D32F098921F9CB160049FE31 /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F098821F9CB160049FE31 /* DownloadHelper.swift */; };
 		D34B24FC21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B24FB21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift */; };
@@ -104,6 +105,7 @@
 		D32273FE218535AE0068A69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D323388125F0213D0054A4EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D323388625F02A170054A4EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D323388E25F02FE00054A4EE /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		D324D66021860B9D0089CD44 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D324D66221860C880089CD44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D32F098821F9CB160049FE31 /* DownloadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				D3B42ABB21867BC500F183B9 /* Resume.swift */,
+				D323388E25F02FE00054A4EE /* Language.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				D389F7B421F9CF18008EAB55 /* DocumentHelper.swift in Sources */,
 				D3D498BC21B88B14008ABCED /* InfoLayoutView.swift in Sources */,
 				D3B42ABC21867BC500F183B9 /* Resume.swift in Sources */,
+				D323388F25F02FE00054A4EE /* Language.swift in Sources */,
 				D3D498D821B894F6008ABCED /* PublicationsLayoutTableViewCell.swift in Sources */,
 				D3D498D021B8949E008ABCED /* EducationLayoutTableViewCell.swift in Sources */,
 				D3D6921121BF45D400A238FD /* InterestsLayoutTableViewHeader.swift in Sources */,
