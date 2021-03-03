@@ -189,7 +189,7 @@ extension ResumeSchemaTableViewController {
             viewController.chosenLanguage = chosenLanguage
             self.navigationController?.pushViewController(viewController, animated: true)
         } else {
-            var viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
+            let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
             viewController.labelContentHeader = data[indexPath.row]
             viewController.basicsContent = basicsStorage
             self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
