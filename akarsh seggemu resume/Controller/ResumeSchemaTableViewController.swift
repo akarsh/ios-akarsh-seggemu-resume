@@ -192,7 +192,7 @@ extension ResumeSchemaTableViewController {
             let viewController = storyboard?.instantiateViewController(withIdentifier: vcName) as! LabelHeader
             viewController.labelContentHeader = data[indexPath.row]
             viewController.basicsContent = basicsStorage
-            self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
+            self.navigationController?.pushViewController(viewController as UIViewController, animated: true)
         }
     }
 }
