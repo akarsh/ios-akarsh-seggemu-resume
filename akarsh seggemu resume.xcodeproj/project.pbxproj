@@ -10,6 +10,8 @@
 		D30A00A921F9DA9A008FC4E7 /* TranslationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A00A821F9DA9A008FC4E7 /* TranslationHelper.swift */; };
 		D32273F3218535AD0068A69D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32273F2218535AD0068A69D /* AppDelegate.swift */; };
 		D32273FA218535AE0068A69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32273F9218535AE0068A69D /* Assets.xcassets */; };
+		D323388225F0213D0054A4EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323388125F0213D0054A4EE /* SceneDelegate.swift */; };
+		D323388725F02A170054A4EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D323388625F02A170054A4EE /* MainView.swift */; };
 		D324D66121860B9D0089CD44 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324D66021860B9D0089CD44 /* MainTableViewController.swift */; };
 		D32F098921F9CB160049FE31 /* DownloadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32F098821F9CB160049FE31 /* DownloadHelper.swift */; };
 		D34B24FC21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B24FB21C3CD5000171E46 /* ProfilesLayoutTableViewCell.swift */; };
@@ -100,6 +102,8 @@
 		D32273F2218535AD0068A69D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D32273F9218535AE0068A69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32273FE218535AE0068A69D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D323388125F0213D0054A4EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D323388625F02A170054A4EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D324D66021860B9D0089CD44 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		D324D66221860C880089CD44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D32F098821F9CB160049FE31 /* DownloadHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHelper.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				D32273F2218535AD0068A69D /* AppDelegate.swift */,
+				D323388125F0213D0054A4EE /* SceneDelegate.swift */,
 				D35AA9D421A4D72D009F8BC8 /* Assets */,
 				D32274072185360A0068A69D /* Controller */,
 				D32C357121FBB18C000A501F /* Helper */,
@@ -310,6 +315,7 @@
 				D3D498D921B89506008ABCED /* InterestsLayoutTableViewCell.swift */,
 				D3D6921221BF463800A238FD /* ReferencesLayoutTableViewHeader.swift */,
 				D3D498DB21B89513008ABCED /* ReferencesLayoutTableViewCell.swift */,
+				D323388625F02A170054A4EE /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,6 +546,7 @@
 				D3AAD5B421BDC291004876FF /* SkillsLayoutTableViewHeader.swift in Sources */,
 				D352110B21BD3C4D009EFD09 /* LanguagesLayoutTableViewController.swift in Sources */,
 				D359DC7B21AB7593008011EE /* ResumeSchemaTableViewController.swift in Sources */,
+				D323388225F0213D0054A4EE /* SceneDelegate.swift in Sources */,
 				D3B28BE721A6236000029A3F /* MainTableViewCell.swift in Sources */,
 				D3D498E621B8955C008ABCED /* PublicationsLayoutTableViewController.swift in Sources */,
 				D3D498D221B894AE008ABCED /* ExperienceLayoutTableViewCell.swift in Sources */,
@@ -552,6 +559,7 @@
 				D3D498CE21B89489008ABCED /* SkillsLayoutTableViewCell.swift in Sources */,
 				D3D498DA21B89506008ABCED /* InterestsLayoutTableViewCell.swift in Sources */,
 				D32F098921F9CB160049FE31 /* DownloadHelper.swift in Sources */,
+				D323388725F02A170054A4EE /* MainView.swift in Sources */,
 				D3646F3221BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift in Sources */,
 				D3D6920D21BF44CA00A238FD /* AwardsLayoutTableViewHeader.swift in Sources */,
 				D352110D21BD3C5F009EFD09 /* LanguagesLayoutTableViewCell.swift in Sources */,
