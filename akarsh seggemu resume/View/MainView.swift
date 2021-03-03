@@ -9,8 +9,20 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var languages = [
+        Language(name: "English resume", flag: "flagUnitedKingdom", code: "en"),
+        Language(name: "Deutsch Lebenslauf", flag: "flagGermany", code: "de")
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(languages, id: \.id) { language in
+            HStack(spacing: 10) {
+                Image(language.flag)
+                    .resizable()
+                    .frame(width: 50, height: 50, alignment: .center)
+                    .scaledToFit()
+                Text(language.name)
+            }
+        }
     }
 }
 
