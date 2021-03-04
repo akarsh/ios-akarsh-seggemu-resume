@@ -9,13 +9,14 @@
 import SwiftUI
 
 struct ResumeSchemaView: View {
+    var code: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(self.code)
     }
 }
 
 struct ResumeSchemaView_Previews: PreviewProvider {
     static var previews: some View {
-        ResumeSchemaView()
+        ResumeSchemaView(code: "")
     }
 }

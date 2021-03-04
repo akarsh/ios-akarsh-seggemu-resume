@@ -13,19 +13,23 @@ struct MainView: View {
         Language(name: "English resume", flag: "flagUnitedKingdom", code: "en"),
         Language(name: "Deutsch Lebenslauf", flag: "flagGermany", code: "de")
     ]
+    @State private var code = 0
     var body: some View {
-        List(languages, id: \.id) { language in
-            HStack(alignment: .center, spacing: 10) {
-                Image(language.flag)
-                    .resizable()
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .scaledToFit()
-                Text(language.name)
-                    .lineLimit(1)
-                    .frame(width:160, alignment: .leading)
+        NavigationView {
+            List(languages, id: \.id) { language in
+                HStack(alignment: .center, spacing: 10) {
+                    Image(language.flag)
+                        .resizable()
+                        .frame(width: 50, height: 50, alignment: .center)
+                        .scaledToFit()
+                    Text(language.name)
+                        .lineLimit(1)
+                        .frame(width:160, alignment: .leading)
+                }
+                NavigationLink(destination: ResumeSchemaView(code: language.code)) {
+                }
             }
-            NavigationLink(destination: ResumeSchemaView()) {
-            }
+            
         }
     }
 }

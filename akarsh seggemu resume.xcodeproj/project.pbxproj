@@ -294,6 +294,8 @@
 		D359DC7721AB72E5008011EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D323388625F02A170054A4EE /* MainView.swift */,
+				D32338B325F03AD30054A4EE /* ResumeSchemaView.swift */,
 				D3B28BE621A6236000029A3F /* MainTableViewCell.swift */,
 				D352110821BD2AB3009EFD09 /* ResumeSchemaTableViewHeader.swift */,
 				D359DC7821AB74B4008011EE /* ResumeSchemaTableViewCell.swift */,
@@ -320,8 +322,6 @@
 				D3D498D921B89506008ABCED /* InterestsLayoutTableViewCell.swift */,
 				D3D6921221BF463800A238FD /* ReferencesLayoutTableViewHeader.swift */,
 				D3D498DB21B89513008ABCED /* ReferencesLayoutTableViewCell.swift */,
-				D323388625F02A170054A4EE /* MainView.swift */,
-				D32338B325F03AD30054A4EE /* ResumeSchemaView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
