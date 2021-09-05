@@ -6,7 +6,7 @@
 //  Copyright © 2018 Akarsh Seggemu. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 struct basics: Codable {
     var name: String

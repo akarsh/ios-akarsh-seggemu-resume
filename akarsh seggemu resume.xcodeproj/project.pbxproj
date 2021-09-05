@@ -29,6 +29,7 @@
 		D359DC7B21AB7593008011EE /* ResumeSchemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */; };
 		D3646F3221BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3646F3121BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift */; };
 		D3646F3421BE429000E726D8 /* EducationLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3646F3321BE429000E726D8 /* EducationLayoutTableViewHeader.swift */; };
+		D37F849A25F11B270098B9B0 /* ResumeSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37F849925F11B270098B9B0 /* ResumeSchema.swift */; };
 		D389F7B421F9CF18008EAB55 /* DocumentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389F7B321F9CF18008EAB55 /* DocumentHelper.swift */; };
 		D39483EE21BA72510074430E /* ProfilesLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39483ED21BA72510074430E /* ProfilesLayout.storyboard */; };
 		D3AAD5B421BDC291004876FF /* SkillsLayoutTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AAD5B321BDC291004876FF /* SkillsLayoutTableViewHeader.swift */; };
@@ -125,6 +126,7 @@
 		D359DC7A21AB7593008011EE /* ResumeSchemaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeSchemaTableViewController.swift; sourceTree = "<group>"; };
 		D3646F3121BE414100E726D8 /* LanguagesLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLayoutTableViewHeader.swift; sourceTree = "<group>"; };
 		D3646F3321BE429000E726D8 /* EducationLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationLayoutTableViewHeader.swift; sourceTree = "<group>"; };
+		D37F849925F11B270098B9B0 /* ResumeSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeSchema.swift; sourceTree = "<group>"; };
 		D389F7B321F9CF18008EAB55 /* DocumentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentHelper.swift; sourceTree = "<group>"; };
 		D39483ED21BA72510074430E /* ProfilesLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfilesLayout.storyboard; sourceTree = "<group>"; };
 		D3AAD5B321BDC291004876FF /* SkillsLayoutTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsLayoutTableViewHeader.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			children = (
 				D3B42ABB21867BC500F183B9 /* Resume.swift */,
 				D323388E25F02FE00054A4EE /* Language.swift */,
+				D37F849925F11B270098B9B0 /* ResumeSchema.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				D3B42ABC21867BC500F183B9 /* Resume.swift in Sources */,
 				D323388F25F02FE00054A4EE /* Language.swift in Sources */,
 				D3D498D821B894F6008ABCED /* PublicationsLayoutTableViewCell.swift in Sources */,
+				D37F849A25F11B270098B9B0 /* ResumeSchema.swift in Sources */,
 				D3D498D021B8949E008ABCED /* EducationLayoutTableViewCell.swift in Sources */,
 				D3D6921121BF45D400A238FD /* InterestsLayoutTableViewHeader.swift in Sources */,
 				D359DC7921AB74B4008011EE /* ResumeSchemaTableViewCell.swift in Sources */,
