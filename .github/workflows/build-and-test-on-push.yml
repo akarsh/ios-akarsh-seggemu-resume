@@ -25,7 +25,6 @@ jobs:
             -sdk iphonesimulator \
             -destination "platform=iOS Simulator,name=iPhone 11" \
             -UseModernBuildSystem=NO \
-            CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGNING_ALLOWED=YES \
             test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
