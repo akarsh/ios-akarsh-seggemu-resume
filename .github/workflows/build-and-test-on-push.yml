@@ -1,0 +1,29 @@
+name: build-and-test-on-push
+run-name: Build and Test on Push
+
+on: push
+
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        run: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+
+      - name: Install xcpretty
+        run: gem install xcpretty
+
+      - name: Build and Test
+        run: |
+          xcodebuild -project "akarsh seggemu resume.xcodeproj" -scheme "akarsh seggemu resume" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" test | xcpretty --test --color
+
+      - name: Upload Coverage report to Codecov
+        if: success()
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
