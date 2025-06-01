@@ -20,7 +20,15 @@ jobs:
 
       - name: Build and Test
         run: |
-          xcodebuild -project "akarsh seggemu resume.xcodeproj" -scheme "akarsh seggemu resume" -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11" -UseModernBuildSystem=NO CODE_SIGNING_ALLOWED=NO test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
+          xcodebuild -project "akarsh seggemu resume.xcodeproj" \
+            -scheme "akarsh seggemu resume" \
+            -sdk iphonesimulator \
+            -destination "platform=iOS Simulator,name=iPhone 11" \
+            -UseModernBuildSystem=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=YES \
+            test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
 
       - name: Upload Coverage report to Codecov
         if: success()
