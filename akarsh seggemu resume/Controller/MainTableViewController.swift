@@ -21,8 +21,8 @@ class MainTableViewController: UITableViewController {
     // empty file path declaration
     var filePath = ""
     // URLs for the resume JSON files located in GitHub
-    let englishResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/en/resume.json"
-    let germanResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/master/json/de/resume.json"
+    let englishResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/main/json/en/resume.json"
+    let germanResumeURL = "https://raw.githubusercontent.com/akarsh/akarsh.github.io/main/json/de/resume.json"
     
     override func viewDidLoad() {
         super.viewDidLoad()
