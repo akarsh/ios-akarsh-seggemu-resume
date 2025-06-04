@@ -24,7 +24,6 @@ jobs:
           xcodebuild test \
             -project "akarsh seggemu resume.xcodeproj" \
             -scheme "akarsh seggemu resume" \
-            -target "akarsh seggemu resumeTests" \
             -sdk iphonesimulator \
             -destination "platform=iOS Simulator,name=iPhone 11" \
             -UseModernBuildSystem=NO | xcpretty --color
