@@ -18,17 +18,16 @@ jobs:
       - name: Install xcpretty
         run: gem install xcpretty
 
-      - name: Build and Test
+      - name: Test
         run: |
-          xcodebuild -project "akarsh seggemu resume.xcodeproj" \
+          set -o pipefail
+          xcodebuild test \
+            -project "akarsh seggemu resume.xcodeproj" \
             -scheme "akarsh seggemu resume" \
+            -target "akarsh seggemu resumeTests" \
             -sdk iphonesimulator \
             -destination "platform=iOS Simulator,name=iPhone 11" \
-            -UseModernBuildSystem=NO \
-            -allowProvisioningUpdates \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=YES \
-            test | xcpretty --test --color; test ${PIPESTATUS[0]} -eq 0
+            -UseModernBuildSystem=NO | xcpretty --color
 
       - name: Upload Coverage report to Codecov
         if: success()
